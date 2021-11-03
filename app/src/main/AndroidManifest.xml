@@ -18,6 +18,7 @@
         </activity>
 
         <activity android:name=".edittext.EdittextActivity"/>
+        <activity android:name=".webview.WebViewActivity"/>
     </application>
 
 </manifest>

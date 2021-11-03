@@ -4,10 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.ViewModelProvider
 import com.gy.commonviewdemo.edittext.EdittextActivity
+import com.gy.commonviewdemo.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(),View.OnClickListener {
@@ -16,7 +14,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         btn_edit.setOnClickListener(this)
-
+        btn_webview.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -25,6 +23,10 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
                val intent = Intent(this,EdittextActivity::class.java)
                startActivity(intent)
            }
+           R.id.btn_webview -> {
+               val intent = Intent(this,WebViewActivity::class.java)
+               startActivity(intent)
+           }
+           }
        }
-    }
 }
