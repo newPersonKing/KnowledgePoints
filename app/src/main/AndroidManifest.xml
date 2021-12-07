@@ -19,6 +19,8 @@
 
         <activity android:name=".edittext.EdittextActivity"/>
         <activity android:name=".webview.WebViewActivity"/>
+        <activity android:name=".viewpager.ViewPagerActivity"/>
+        <activity android:name=".systemui.SystemUiActivity"/>
     </application>
 
 </manifest>

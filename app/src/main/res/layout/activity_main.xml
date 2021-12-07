@@ -23,4 +23,28 @@
         android:layout_marginTop="15dp"
         android:background="@color/colorAccent"/>
 
+    <Button
+        android:id="@+id/btn_time_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="测试ANR"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="viewpager"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_system_ui"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="获取系统尺寸"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"/>
+
 </LinearLayout>
