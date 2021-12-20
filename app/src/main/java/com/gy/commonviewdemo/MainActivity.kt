@@ -9,7 +9,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.edittext.EdittextActivity
+import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_time_out.setOnClickListener(this)
         btn_viewpager.setOnClickListener(this)
         btn_system_ui.setOnClickListener(this)
+        btn_rv.setOnClickListener(this)
+        btn_cus_view.setOnClickListener(this)
 
         lifecycle.addObserver(object : DefaultLifecycleObserver{
             override fun onCreate(owner: LifecycleOwner) {
@@ -69,6 +73,14 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btn_system_ui ->{
                 val intent = Intent(this,SystemUiActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_rv -> {
+                val intent = Intent(this,RvMainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_cus_view -> {
+                val intent = Intent(this,CusViewMainActivity::class.java)
                 startActivity(intent)
             }
         }

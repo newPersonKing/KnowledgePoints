@@ -21,6 +21,10 @@
         <activity android:name=".webview.WebViewActivity"/>
         <activity android:name=".viewpager.ViewPagerActivity"/>
         <activity android:name=".systemui.SystemUiActivity"/>
+        <activity android:name=".recyclerView.RvMainActivity"/>
+        <activity android:name=".recyclerView.RvThreeDemo"/>
+        <activity android:name=".cusview.threeD.CusView3DActivity"/>
+        <activity android:name=".cusview.CusViewMainActivity"/>
     </application>
 
 </manifest>
