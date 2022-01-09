@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
         })
 
-        Log.i("cccccccccc","onCreate")
     }
 
     // 这里执行
