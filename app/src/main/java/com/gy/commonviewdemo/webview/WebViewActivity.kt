@@ -6,6 +6,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
+import android.util.Log
 import android.view.View
 import android.webkit.*
 import androidx.core.content.FileProvider
@@ -22,6 +23,7 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
         setContentView(R.layout.activity_webview)
 
         webview.loadUrl("file:///android_asset/test.html")
+//        webview.loadUrl("https://m.ivydad.com/act2/buildactivity?activityId=187&_hideShareButton=1")
 
         webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
@@ -30,6 +32,16 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
             ): Boolean {
                 return super.shouldOverrideUrlLoading(view, request)
             }
+
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                view?.postDelayed({
+
+                    checkContentSize()
+                },1000)
+
+
+            }
         }
 
         webview.webChromeClient = CusWebChromeClient{ callback,chooseParams->
@@ -37,6 +49,35 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
             takePhoto()
         }
         initSetting()
+    }
+
+    private fun checkContentSize(){
+
+        webview.evaluateJavascript("document.compatMode"){
+            Log.i("ccccccccccccc","mode====$it")
+        }
+
+        // 注意点：只针对 自己本地的html
+        // document.documentElement.scrollHeight; 与 document.body.scrollHeight; 在webview 是match——parent的时候 获取到的值是固定的 暂时不知道是什么含义
+        // 当内容超过webview 的高度的时候 document.documentElement.scrollHeight; 返回的值 会跟着内容的高度变化变化 document.body.scrollHeight; 还是固定值
+
+        // 只有内容高度 大于webview 的尺寸的时候 读取到的值才是正确的
+        webview.evaluateJavascript("document.documentElement.scrollHeight;"){
+            Log.i("ccccccccccccc","height1====$it")
+        }
+
+        // 只有内容高度 大于webview 的尺寸的时候 读取到的值才是正确的
+        webview.evaluateJavascript("document.body.scrollHeight;"){
+            Log.i("ccccccccccccc","height2====$it")
+        }
+        /*document.body.querySelector('.preview-box').scrollHeight*/
+        webview.evaluateJavascript("document.body.querySelector('.preview-box').scrollHeight"){
+            Log.i("ccccccccccccc","height3====$it")
+            // 动态设置webview 的高度
+//            val params =  webview.layoutParams
+//            params.height = (it.toInt()* resources.displayMetrics.density).toInt()
+//            webview.layoutParams = params
+        }
     }
 
     private fun initSetting(){
@@ -69,7 +110,7 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
      */
     private fun takePhoto() {
         val fileUri =  File(getExternalFilesDir("")!!.path + "/" + SystemClock.currentThreadTimeMillis() + ".jpg");
-         imageUri = Uri.fromFile(fileUri);
+        imageUri = Uri.fromFile(fileUri);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             imageUri = FileProvider.getUriForFile(this, "$packageName.fileprovider", fileUri);//通过FileProvider创建一个content类型的Uri
         }
@@ -125,7 +166,7 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
                         val item = clipData.getItemAt(i);
                         results[i] = item.getUri();
                     }
-                    
+
                 }
 
                 if (dataString != null)

@@ -7,6 +7,7 @@ import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 
 // 处理H5 输入框 被遮挡的问题
+// https://www.jianshu.com/p/306482e17080
 public class AndroidBug5497Workaround {
 
     // For more information, see https://code.google.com/p/android/issues/detail?id=5497

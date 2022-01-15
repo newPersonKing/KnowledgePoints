@@ -10,7 +10,7 @@ import com.gy.commonviewdemo.R
 import kotlinx.android.synthetic.main.activity_viewpager.*
 
 
-// ViewPager中Fraagment 的生命周期 跟 网上搜的图不一致
+// ViewPager中Fragment 的生命周期 跟 网上搜的图不一致
 class ViewPagerActivity : AppCompatActivity(){
 
     override fun onStart() {

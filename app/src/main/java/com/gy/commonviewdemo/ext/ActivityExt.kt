@@ -1,6 +1,7 @@
 package com.gy.commonviewdemo.ext
 
 import android.app.Activity
+import android.app.PendingIntent
 
 
 // 校验打开这个Activity 的是哪个应用打开的
