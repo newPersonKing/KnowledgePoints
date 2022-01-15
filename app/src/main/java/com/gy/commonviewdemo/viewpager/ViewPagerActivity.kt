@@ -9,6 +9,13 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.gy.commonviewdemo.R
 import kotlinx.android.synthetic.main.activity_viewpager.*
 
+// FragmentPagerAdapter 设置 BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT 的理解
+// 1 如果设置了 这个behavior 那么 在执行instantiateItem 对于不是当前要显示的item 就不会执行setUserVisibleHint（false） 而是执行setMaxLifecycle(fragment, Lifecycle.State.STARTED)
+// 2 当一个Fragment 从可见到不可见 执行的方法包括 setMenuVisibility(false) -》setMaxLifecycle(mCurrentPrimaryItem, Lifecycle.State.STARTED)
+// 3 当一个Fragment 从不可见到可见 执行的方法包括 setMenuVisibility(true) -》setMaxLifecycle(fragment, Lifecycle.State.RESUMED)
+// 4 对于步骤2 初始值setMaxLifecycle 设置的是RESUMED 从RESUMED-》STARTED 会执行onPause
+// 5 对于步骤3 相当于STARTED -》 RESUMED 直接执行 onResume
+
 
 // ViewPager中Fragment 的生命周期 跟 网上搜的图不一致
 class ViewPagerActivity : AppCompatActivity(){
