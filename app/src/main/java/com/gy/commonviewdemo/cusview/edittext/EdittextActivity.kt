@@ -1,4 +1,4 @@
-package com.gy.commonviewdemo.edittext
+package com.gy.commonviewdemo.cusview.edittext
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

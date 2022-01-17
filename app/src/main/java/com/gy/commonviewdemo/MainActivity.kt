@@ -6,11 +6,11 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
-import com.gy.commonviewdemo.edittext.EdittextActivity
+import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
+import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_system_ui.setOnClickListener(this)
         btn_rv.setOnClickListener(this)
         btn_cus_view.setOnClickListener(this)
+        btn_textview.setOnClickListener(this)
 
         lifecycle.addObserver(object : DefaultLifecycleObserver{
             override fun onCreate(owner: LifecycleOwner) {
@@ -80,6 +81,10 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btn_cus_view -> {
                 val intent = Intent(this,CusViewMainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_textview ->{
+                val intent = Intent(this,TextViewActivity::class.java)
                 startActivity(intent)
             }
         }

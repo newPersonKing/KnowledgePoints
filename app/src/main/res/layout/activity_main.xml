@@ -73,6 +73,14 @@
             android:text="通知"
             android:layout_marginTop="15dp"
             android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TextView相关"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
     </LinearLayout>
 
 

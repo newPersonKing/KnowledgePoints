@@ -34,7 +34,7 @@
                 android:resource="@xml/file_provider_paths"/>
         </provider>
 
-        <activity android:name=".edittext.EdittextActivity"/>
+        <activity android:name="com.gy.commonviewdemo.cusview.edittext.EdittextActivity"/>
         <activity android:name=".webview.WebViewActivity"/>
         <activity android:name=".viewpager.ViewPagerActivity"/>
         <activity android:name=".systemui.SystemUiActivity"/>
@@ -42,6 +42,7 @@
         <activity android:name=".recyclerView.RvThreeDemo"/>
         <activity android:name=".cusview.threeD.CusView3DActivity"/>
         <activity android:name=".cusview.CusViewMainActivity"/>
+        <activity android:name=".cusview.text.TextViewActivity"/>
     </application>
 
 </manifest>
