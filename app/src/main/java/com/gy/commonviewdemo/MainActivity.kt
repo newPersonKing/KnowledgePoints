@@ -13,6 +13,7 @@ import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.cusview.text.rich_text.ClickSpanActivity
 import com.gy.commonviewdemo.cusview.text.rich_text.ImageSpanActivity
+import com.gy.commonviewdemo.cusview.text.rich_text.ReplacementSpanActivity
 import com.gy.commonviewdemo.cusview.text.rich_text.RichTextActivity
 import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_rich_text.setOnClickListener(this)
         btn_image_span.setOnClickListener(this)
         btn_click_span.setOnClickListener(this)
-
+        btn_replacement_span.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -88,6 +89,10 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btn_click_span -> {
                 val intent = Intent(this,ClickSpanActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_replacement_span -> {
+                val intent = Intent(this,ReplacementSpanActivity::class.java)
                 startActivity(intent)
             }
         }
