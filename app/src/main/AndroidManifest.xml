@@ -48,6 +48,7 @@
         <activity android:name=".cusview.text.rich_text.ImageSpanActivity"/>
         <activity android:name=".cusview.text.rich_text.ClickSpanActivity"/>
         <activity android:name=".cusview.text.rich_text.ReplacementSpanActivity"/>
+        <activity android:name=".cusview.text.rich_text.SpanWatcherActivity"/>
     </application>
 
 </manifest>
