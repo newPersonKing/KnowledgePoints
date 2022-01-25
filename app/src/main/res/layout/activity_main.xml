@@ -81,6 +81,38 @@
             android:text="TextView相关"
             android:layout_marginTop="15dp"
             android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_flow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="flow相关"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_rich_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="富文本相关"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_image_span"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="富文本之ImageSpan"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_click_span"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="富文本之ClickSpan"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
     </LinearLayout>
 
 

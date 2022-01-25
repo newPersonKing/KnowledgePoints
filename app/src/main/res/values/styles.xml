@@ -7,4 +7,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SpecialTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@color/color_3cc864</item>
+        <item name="android:textColorHint">@color/color_dddddd</item>
+        <item name="android:textColorLink">@color/color_f26e6e</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
 </resources>

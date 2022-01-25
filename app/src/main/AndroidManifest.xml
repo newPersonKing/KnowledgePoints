@@ -43,6 +43,10 @@
         <activity android:name=".cusview.threeD.CusView3DActivity"/>
         <activity android:name=".cusview.CusViewMainActivity"/>
         <activity android:name=".cusview.text.TextViewActivity"/>
+        <activity android:name=".flow.FlowActivity"/>
+        <activity android:name=".cusview.text.rich_text.RichTextActivity"/>
+        <activity android:name=".cusview.text.rich_text.ImageSpanActivity"/>
+        <activity android:name=".cusview.text.rich_text.ClickSpanActivity"/>
     </application>
 
 </manifest>

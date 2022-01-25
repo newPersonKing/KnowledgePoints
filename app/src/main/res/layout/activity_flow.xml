@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/start_simple_flow"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:text="启动简单flow"/>
+
+    <Button
+        android:id="@+id/start_call_back_flow"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:text="start_call_back_flow"/>
+
+    <Button
+        android:id="@+id/start_flow_with_lifecycle"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:text="start_flow_with_lifecycle"/>
+
+    <Button
+        android:id="@+id/cancel_flow_test"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:text="cancel_flow_test"/>
+
+    <Button
+        android:id="@+id/flow_buffer"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:text="flow_buffer"/>
+
+    <Button
+        android:id="@+id/flow_conflate"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:text="flow_conflate"/>
+
+</LinearLayout>

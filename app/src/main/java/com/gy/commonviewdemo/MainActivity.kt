@@ -11,6 +11,10 @@ import androidx.lifecycle.LifecycleOwner
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.text.TextViewActivity
+import com.gy.commonviewdemo.cusview.text.rich_text.ClickSpanActivity
+import com.gy.commonviewdemo.cusview.text.rich_text.ImageSpanActivity
+import com.gy.commonviewdemo.cusview.text.rich_text.RichTextActivity
+import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
@@ -30,28 +34,11 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_rv.setOnClickListener(this)
         btn_cus_view.setOnClickListener(this)
         btn_textview.setOnClickListener(this)
+        btn_flow.setOnClickListener(this)
+        btn_rich_text.setOnClickListener(this)
+        btn_image_span.setOnClickListener(this)
+        btn_click_span.setOnClickListener(this)
 
-        lifecycle.addObserver(object : DefaultLifecycleObserver{
-            override fun onCreate(owner: LifecycleOwner) {
-                Log.i("cccccccccc","onCreate1")
-            }
-
-            override fun onResume(owner: LifecycleOwner) {
-                Log.i("ccccccc","onResume1")
-            }
-        })
-
-    }
-
-    // 这里执行
-    override fun onResume() {
-        super.onResume()
-        Log.i("ccccccc","onResume")
-        ViewCompat.setOnApplyWindowInsetsListener(btn_edit){
-                v,insets->
-            Log.i("ccccccc","setOnApplyWindowInsetsListener")
-            insets
-        }
     }
 
     override fun onClick(v: View) {
@@ -85,6 +72,22 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btn_textview ->{
                 val intent = Intent(this,TextViewActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_flow -> {
+                val intent = Intent(this,FlowActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_rich_text -> {
+                val intent = Intent(this,RichTextActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_image_span -> {
+                val intent = Intent(this,ImageSpanActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_click_span -> {
+                val intent = Intent(this,ClickSpanActivity::class.java)
                 startActivity(intent)
             }
         }
