@@ -8,11 +8,15 @@ import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.cusview.text.rich_text.*
+import com.gy.commonviewdemo.db.ContentProviderActivity
+import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.flow.FlowActivity
+import com.gy.commonviewdemo.notification.NotificationActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
@@ -38,6 +42,10 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_click_span.setOnClickListener(this)
         btn_replacement_span.setOnClickListener(this)
         btn_span_watcher.setOnClickListener(this)
+        btn_notification.setOnClickListener(this)
+        btn_clip_board.setOnClickListener(this)
+        btn_content_provider.setOnClickListener(this)
+        btn_drag_and_drop.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -95,6 +103,22 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btn_span_watcher -> {
                 val intent = Intent(this,SpanWatcherActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_notification -> {
+                val intent = Intent(this,NotificationActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_content_provider -> {
+                val intent = Intent(this,ContentProviderActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_clip_board -> {
+                val intent = Intent(this,ClipBoardActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_drag_and_drop -> {
+                val intent = Intent(this,DragAndDropActivity::class.java)
                 startActivity(intent)
             }
         }

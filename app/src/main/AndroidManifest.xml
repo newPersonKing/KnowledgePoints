@@ -34,6 +34,13 @@
                 android:resource="@xml/file_provider_paths"/>
         </provider>
 
+         <!--authorities 是自己拼接Uri的时候content中拼接的内容 也就是AUTHORITY 对应的内容-->
+         <!--content://"+ AUTHORITY+"/"+TABLE_NAME-->
+        <provider
+            android:authorities="com.gy.commonviewdemo.provider"
+            android:name=".db.DataProvider"
+            android:exported="true"/>
+
         <activity android:name="com.gy.commonviewdemo.cusview.edittext.EdittextActivity"/>
         <activity android:name=".webview.WebViewActivity"/>
         <activity android:name=".viewpager.ViewPagerActivity"/>
@@ -49,6 +56,11 @@
         <activity android:name=".cusview.text.rich_text.ClickSpanActivity"/>
         <activity android:name=".cusview.text.rich_text.ReplacementSpanActivity"/>
         <activity android:name=".cusview.text.rich_text.SpanWatcherActivity"/>
+        <activity android:name=".notification.NotificationActivity"/>
+        <activity android:name=".notification.PendingActivity"/>
+        <activity android:name=".db.ContentProviderActivity"/>
+        <activity android:name=".clipboardManager.ClipBoardActivity"/>
+        <activity android:name=".drag_and_drop.DragAndDropActivity"/>
     </application>
 
 </manifest>

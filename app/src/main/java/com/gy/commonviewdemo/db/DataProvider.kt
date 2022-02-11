@@ -7,6 +7,7 @@ import android.content.UriMatcher
 import android.database.Cursor
 import android.database.sqlite.SQLiteException
 import android.net.Uri
+import android.util.Log
 import com.gy.commonviewdemo.db.model.UserColumns
 
 class DataProvider : ContentProvider() {
@@ -31,12 +32,12 @@ class DataProvider : ContentProvider() {
         )
         sUriMatcher.addURI(
             UserColumns.AUTHORITY,
-            UserColumns.TABLE_NAME.toString() + "/id/*",
+            UserColumns.TABLE_NAME + "/id/*",
             USER_ID
         )
         sUriMatcher.addURI(
             UserColumns.AUTHORITY,
-            UserColumns.TABLE_NAME.toString() + "/account/*",
+            UserColumns.TABLE_NAME + "/account/*",
             USER_ACCOUNT
         )
 
@@ -89,13 +90,14 @@ class DataProvider : ContentProvider() {
     // 自己根据uri类型 返回不同的类型
     override fun getType(uri: Uri): String? {
 
-        return "";
+        return "DateProvider";
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
         if (values == null) {
             return uri
         }
+        Log.i("cccccccccc","插入数据===${values}")
         val sqLiteDatabase = dbHelper.readableDatabase
         val tableName = uri.pathSegments[0]
         val rowId = sqLiteDatabase.insert(tableName, null, values) //插入的行数
@@ -114,6 +116,7 @@ class DataProvider : ContentProvider() {
             val sqLiteDatabase = dbHelper.readableDatabase
             val tableName = uri.pathSegments[0]
             count = sqLiteDatabase.delete(tableName, selection, selectionArgs)
+            Log.i("cccccccccccc","删除成功====count:$count")
         } catch (e: SQLiteException) {
             Exception("" + e.message)
         }

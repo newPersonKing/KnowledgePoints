@@ -129,6 +129,30 @@
             android:text="富文本之SpanWatcher"
             android:layout_marginTop="15dp"
             android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_content_provider"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="contentProvider共享数据"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_clip_board"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="复制粘贴"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_drag_and_drop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="拖拽以及释放"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
     </LinearLayout>
 
 

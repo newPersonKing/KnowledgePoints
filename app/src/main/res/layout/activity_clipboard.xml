@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/btn_copy_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="复制文本"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_copy_uri"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="复制Uri"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_copy_intent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="复制Intent"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_get_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="获取复制的文本"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_get_uri"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="获取复制的Uri"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_get_intent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="获取复制的Intent"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>
