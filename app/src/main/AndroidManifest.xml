@@ -61,6 +61,11 @@
         <activity android:name=".db.ContentProviderActivity"/>
         <activity android:name=".clipboardManager.ClipBoardActivity"/>
         <activity android:name=".drag_and_drop.DragAndDropActivity"/>
+        <activity android:name=".picture_in_picture.PictureInPictureActivity"
+            android:supportsPictureInPicture="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"/>
+
+        <activity android:name=".rxjava.rxjava2.RxJava2Activity"/>
     </application>
 
 </manifest>

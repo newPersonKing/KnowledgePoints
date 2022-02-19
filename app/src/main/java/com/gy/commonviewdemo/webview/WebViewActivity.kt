@@ -22,8 +22,8 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
 
-        webview.loadUrl("file:///android_asset/test.html")
-//        webview.loadUrl("https://m.ivydad.com/act2/buildactivity?activityId=187&_hideShareButton=1")
+//        webview.loadUrl("file:///android_asset/test.html")
+        webview.loadUrl("https://shared.ivydad.com/goods/shop?page_id=84&_hideShareButton=1")
 
         webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
@@ -52,6 +52,10 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     private fun checkContentSize(){
+
+//        webview.evaluateJavascript("javascript:showAlert()"){
+//
+//        }
 
         webview.evaluateJavascript("document.compatMode"){
             Log.i("ccccccccccccc","mode====$it")

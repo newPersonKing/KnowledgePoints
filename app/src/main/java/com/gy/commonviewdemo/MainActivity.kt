@@ -17,7 +17,9 @@ import com.gy.commonviewdemo.db.ContentProviderActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.notification.NotificationActivity
+import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
+import com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
@@ -46,6 +48,8 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_clip_board.setOnClickListener(this)
         btn_content_provider.setOnClickListener(this)
         btn_drag_and_drop.setOnClickListener(this)
+        btn_picture_in_picture.setOnClickListener(this)
+        btn_rxjava_2.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -119,6 +123,14 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btn_drag_and_drop -> {
                 val intent = Intent(this,DragAndDropActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_picture_in_picture -> {
+                val intent = Intent(this,PictureInPictureActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_rxjava_2 -> {
+                val intent = Intent(this,RxJava2Activity::class.java)
                 startActivity(intent)
             }
         }

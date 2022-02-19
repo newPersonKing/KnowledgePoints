@@ -153,6 +153,23 @@
             android:text="拖拽以及释放"
             android:layout_marginTop="15dp"
             android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_picture_in_picture"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="画中画"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_rxjava_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="rxJava2操作符"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
     </LinearLayout>
 
 

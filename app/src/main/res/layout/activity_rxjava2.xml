@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="create"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_just"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="just"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_timer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="timer 延时"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_interval"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="interval 周期"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_interval_range"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="intervalRange 周期"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_range"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="range 区间"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="map 数据转换"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_flat_map"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="flatMap 无序数据转换"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_concat_map"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="concatMap 有序数据转换"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_buffer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="buffer 缓存"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_scan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="scan 累加"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_window"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="window 分组"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_concat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="concat 有序组合"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_concat_array"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="concat_array 有序组合"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_merge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="merge 并行"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_zip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="zip 组合"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start_with"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="start_with"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start_with_array"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="start_with_array"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_count"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="count 被观察者数量"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_delay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="delay 延时发送"/>
+    </LinearLayout>
+
+
+</ScrollView>
