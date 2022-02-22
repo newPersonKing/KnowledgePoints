@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.LinearLayout
 import androidx.core.view.ViewCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
@@ -20,119 +22,42 @@ import com.gy.commonviewdemo.notification.NotificationActivity
 import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
+import com.gy.commonviewdemo.statusbar.StatusBarActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(),View.OnClickListener {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_edit.setOnClickListener(this)
-        btn_webview.setOnClickListener(this)
-        btn_time_out.setOnClickListener(this)
-        btn_viewpager.setOnClickListener(this)
-        btn_system_ui.setOnClickListener(this)
-        btn_rv.setOnClickListener(this)
-        btn_cus_view.setOnClickListener(this)
-        btn_textview.setOnClickListener(this)
-        btn_flow.setOnClickListener(this)
-        btn_rich_text.setOnClickListener(this)
-        btn_image_span.setOnClickListener(this)
-        btn_click_span.setOnClickListener(this)
-        btn_replacement_span.setOnClickListener(this)
-        btn_span_watcher.setOnClickListener(this)
-        btn_notification.setOnClickListener(this)
-        btn_clip_board.setOnClickListener(this)
-        btn_content_provider.setOnClickListener(this)
-        btn_drag_and_drop.setOnClickListener(this)
-        btn_picture_in_picture.setOnClickListener(this)
-        btn_rxjava_2.setOnClickListener(this)
+        val adapter = MainAdapter(listOf(
+            DemoData("edittext相关",EdittextActivity::class.java,this),
+            DemoData("webview相关",WebViewActivity::class.java,this),
+            DemoData("viewpager",ViewPagerActivity::class.java,this),
+            DemoData("btn_system_ui",SystemUiActivity::class.java,this),
+            DemoData("rv相关",RvMainActivity::class.java,this),
+            DemoData("自定义一view相关",CusViewMainActivity::class.java,this),
+            DemoData("TextView相关",TextViewActivity::class.java,this),
+            DemoData("flow相关",FlowActivity::class.java,this),
+            DemoData("富文本相关",RichTextActivity::class.java,this),
+            DemoData("富文本之ImageSpan",ImageSpanActivity::class.java,this),
+            DemoData("富文本之ClickSpan",ClickSpanActivity::class.java,this),
+            DemoData("富文本之replaceSpan",ReplacementSpanActivity::class.java,this),
+            DemoData("富文本之SpanWatcher",SpanWatcherActivity::class.java,this),
+            DemoData("通知",NotificationActivity::class.java,this),
+            DemoData("contentProvider共享数据",ContentProviderActivity::class.java,this),
+            DemoData("复制粘贴",ClipBoardActivity::class.java,this),
+            DemoData("拖拽以及释放",DragAndDropActivity::class.java,this),
+            DemoData("画中画",PictureInPictureActivity::class.java,this),
+            DemoData("rxJava2操作符",RxJava2Activity::class.java,this),
+            DemoData("状态栏颜色",StatusBarActivity::class.java,this),
+        ))
+
+        rv_main.layoutManager = LinearLayoutManager(this)
+        rv_main.adapter = adapter
     }
 
-    override fun onClick(v: View) {
-        when(v.id){
-            R.id.btn_edit -> {
-                val intent = Intent(this,EdittextActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_webview -> {
-                val intent = Intent(this,WebViewActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_time_out ->{
-                Log.i("cccccccccccc","1231231232")
-            }
-            R.id.btn_viewpager -> {
-                val intent = Intent(this,ViewPagerActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_system_ui ->{
-                val intent = Intent(this,SystemUiActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_rv -> {
-                val intent = Intent(this,RvMainActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_cus_view -> {
-                val intent = Intent(this,CusViewMainActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_textview ->{
-                val intent = Intent(this,TextViewActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_flow -> {
-                val intent = Intent(this,FlowActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_rich_text -> {
-                val intent = Intent(this,RichTextActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_image_span -> {
-                val intent = Intent(this,ImageSpanActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_click_span -> {
-                val intent = Intent(this,ClickSpanActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_replacement_span -> {
-                val intent = Intent(this,ReplacementSpanActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_span_watcher -> {
-                val intent = Intent(this,SpanWatcherActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_notification -> {
-                val intent = Intent(this,NotificationActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_content_provider -> {
-                val intent = Intent(this,ContentProviderActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_clip_board -> {
-                val intent = Intent(this,ClipBoardActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_drag_and_drop -> {
-                val intent = Intent(this,DragAndDropActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_picture_in_picture -> {
-                val intent = Intent(this,PictureInPictureActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.btn_rxjava_2 -> {
-                val intent = Intent(this,RxJava2Activity::class.java)
-                startActivity(intent)
-            }
-        }
-    }
 }

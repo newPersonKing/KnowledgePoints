@@ -19,7 +19,7 @@ class PictureInPictureActivity : AppCompatActivity(),View.OnClickListener{
 
     override fun onClick(v: View) {
        when(v.id){
-           R.id.btn_picture_in_picture -> {
+           R.id.btn_enter_picture_in_picture -> {
                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
                    enterPictureInPictureMode()
                }

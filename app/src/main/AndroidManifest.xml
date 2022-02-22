@@ -66,6 +66,12 @@
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"/>
 
         <activity android:name=".rxjava.rxjava2.RxJava2Activity"/>
+
+        <activity android:name=".recyclerView.RvScrollActivityOne"/>
+        <activity android:name=".recyclerView.RvScrollActivityTwo"/>
+        <activity android:name=".recyclerView.RvScrollActivityThree"/>
+
+        <activity android:name=".statusbar.StatusBarActivity"/>
     </application>
 
 </manifest>

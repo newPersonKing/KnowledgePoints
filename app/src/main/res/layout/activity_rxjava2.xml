@@ -172,6 +172,78 @@
             android:background="@color/colorAccent"
             android:layout_margin="15dp"
             android:text="delay 延时发送"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_retry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="retry 失败重试"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_retry_when"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="retry_when 失败重试 设置时间间隔"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_retry_until"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="retry_until"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="retry_repeat 重复"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_of_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="of_type 根据类型过滤"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="skip 跳过指定个数的事件"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_distinct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="distinct 去重"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_take"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="take 处理事件的个数"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_debounce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"
+            android:text="debounce 事件限流"/>
     </LinearLayout>
 
 

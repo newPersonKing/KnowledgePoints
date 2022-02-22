@@ -11,8 +11,10 @@ class RvMainActivity : AppCompatActivity(),View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.rv_main)
-
         btn_three.setOnClickListener(this)
+        btn_scroll_one.setOnClickListener(this)
+        btn_scroll_two.setOnClickListener(this)
+        btn_scroll_three.setOnClickListener(this)
 
     }
 
@@ -25,6 +27,21 @@ class RvMainActivity : AppCompatActivity(),View.OnClickListener {
                 val intent = Intent(this,RvThreeDemo::class.java)
                 startActivity(intent)
 
+            }
+
+            R.id.btn_scroll_one -> {
+                val intent = Intent(this,RvScrollActivityOne::class.java)
+                startActivity(intent)
+            }
+
+            R.id.btn_scroll_two -> {
+                val intent = Intent(this,RvScrollActivityTwo::class.java)
+                startActivity(intent)
+            }
+
+            R.id.btn_scroll_three -> {
+                val intent = Intent(this,RvScrollActivityThree::class.java)
+                startActivity(intent)
             }
 
         }
