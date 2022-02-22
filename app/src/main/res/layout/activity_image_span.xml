@@ -39,6 +39,12 @@
             android:layout_marginTop="10dp" />
 
         <TextView
+            android:id="@+id/tv_network_image_span_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <TextView
             android:id="@+id/tv_margin_image_span"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

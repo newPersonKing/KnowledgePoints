@@ -6,6 +6,7 @@ import android.text.Selection
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.UnderlineSpan
+import android.util.Log
 import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
 import com.gy.commonviewdemo.R
@@ -31,9 +32,10 @@ class SpanWatcherActivity : AppCompatActivity(){
         et_span_watcher.setOnKeyListener { v, keyCode, event ->
 
             if(keyCode === KeyEvent.KEYCODE_DEL && event.action == KeyEvent.ACTION_DOWN){
-               val text = et_span_watcher.text
+                val text = et_span_watcher.text
                 val selectionStart = Selection.getSelectionStart(text)
                 val selectionEnd = Selection.getSelectionEnd(text)
+                Log.i("cccccccccccc","selectionStart==$selectionStart==selectionEnd===$selectionEnd")
                 if(selectionEnd != selectionStart) return@setOnKeyListener false
                 val underlineSpans = text.getSpans(selectionStart,selectionEnd,UnderlineSpan::class.java)
                 underlineSpans.firstOrNull()?.also {

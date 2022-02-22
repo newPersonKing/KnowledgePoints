@@ -8,11 +8,13 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <!--textAllCaps 英文自动大写的问题-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_main"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="15dp"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

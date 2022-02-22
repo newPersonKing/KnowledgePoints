@@ -7,10 +7,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.os.Handler
-import android.text.DynamicLayout
-import android.text.Spannable
-import android.text.SpannableStringBuilder
-import android.text.Spanned
+import android.text.*
 import android.text.style.DynamicDrawableSpan
 import android.text.style.ImageSpan
 import android.view.View
@@ -24,6 +21,7 @@ import com.bumptech.glide.request.transition.Transition
 import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.cusview.text.rich_text.span.ExImageSpan
 import com.gy.commonviewdemo.cusview.text.rich_text.span.MarginImageSpan
+import com.gy.commonviewdemo.cusview.text.rich_text.url_image_span.URLImageSpan
 import kotlinx.android.synthetic.main.activity_image_span.*
 import kotlin.math.min
 
@@ -40,6 +38,8 @@ class ImageSpanActivity : AppCompatActivity(){
         bigImageSpan()
 
         netWorkImageSpan()
+
+        netWorkImageSpanTwo()
 
         marginImageSpan()
 
@@ -94,11 +94,24 @@ class ImageSpanActivity : AppCompatActivity(){
             override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
                 Handler().postDelayed({
                     val bitmapDrawable: Drawable = BitmapDrawable(resources, resource)
-                    bitmapDrawable.setBounds(0, 0, 200, 200)
+                    bitmapDrawable.setBounds(0, 0, 100, 100)
                     spannableText.setSpan(ImageSpan(bitmapDrawable), 5, 9, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
                 }, 3000)
             }
         })
+    }
+
+    private fun netWorkImageSpanTwo() {
+        val ss =
+            SpannableString("<img>To be or not to be, that is the question（生存还是毁灭，这是一个值得考虑的问题）")
+
+        // build 返回 DynamicDrawableSpan
+        val urlImageSpan = URLImageSpan.Builder()
+            .url("https://qdclient-resources-1252317822.cos.ap-chengdu.myqcloud.com/Android/test/maomao1.jpeg")
+            .override(100, 100)
+            .build(tv_network_image_span_two)
+        ss.setSpan(urlImageSpan, 0, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        tv_network_image_span_two.setText(ss, TextView.BufferType.SPANNABLE) // 必需设置
     }
 
     private fun marginImageSpan(){

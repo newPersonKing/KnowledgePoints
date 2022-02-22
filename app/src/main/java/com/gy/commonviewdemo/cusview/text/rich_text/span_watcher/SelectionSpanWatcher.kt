@@ -1,11 +1,8 @@
 package com.gy.commonviewdemo.cusview.text.rich_text.span_watcher
 
-import android.text.NoCopySpan
 import android.text.Selection
 import android.text.SpanWatcher
 import android.text.Spannable
-import android.view.KeyEvent
-import android.view.View
 import java.lang.Math.abs
 import kotlin.reflect.KClass
 
