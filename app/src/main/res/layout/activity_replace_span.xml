@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_span"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addSpan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:forceDarkAllowed="false"
+        android:text="尾部add"
+        android:background="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/insertSpan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:forceDarkAllowed="false"
+        android:text="中间插入add"
+        android:background="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/replaceSpan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:forceDarkAllowed="false"
+        android:text="替换Span"
+        android:background="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/replaceFirstSpan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:forceDarkAllowed="false"
+        android:text="替换第一个匹配到的"
+        android:background="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/replaceLastSpan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:forceDarkAllowed="false"
+        android:text="替换最后一个匹配到的"
+        android:background="@color/colorAccent"/>
+</LinearLayout>

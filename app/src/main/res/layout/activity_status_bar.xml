@@ -8,5 +8,57 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <Button
+        android:id="@+id/btn_set_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="setColor"
+        android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/setLightModel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="setLightModel"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/setDarkModel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="setDarkModel"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/setTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="setTransparent"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/setTranslucent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="setTranslucent"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/setTransparentForImageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="setTransparentForImageView"
+        android:textAllCaps="false"/>
 </LinearLayout>

@@ -5,6 +5,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!--设置状态栏 颜色默认透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!--底部导航栏透明-->
+        <!-- Navigation Bar -->
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
     <style name="SpecialTextAppearance" parent="@android:style/TextAppearance">
@@ -15,5 +22,29 @@
         <item name="android:textSize">28sp</item>
         <item name="android:textStyle">italic</item>
     </style>
+
+    <!--Alerter-->
+    <style name="AlertStyle" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">top</item>
+        <item name="android:paddingTop">@dimen/alerter_alert_padding</item>
+    </style>
+
+    <style name="AlertTextAppearance">
+        <item name="android:textColor">@color/alert_default_text_color</item>
+    </style>
+
+    <style name="AlertTextAppearance.Title">
+        <item name="android:textSize">@dimen/alerter_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlertTextAppearance.Text">
+        <item name="android:textSize">@dimen/alerter_text_small</item>
+    </style>
+
+    <style name="AlertButton" parent="@style/Widget.AppCompat.Button.Colored" />
 
 </resources>

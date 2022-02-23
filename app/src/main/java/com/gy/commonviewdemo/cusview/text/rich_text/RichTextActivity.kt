@@ -1,6 +1,7 @@
 package com.gy.commonviewdemo.cusview.text.rich_text
 
 import android.graphics.*
+import android.os.Build
 import android.os.Bundle
 import android.text.Layout
 import android.text.Spannable
@@ -12,6 +13,7 @@ import android.text.style.*
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.cusview.text.rich_text.span.BlockSpaceSpan
@@ -153,6 +155,7 @@ class RichTextActivity : AppCompatActivity(){
     }
 
     // QuoteSpan   段落前引用
+    @RequiresApi(Build.VERSION_CODES.P)
     private fun quoteSpan(){
         val span = QuoteSpan(Color.RED, 50, 50)
         val spannableString = SpannableString("段落前引用")
@@ -161,6 +164,7 @@ class RichTextActivity : AppCompatActivity(){
     }
 
     // BulletSpan：段落前圆点
+    @RequiresApi(Build.VERSION_CODES.P)
     private fun bulletSpan(){
         val span = BulletSpan(15, Color.RED, 15)
         val spannableString = SpannableString("段落前圆点")

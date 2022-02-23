@@ -8,4 +8,9 @@
     <color name="color_82dc50">#82dc50</color>
     <color name="color_3cc864">#3cc864</color>
     <color name="color_dddddd">#dddddd</color>
+
+    <color name="alerter_default_success_background">#4CAF50</color>
+    <color name="alert_default_error_background">#F44336</color>
+    <color name="alert_default_text_color">@android:color/white</color>
+    <color name="alert_default_icon_color">@android:color/white</color>
 </resources>

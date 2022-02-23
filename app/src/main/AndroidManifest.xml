@@ -72,6 +72,10 @@
         <activity android:name=".recyclerView.RvScrollActivityThree"/>
 
         <activity android:name=".statusbar.StatusBarActivity"/>
+        <activity android:name=".cusview.text.SpanEnterActivity"/>
+        <activity android:name=".cusview.text.rich_text.ReplaceSpanActivity"/>
+        <activity android:name=".notification.NotificationMainActivity"/>
+        <activity android:name=".notification.alerter.AlerterActivity"/>
     </application>
 
 </manifest>

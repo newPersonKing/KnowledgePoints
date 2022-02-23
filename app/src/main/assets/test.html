@@ -345,13 +345,13 @@
 
 <script>
     function get_android_base(base){
-
+        window.localStorage.setItem("name",'');
+        var a = window.localStorage.getItem("name");
+        alert(a)
     }
     get_android_base()
 
-    function showAlert(){
-     alert("Html Alert");
-    }
+
 </script>
 
 <style>
