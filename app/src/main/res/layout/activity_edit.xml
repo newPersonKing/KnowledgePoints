@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,21 +8,31 @@
     android:orientation="vertical"
     android:gravity="center">
 
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/et_test"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_red_dark"
-        android:maxLines="1"
-        android:lines="1"
-        android:inputType="text"
-        android:text="测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行"/>
+        android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_red_dark"
-        android:singleLine="true"
-        android:text="测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行"/>
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:layout_margin="15dp"
+            android:text="测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:singleLine="true"
+            android:layout_margin="15dp"
+            android:text="测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

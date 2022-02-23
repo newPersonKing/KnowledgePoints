@@ -18,5 +18,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <com.gy.commonviewdemo.cusview.text.zoom_text_view.PinchZoomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="可以放大的textView可以放大的textView可以放大的textView可以放大的textView可以放大的textView可以放大的textView"/>
+
+
+    <com.gy.commonviewdemo.cusview.text.anim_num_textview.NumberAnimTextView
+        android:id="@+id/anim_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:layout_margin="15dp"
+        android:gravity="center"/>
+
+    <com.gy.commonviewdemo.cusview.text.autofit_textview.AutofitTextView
+        android:id="@+id/auto_fit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2" />
+
+    <com.gy.commonviewdemo.cusview.text.ExpandableTextView
+        android:id="@+id/tv_expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:maxCollapsedLines="4">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"/>
+
+    </com.gy.commonviewdemo.cusview.text.ExpandableTextView>
+
+
 
 </LinearLayout>
