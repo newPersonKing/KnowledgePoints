@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.gy.commonviewdemo.R
+import com.gy.commonviewdemo.cusview.text.ticker.TickerUtils
 import kotlinx.android.synthetic.main.activity_textview.*
 import java.util.*
 import kotlin.concurrent.schedule
@@ -24,9 +25,10 @@ class TextViewActivity : AppCompatActivity(){
 
         autoFitTextView()
 
-        tv_expandable.postDelayed({
-            tv_expandable.text = "这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView"
-        },2000)
+        expandTextView()
+
+        tickerTextView()
+
     }
 
     private fun resolveHighLight(){
@@ -53,6 +55,22 @@ class TextViewActivity : AppCompatActivity(){
             content+="自适应宽度的 textView自适应宽度的 textView自适应宽度的 textView自适应宽度的 textView"
             auto_fit_tv.text = content
         },1000)
+    }
+
+    private fun expandTextView(){
+        tv_expandable.postDelayed({
+            tv_expandable.text = "这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView这是可以收缩的textView"
+        },2000)
+
+    }
+
+    private fun tickerTextView(){
+        ticker_tv.setCharacterLists(TickerUtils.provideNumberList())
+        ticker_tv.animationDuration = 3000
+        ticker_tv.setText("这是",true)
+        ticker_tv.postDelayed({
+            ticker_tv.setText("不是我的",true)
+        },2000)
     }
 
 }
