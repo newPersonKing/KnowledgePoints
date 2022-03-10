@@ -18,10 +18,15 @@ import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
 import com.gy.commonviewdemo.statusbar.StatusBarActivity
+import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
+
+
+// postInvalidateOnAnimation
+// ValueAnimator 更新回调  这两个方法 都是在下一帧刷新的时候 毁回调
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("画中画",PictureInPictureActivity::class.java,this),
             DemoData("rxJava2操作符",RxJava2Activity::class.java,this),
             DemoData("状态栏颜色",StatusBarActivity::class.java,this),
+            DemoData("system-api",SystemApiActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

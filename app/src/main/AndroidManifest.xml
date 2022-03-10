@@ -76,6 +76,9 @@
         <activity android:name=".cusview.text.rich_text.ReplaceSpanActivity"/>
         <activity android:name=".notification.NotificationMainActivity"/>
         <activity android:name=".notification.alerter.AlerterActivity"/>
+
+        <activity android:name=".systemapi.SystemApiActivity"/>
+        <activity android:name=".systemapi.HasOverlappingRenderingActivity"/>
     </application>
 
 </manifest>

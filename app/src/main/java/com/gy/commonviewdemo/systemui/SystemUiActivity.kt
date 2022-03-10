@@ -34,7 +34,7 @@ class SystemUiActivity : AppCompatActivity(),View.OnClickListener{
         // 3. 可能出现视觉冲突的 view 处理 insets
         ViewCompat.setOnApplyWindowInsetsListener(btn_status_light) { view, windowInsets ->
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
-            Log.i("ccccccccc","insets====${insets.toString()}")
+            Log.i("ccccccccc","insets====${insets}")
             WindowInsetsCompat.CONSUMED
         }
 
@@ -108,7 +108,7 @@ class SystemUiActivity : AppCompatActivity(),View.OnClickListener{
            }
 
            R.id.btn_status_light -> {
-
+              // api 30 以上才生效
                ViewCompat.getWindowInsetsController(btn_sys_bar)?.isAppearanceLightStatusBars = isLight
                // 这个属性没有生效 不知道为嘛
                ViewCompat.getWindowInsetsController(btn_sys_bar)?.isAppearanceLightNavigationBars = isLight

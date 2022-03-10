@@ -1,8 +1,11 @@
 package com.gy.commonviewdemo.statusbar
 
 import android.os.Bundle
+import android.view.View
+import android.view.WindowInsetsController
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import com.gy.commonviewdemo.R
 import com.jaeger.library.StatusBarUtil
 import kotlinx.android.synthetic.main.activity_status_bar.*
@@ -14,9 +17,10 @@ class StatusBarActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_status_bar)
 
+
         btn_set_color.setOnClickListener {
             // 修改顶部状态栏的颜色
-            StatusBarUtil.setColor(this,ContextCompat.getColor(this,R.color.color_3cc864))
+            StatusBarUtil.setColor(this, ContextCompat.getColor(this, R.color.color_3cc864))
         }
         // 文字颜色是黑色
         setLightModel.setOnClickListener {
@@ -36,7 +40,7 @@ class StatusBarActivity : AppCompatActivity(){
         }
 
         setTransparentForImageView.setOnClickListener {
-            StatusBarUtil.setTransparentForImageView(this,setTransparentForImageView)
+            StatusBarUtil.setTransparentForImageView(this, setTransparentForImageView)
         }
     }
 
