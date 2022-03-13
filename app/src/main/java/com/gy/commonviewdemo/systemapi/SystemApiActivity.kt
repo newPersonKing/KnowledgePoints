@@ -15,7 +15,7 @@ class SystemApiActivity : AppCompatActivity(){
         setContentView(R.layout.activity_system_api)
 
         val adapter = MainAdapter(listOf(
-            DemoData("hasOverlappingRendering", HasOverlappingRenderingActivity::class.java,this),
+            DemoData("hasOverlappingRendering 叠加绘制", HasOverlappingRenderingActivity::class.java,this),
         ))
 
         rv_system_api.layoutManager = LinearLayoutManager(this)

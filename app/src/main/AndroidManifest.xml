@@ -79,6 +79,9 @@
 
         <activity android:name=".systemapi.SystemApiActivity"/>
         <activity android:name=".systemapi.HasOverlappingRenderingActivity"/>
+        <activity android:name=".kotlin.KotlinActivity"/>
+        <activity android:name=".kotlin.KotlinReadAndWriterActivity"/>
+        <activity android:name=".cusview.text.scroll_textview.ScrollTextViewActivity"/>
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@ import com.gy.commonviewdemo.cusview.text.rich_text.*
 import com.gy.commonviewdemo.db.ContentProviderActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.flow.FlowActivity
+import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
 import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("rxJava2操作符",RxJava2Activity::class.java,this),
             DemoData("状态栏颜色",StatusBarActivity::class.java,this),
             DemoData("system-api",SystemApiActivity::class.java,this),
+            DemoData("kotlin相关知识点",KotlinActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

@@ -1,10 +1,12 @@
 package com.gy.commonviewdemo.cusview.text
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.gy.commonviewdemo.R
+import com.gy.commonviewdemo.cusview.text.scroll_textview.ScrollTextViewActivity
 import com.gy.commonviewdemo.cusview.text.ticker.TickerUtils
 import kotlinx.android.synthetic.main.activity_textview.*
 import java.util.*
@@ -28,6 +30,11 @@ class TextViewActivity : AppCompatActivity(){
         expandTextView()
 
         tickerTextView()
+
+        btn_scroll_textview.setOnClickListener {
+            val intent = Intent(this,ScrollTextViewActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

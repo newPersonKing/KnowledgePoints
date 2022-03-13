@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.gy.commonviewdemo.cusview.text.scroll_textview.ScrollTextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/test_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。"/>
+
+        <com.gy.commonviewdemo.cusview.text.scroll_textview.EngTextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/eng_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。这是一段神话故事。"/>
+
+
+        <Button
+            android:id="@+id/get_left_position"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:text="获取左位置"/>
+
+        <Button
+            android:id="@+id/get_right_position"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:text="获取右位置"/>
+
+        <Button
+            android:id="@+id/get_lines"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:text="获取属于第几行"/>
+
+        <Button
+            android:id="@+id/get_lines_bounds"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:text="获取文本所占区域"/>
+
+        <Button
+            android:id="@+id/get_bounds"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:text="获取指定文本占据的区域"/>
+    </LinearLayout>
+
+
+</ScrollView>
