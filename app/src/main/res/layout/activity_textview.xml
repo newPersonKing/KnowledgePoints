@@ -84,5 +84,13 @@
         android:text="自动滚动的textview"/>
 
 
+    <Button
+        android:id="@+id/btn_no_padding_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_margin="15dp"
+        android:text="没有padding的textview"/>
+
 
 </LinearLayout>

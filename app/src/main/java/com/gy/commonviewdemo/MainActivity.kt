@@ -3,6 +3,7 @@ package com.gy.commonviewdemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
@@ -53,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("状态栏颜色",StatusBarActivity::class.java,this),
             DemoData("system-api",SystemApiActivity::class.java,this),
             DemoData("kotlin相关知识点",KotlinActivity::class.java,this),
+            DemoData("binder相关知识点",BinderActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

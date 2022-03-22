@@ -52,4 +52,8 @@
         <attr name="android:textSize" tools:ignore="ResourceName" />
         <attr name="android:textStyle" tools:ignore="ResourceName" />
     </declare-styleable>
+
+    <declare-styleable name="NoPaddingTextView">
+        <attr name="removeDefaultPadding" format="boolean"/>
+    </declare-styleable>
 </resources>
