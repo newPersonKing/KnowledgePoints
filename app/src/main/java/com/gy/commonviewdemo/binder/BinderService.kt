@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Binder
 import android.os.IBinder
 import android.os.Parcel
+import android.util.Log
 
 
 class BinderService : Service() {
@@ -18,6 +19,7 @@ class BinderService : Service() {
                 replyStudent.code = 200
                 replyStudent.name = "郭勇"
                 reply?.writeParcelable(replyStudent,0)
+                Log.i("cccccccccccc","远程服务调用你")
                 return true
             }
             return super.onTransact(code, data, reply, flags)
@@ -25,7 +27,9 @@ class BinderService : Service() {
     }
 
     override fun onBind(intent: Intent?): IBinder? {
+        binder.run {
 
+        }
         return binder;
     }
 

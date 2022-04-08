@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.gy.commonviewdemo.R
 import kotlinx.android.synthetic.main.activity_binder.*
 
-
 // mmap Memory Mapping
 class BinderActivity : AppCompatActivity(){
 
@@ -36,6 +35,13 @@ class BinderActivity : AppCompatActivity(){
 
         btn_get_data.setOnClickListener {
             proxy?.getStudentGrade(Student());
+        }
+
+        btn_open_activity.setOnClickListener {
+            val intent = Intent()
+            intent.action = "login_success"
+            intent.setPackage("com.ivydad.module.android_test")
+            sendBroadcast(intent,"com.android.permission.RECV_XXX")
         }
     }
 

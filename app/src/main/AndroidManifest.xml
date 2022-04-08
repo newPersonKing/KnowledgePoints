@@ -7,6 +7,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <permission android:name = "com.android.permission.RECV_XXX"/>
+    <uses-permission android:name="com.android.permission.RECV_XXX"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -84,7 +87,12 @@
         <activity android:name=".cusview.text.scroll_textview.ScrollTextViewActivity"/>
 
         <service android:name=".binder.BinderService"
-            android:process=":binder"/>
+            android:process=":binder"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.gy.commonviewdemo.binder.BinderService"/>
+            </intent-filter>
+        </service>
         <activity android:name=".binder.BinderActivity"/>
 
         <activity android:name=".cusview.text.no_padding_textview.NoPaddingTextViewActivity"/>

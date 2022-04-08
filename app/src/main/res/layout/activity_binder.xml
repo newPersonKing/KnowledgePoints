@@ -29,6 +29,14 @@
             android:background="@color/colorAccent"
             android:layout_margin="15dp"/>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_open_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="测试打开第三方app"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp"/>
+
     </LinearLayout>
 
 
