@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_gradient.xml" value="0.2078804347826087" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_main.xml" value="0.19746376811594202" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_no_padding_textview.xml" value="0.2078804347826087" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_textview.xml" value="0.2078804347826087" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_video_list.xml" value="0.19746376811594202" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_video_main.xml" value="0.19746376811594202" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/cus_view_main.xml" value="0.2078804347826087" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/video_list_item.xml" value="0.19746376811594202" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

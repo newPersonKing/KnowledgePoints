@@ -7,6 +7,7 @@ import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
+import com.gy.commonviewdemo.cusview.gradient.GradientActivity
 import com.gy.commonviewdemo.cusview.text.SpanEnterActivity
 import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.cusview.text.rich_text.*
@@ -22,6 +23,7 @@ import com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
 import com.gy.commonviewdemo.statusbar.StatusBarActivity
 import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
+import com.gy.commonviewdemo.video.VideoMainActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -55,6 +57,8 @@ class MainActivity : AppCompatActivity() {
             DemoData("system-api",SystemApiActivity::class.java,this),
             DemoData("kotlin相关知识点",KotlinActivity::class.java,this),
             DemoData("binder相关知识点",BinderActivity::class.java,this),
+            DemoData("渐变效果",GradientActivity::class.java,this),
+            DemoData("视频相关",VideoMainActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

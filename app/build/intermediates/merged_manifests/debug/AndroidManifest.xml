@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gy.commonviewdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="com.android.permission.RECV_XXX" />
+
+    <uses-permission android:name="com.android.permission.RECV_XXX" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.gy.commonviewdemo.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.gy.commonviewdemo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <!-- authorities 是自己拼接Uri的时候content中拼接的内容 也就是AUTHORITY 对应的内容 -->
+        <!-- content://"+ AUTHORITY+"/"+TABLE_NAME -->
+        <provider
+            android:name="com.gy.commonviewdemo.db.DataProvider"
+            android:authorities="com.gy.commonviewdemo.provider"
+            android:exported="true" />
+
+        <activity android:name="com.gy.commonviewdemo.cusview.edittext.EdittextActivity" />
+        <activity android:name="com.gy.commonviewdemo.webview.WebViewActivity" />
+        <activity android:name="com.gy.commonviewdemo.viewpager.ViewPagerActivity" />
+        <activity android:name="com.gy.commonviewdemo.systemui.SystemUiActivity" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvMainActivity" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvThreeDemo" />
+        <activity android:name="com.gy.commonviewdemo.cusview.threeD.CusView3DActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.CusViewMainActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.TextViewActivity" />
+        <activity android:name="com.gy.commonviewdemo.flow.FlowActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.RichTextActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ImageSpanActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ClickSpanActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ReplacementSpanActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.SpanWatcherActivity" />
+        <activity android:name="com.gy.commonviewdemo.notification.NotificationActivity" />
+        <activity android:name="com.gy.commonviewdemo.notification.PendingActivity" />
+        <activity android:name="com.gy.commonviewdemo.db.ContentProviderActivity" />
+        <activity android:name="com.gy.commonviewdemo.clipboardManager.ClipBoardActivity" />
+        <activity android:name="com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity" />
+        <activity
+            android:name="com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:supportsPictureInPicture="true" />
+        <activity android:name="com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityOne" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityTwo" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityThree" />
+        <activity android:name="com.gy.commonviewdemo.statusbar.StatusBarActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.SpanEnterActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ReplaceSpanActivity" />
+        <activity android:name="com.gy.commonviewdemo.notification.NotificationMainActivity" />
+        <activity android:name="com.gy.commonviewdemo.notification.alerter.AlerterActivity" />
+        <activity android:name="com.gy.commonviewdemo.systemapi.SystemApiActivity" />
+        <activity android:name="com.gy.commonviewdemo.systemapi.HasOverlappingRenderingActivity" />
+        <activity android:name="com.gy.commonviewdemo.kotlin.KotlinActivity" />
+        <activity android:name="com.gy.commonviewdemo.kotlin.KotlinReadAndWriterActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.scroll_textview.ScrollTextViewActivity" />
+
+        <service
+            android:name="com.gy.commonviewdemo.binder.BinderService"
+            android:exported="true"
+            android:process=":binder" >
+            <intent-filter>
+                <action android:name="com.gy.commonviewdemo.binder.BinderService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.gy.commonviewdemo.binder.BinderActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.text.no_padding_textview.NoPaddingTextViewActivity" />
+        <activity android:name="com.gy.commonviewdemo.cusview.gradient.GradientActivity" />
+        <activity android:name="com.gy.commonviewdemo.video.VideoMainActivity" />
+        <activity android:name="com.gy.commonviewdemo.video.VideoListPlayTimeActivity" />
+    </application>
+
+</manifest>

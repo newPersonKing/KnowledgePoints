@@ -96,6 +96,9 @@
         <activity android:name=".binder.BinderActivity"/>
 
         <activity android:name=".cusview.text.no_padding_textview.NoPaddingTextViewActivity"/>
+        <activity android:name=".cusview.gradient.GradientActivity"/>
+        <activity android:name=".video.VideoMainActivity"/>
+        <activity android:name=".video.VideoListPlayTimeActivity"/>
     </application>
 
 </manifest>
