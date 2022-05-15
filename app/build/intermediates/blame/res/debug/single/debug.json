@@ -32,6 +32,10 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_image_span.xml"
     },
     {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_scroll_lane.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_scroll_lane.xml"
+    },
+    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pending.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_pending.xml"
     },
@@ -42,6 +46,10 @@
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_three_demo.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_three_demo.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_timer_task.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_timer_task.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scroll_textview.xml.flat",
@@ -204,12 +212,20 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\three_d_viewpager_item.xml"
     },
     {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_value_animation.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_value_animation.xml"
+    },
+    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_picture_in_picture.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_picture_in_picture.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_in_from_left.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_in_from_left.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_lane.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_lane.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_lemon.png.flat",

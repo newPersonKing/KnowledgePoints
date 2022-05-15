@@ -1,0 +1,11 @@
+
+        这几个属性都是跟 状态栏 或者导航栏相关的属性
+        <item name="android:windowFullscreen">true</item>
+        设置以下两个属性 目的是为了 让状态栏 跟 导航栏 透明 从而 内容可以填充到状态栏跟导航栏下面
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        这个属性跟异形屏幕 有关 为了让内容填充到异形屏区域
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        fitsSystemWindows 属性 意思是说让自己的子view 适应屏幕，顶部会设置状态栏高度的padding

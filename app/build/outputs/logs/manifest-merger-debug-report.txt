@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
 MERGED from [androidx.activity:activity-ktx:1.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\1ce73928a2bd1b286add81e49d422a67\jetified-activity-ktx-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\44722fb9df2cddc22b66e6edd68c880e\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\85adc2bd3f6406c0ebab8c750fea9f6b\jetified-lifecycle-viewmodel-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -52,22 +52,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\leblanc.guo\.gra
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\8506ba1d84ee465816087f8e1e40a6e1\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\d99158f1d1aa03bbdfb36c408c27c71a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\393e9d55f37e85628ab978de16c93c87\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
 	package
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:4:5-36
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-104:12
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-108:12
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:11-69
@@ -91,8 +91,12 @@ uses-permission#com.android.permission.RECV_XXX
 ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:11:5-87
 	android:name
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:11:22-68
+uses-permission#android.permission.VIBRATE
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:22-63
 application
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:5-102:19
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-106:19
 MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\11e9227c0d812a0a15c5c7269ad4c8ea\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\11e9227c0d812a0a15c5c7269ad4c8ea\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -110,237 +114,245 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\le
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\e990b9b164eeda24c291887f4f065851\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:18:9-41
 	android:roundIcon
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:20:9-40
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:22:9-40
 	android:networkSecurityConfig
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:19:9-69
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:21:9-69
 activity#com.gy.commonviewdemo.MainActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:9-29:20
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:27:27-74
 provider#androidx.core.content.FileProvider
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:29:9-38:20
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:31:9-40:20
 	android:grantUriPermissions
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:33:13-47
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:35:13-47
 	android:authorities
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:30:13-69
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:32:13-69
 	android:exported
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:34:13-37
 	tools:ignore
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:34:13-40
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:36:13-40
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:31:13-62
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:33:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:35:13-37:62
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:37:13-39:62
 	android:resource
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:37:17-60
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:39:17-60
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:36:17-67
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:38:17-67
 provider#com.gy.commonviewdemo.db.DataProvider
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:42:9-45:38
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:44:9-47:38
 	android:authorities
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:43:13-65
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:45:13-65
 	android:exported
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:45:13-36
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:44:13-44
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:46:13-44
 activity#com.gy.commonviewdemo.cusview.edittext.EdittextActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:47:9-91
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:49:9-91
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:47:19-89
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:49:19-89
 activity#com.gy.commonviewdemo.webview.WebViewActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:48:9-60
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:9-60
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:48:19-58
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:19-58
 activity#com.gy.commonviewdemo.viewpager.ViewPagerActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:49:9-64
-	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:49:19-62
-activity#com.gy.commonviewdemo.systemui.SystemUiActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:9-62
-	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:19-60
-activity#com.gy.commonviewdemo.recyclerView.RvMainActivity
 ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:51:9-64
 	android:name
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:51:19-62
+activity#com.gy.commonviewdemo.systemui.SystemUiActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:9-62
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:19-60
+activity#com.gy.commonviewdemo.recyclerView.RvMainActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:9-64
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:19-62
 activity#com.gy.commonviewdemo.recyclerView.RvThreeDemo
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:9-61
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:9-61
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:19-59
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:19-59
 activity#com.gy.commonviewdemo.cusview.threeD.CusView3DActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:9-69
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:9-69
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:19-67
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:19-67
 activity#com.gy.commonviewdemo.cusview.CusViewMainActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:9-64
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:9-64
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:19-62
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:19-62
 activity#com.gy.commonviewdemo.cusview.text.TextViewActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:9-66
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:9-66
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:19-64
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:19-64
 activity#com.gy.commonviewdemo.flow.FlowActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:9-54
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:9-54
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:19-52
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:19-52
 activity#com.gy.commonviewdemo.cusview.text.rich_text.RichTextActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:9-76
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:9-76
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:19-74
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:19-74
 activity#com.gy.commonviewdemo.cusview.text.rich_text.ImageSpanActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:9-77
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:9-77
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:19-75
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:19-75
 activity#com.gy.commonviewdemo.cusview.text.rich_text.ClickSpanActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:9-77
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:9-77
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:19-75
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:19-75
 activity#com.gy.commonviewdemo.cusview.text.rich_text.ReplacementSpanActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:9-83
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:9-83
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:19-81
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:19-81
 activity#com.gy.commonviewdemo.cusview.text.rich_text.SpanWatcherActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:9-79
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:9-79
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:19-77
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:19-77
 activity#com.gy.commonviewdemo.notification.NotificationActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:9-70
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:9-70
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:19-68
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:19-68
 activity#com.gy.commonviewdemo.notification.PendingActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:9-65
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:9-65
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:19-63
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:19-63
 activity#com.gy.commonviewdemo.db.ContentProviderActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:9-63
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:9-63
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:19-61
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:19-61
 activity#com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:9-71
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:9-71
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:19-69
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:19-69
 activity#com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:9-70
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:9-70
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:19-68
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:19-68
 activity#com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:9-69:93
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:9-71:93
 	android:supportsPictureInPicture
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:13-52
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:70:13-52
 	android:configChanges
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:13-91
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:71:13-91
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:19-78
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:19-78
 activity#com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:71:9-67
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:73:9-67
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:71:19-65
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:73:19-65
 activity#com.gy.commonviewdemo.recyclerView.RvScrollActivityOne
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:73:9-69
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:75:9-69
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:73:19-67
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:75:19-67
 activity#com.gy.commonviewdemo.recyclerView.RvScrollActivityTwo
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:74:9-69
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:76:9-69
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:74:19-67
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:76:19-67
 activity#com.gy.commonviewdemo.recyclerView.RvScrollActivityThree
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:75:9-71
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:9-71
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:75:19-69
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:19-69
 activity#com.gy.commonviewdemo.statusbar.StatusBarActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:9-64
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:79:9-64
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:19-62
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:79:19-62
 activity#com.gy.commonviewdemo.cusview.text.SpanEnterActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:78:9-67
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:9-67
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:78:19-65
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:19-65
 activity#com.gy.commonviewdemo.cusview.text.rich_text.ReplaceSpanActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:79:9-79
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:9-79
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:79:19-77
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:19-77
 activity#com.gy.commonviewdemo.notification.NotificationMainActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:9-74
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:82:9-74
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:19-72
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:82:19-72
 activity#com.gy.commonviewdemo.notification.alerter.AlerterActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:9-73
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:9-73
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:19-71
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:19-71
 activity#com.gy.commonviewdemo.systemapi.SystemApiActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:9-64
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:85:9-64
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:19-62
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:85:19-62
 activity#com.gy.commonviewdemo.systemapi.HasOverlappingRenderingActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:84:9-78
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:9-78
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:84:19-76
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:19-76
 activity#com.gy.commonviewdemo.kotlin.KotlinActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:85:9-58
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:9-58
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:85:19-56
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:19-56
 activity#com.gy.commonviewdemo.kotlin.KotlinReadAndWriterActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:9-71
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:88:9-71
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:19-69
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:88:19-69
 activity#com.gy.commonviewdemo.cusview.text.scroll_textview.ScrollTextViewActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:9-88
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:9-88
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:19-86
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:19-86
 service#com.gy.commonviewdemo.binder.BinderService
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:9-95:19
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:91:9-97:19
 	android:process
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:90:13-38
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:92:13-38
 	android:exported
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:91:13-36
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:93:13-36
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:18-54
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:91:18-54
 intent-filter#action:name:com.gy.commonviewdemo.binder.BinderService
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:92:13-94:29
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:94:13-96:29
 action#com.gy.commonviewdemo.binder.BinderService
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:93:17-84
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:95:17-84
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:93:25-82
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:95:25-82
 activity#com.gy.commonviewdemo.binder.BinderActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:96:9-58
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:98:9-58
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:96:19-56
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:98:19-56
 activity#com.gy.commonviewdemo.cusview.text.no_padding_textview.NoPaddingTextViewActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:98:9-95
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:100:9-95
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:98:19-93
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:100:19-93
 activity#com.gy.commonviewdemo.cusview.gradient.GradientActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:99:9-70
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:9-70
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:99:19-68
-activity#com.gy.commonviewdemo.video.VideoMainActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:100:9-60
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:19-68
+activity#com.gy.commonviewdemo.recyclerView.VideoListPlayTimeActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:102:9-75
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:100:19-58
-activity#com.gy.commonviewdemo.video.VideoListPlayTimeActivity
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:9-68
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:102:19-73
+activity#com.gy.commonviewdemo.recyclerView.RvLaneActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:103:9-64
 	android:name
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:19-66
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:103:19-62
+activity#com.gy.commonviewdemo.systemapi.TimerTaskActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:104:9-64
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:104:19-62
+activity#com.gy.commonviewdemo.systemapi.ValueAnimationActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:105:9-69
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:105:19-67
 uses-sdk
 INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml

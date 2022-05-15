@@ -16,6 +16,8 @@ class SystemApiActivity : AppCompatActivity(){
 
         val adapter = MainAdapter(listOf(
             DemoData("hasOverlappingRendering 叠加绘制", HasOverlappingRenderingActivity::class.java,this),
+            DemoData("TimerTask", TimerTaskActivity::class.java,this),
+            DemoData("ValueAnimation", ValueAnimationActivity::class.java,this),
         ))
 
         rv_system_api.layoutManager = LinearLayoutManager(this)

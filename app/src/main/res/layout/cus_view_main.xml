@@ -15,5 +15,9 @@
         android:text="3D切换"
         android:background="@color/colorAccent"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

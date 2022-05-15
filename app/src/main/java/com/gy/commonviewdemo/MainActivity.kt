@@ -2,6 +2,7 @@ package com.gy.commonviewdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
@@ -23,10 +24,10 @@ import com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
 import com.gy.commonviewdemo.statusbar.StatusBarActivity
 import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
-import com.gy.commonviewdemo.video.VideoMainActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 
 // postInvalidateOnAnimation
@@ -38,13 +39,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val adapter = MainAdapter(listOf(
-            DemoData("edittext相关",EdittextActivity::class.java,this),
             DemoData("webview相关",WebViewActivity::class.java,this),
             DemoData("viewpager",ViewPagerActivity::class.java,this),
             DemoData("btn_system_ui",SystemUiActivity::class.java,this),
             DemoData("rv相关",RvMainActivity::class.java,this),
             DemoData("自定义一view相关",CusViewMainActivity::class.java,this),
-            DemoData("TextView相关",TextViewActivity::class.java,this),
             DemoData("flow相关",FlowActivity::class.java,this),
             DemoData("富文本相关", SpanEnterActivity::class.java,this),
             DemoData("通知",NotificationMainActivity::class.java,this),
@@ -57,12 +56,23 @@ class MainActivity : AppCompatActivity() {
             DemoData("system-api",SystemApiActivity::class.java,this),
             DemoData("kotlin相关知识点",KotlinActivity::class.java,this),
             DemoData("binder相关知识点",BinderActivity::class.java,this),
-            DemoData("渐变效果",GradientActivity::class.java,this),
-            DemoData("视频相关",VideoMainActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
         rv_main.adapter = adapter
+
+        var timer = Timer()
+        val timerTask = object : TimerTask() {
+            override fun run() {
+                Log.i("ccccccccccc","scheduleAtFixedRate")
+            }
+        }
+
+        timer.scheduleAtFixedRate(timerTask,0,1000)
+        rv_main.postDelayed({
+            timerTask.cancel()
+            timer.purge()
+        },3000)
 
     }
 

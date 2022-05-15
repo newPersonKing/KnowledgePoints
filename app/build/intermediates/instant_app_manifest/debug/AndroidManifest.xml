@@ -16,6 +16,8 @@
     <permission android:name="com.android.permission.RECV_XXX" />
 
     <uses-permission android:name="com.android.permission.RECV_XXX" />
+    <!-- 手机震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -105,8 +107,10 @@
         <activity android:name="com.gy.commonviewdemo.binder.BinderActivity" />
         <activity android:name="com.gy.commonviewdemo.cusview.text.no_padding_textview.NoPaddingTextViewActivity" />
         <activity android:name="com.gy.commonviewdemo.cusview.gradient.GradientActivity" />
-        <activity android:name="com.gy.commonviewdemo.video.VideoMainActivity" />
-        <activity android:name="com.gy.commonviewdemo.video.VideoListPlayTimeActivity" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.VideoListPlayTimeActivity" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvLaneActivity" />
+        <activity android:name="com.gy.commonviewdemo.systemapi.TimerTaskActivity" />
+        <activity android:name="com.gy.commonviewdemo.systemapi.ValueAnimationActivity" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.gy.commonviewdemo.video
+package com.gy.commonviewdemo.recyclerView
 
 import android.graphics.Rect
 import android.os.Bundle
