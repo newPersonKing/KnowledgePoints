@@ -33,7 +33,7 @@
 19-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:22-63
 20
 21    <application
-21-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-106:19
+21-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-107:19
 22        android:allowBackup="true"
 22-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:16:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -53,198 +53,201 @@
 31        android:testOnly="true"
 32        android:theme="@style/AppTheme" >
 32-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:22:9-40
-33        <activity android:name="com.gy.commonviewdemo.MainActivity" >
-33-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:9-29:20
-33-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:19-47
-34            <intent-filter>
-34-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:24:13-28:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:17-69
-35-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:27:17-77
-37-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:27:27-74
-38            </intent-filter>
-39        </activity>
-40
-41        <provider
-41-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:31:9-40:20
-42            android:name="androidx.core.content.FileProvider"
-42-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:33:13-62
-43            android:authorities="com.gy.commonviewdemo.fileprovider"
-43-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:32:13-69
-44            android:exported="false"
-44-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:34:13-37
-45            android:grantUriPermissions="true" >
-45-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:35:13-47
-46            <meta-data
-46-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:37:13-39:62
-47                android:name="android.support.FILE_PROVIDER_PATHS"
-47-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:38:17-67
-48                android:resource="@xml/file_provider_paths" />
-48-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:39:17-60
-49        </provider>
-50
-51        <!-- authorities 是自己拼接Uri的时候content中拼接的内容 也就是AUTHORITY 对应的内容 -->
-52        <!-- content://"+ AUTHORITY+"/"+TABLE_NAME -->
-53        <provider
-53-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:44:9-47:38
-54            android:name="com.gy.commonviewdemo.db.DataProvider"
-54-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:46:13-44
-55            android:authorities="com.gy.commonviewdemo.provider"
-55-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:45:13-65
-56            android:exported="true" />
-56-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:47:13-36
-57
-58        <activity android:name="com.gy.commonviewdemo.cusview.edittext.EdittextActivity" />
-58-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:49:9-91
-58-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:49:19-89
-59        <activity android:name="com.gy.commonviewdemo.webview.WebViewActivity" />
-59-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:9-60
-59-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:19-58
-60        <activity android:name="com.gy.commonviewdemo.viewpager.ViewPagerActivity" />
-60-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:51:9-64
-60-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:51:19-62
-61        <activity android:name="com.gy.commonviewdemo.systemui.SystemUiActivity" />
-61-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:9-62
-61-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:19-60
-62        <activity android:name="com.gy.commonviewdemo.recyclerView.RvMainActivity" />
-62-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:9-64
-62-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:19-62
-63        <activity android:name="com.gy.commonviewdemo.recyclerView.RvThreeDemo" />
-63-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:9-61
-63-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:19-59
-64        <activity android:name="com.gy.commonviewdemo.cusview.threeD.CusView3DActivity" />
-64-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:9-69
-64-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:19-67
-65        <activity android:name="com.gy.commonviewdemo.cusview.CusViewMainActivity" />
-65-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:9-64
-65-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:19-62
-66        <activity android:name="com.gy.commonviewdemo.cusview.text.TextViewActivity" />
-66-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:9-66
-66-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:19-64
-67        <activity android:name="com.gy.commonviewdemo.flow.FlowActivity" />
-67-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:9-54
-67-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:19-52
-68        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.RichTextActivity" />
-68-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:9-76
-68-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:19-74
-69        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ImageSpanActivity" />
-69-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:9-77
-69-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:19-75
-70        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ClickSpanActivity" />
-70-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:9-77
-70-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:19-75
-71        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ReplacementSpanActivity" />
-71-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:9-83
-71-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:19-81
-72        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.SpanWatcherActivity" />
-72-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:9-79
-72-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:19-77
-73        <activity android:name="com.gy.commonviewdemo.notification.NotificationActivity" />
-73-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:9-70
-73-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:19-68
-74        <activity android:name="com.gy.commonviewdemo.notification.PendingActivity" />
-74-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:9-65
-74-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:19-63
-75        <activity android:name="com.gy.commonviewdemo.db.ContentProviderActivity" />
-75-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:9-63
-75-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:19-61
-76        <activity android:name="com.gy.commonviewdemo.clipboardManager.ClipBoardActivity" />
-76-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:9-71
-76-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:19-69
-77        <activity android:name="com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity" />
-77-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:9-70
-77-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:19-68
-78        <activity
-78-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:9-71:93
-79            android:name="com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity"
-79-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:19-78
-80            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-80-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:71:13-91
-81            android:supportsPictureInPicture="true" />
-81-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:70:13-52
-82        <activity android:name="com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity" />
-82-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:73:9-67
-82-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:73:19-65
-83        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityOne" />
-83-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:75:9-69
-83-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:75:19-67
-84        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityTwo" />
-84-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:76:9-69
-84-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:76:19-67
-85        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityThree" />
-85-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:9-71
-85-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:19-69
-86        <activity android:name="com.gy.commonviewdemo.statusbar.StatusBarActivity" />
-86-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:79:9-64
-86-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:79:19-62
-87        <activity android:name="com.gy.commonviewdemo.cusview.text.SpanEnterActivity" />
-87-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:9-67
-87-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:19-65
-88        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ReplaceSpanActivity" />
-88-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:9-79
-88-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:19-77
-89        <activity android:name="com.gy.commonviewdemo.notification.NotificationMainActivity" />
-89-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:82:9-74
-89-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:82:19-72
-90        <activity android:name="com.gy.commonviewdemo.notification.alerter.AlerterActivity" />
-90-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:9-73
-90-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:19-71
-91        <activity android:name="com.gy.commonviewdemo.systemapi.SystemApiActivity" />
-91-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:85:9-64
-91-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:85:19-62
-92        <activity android:name="com.gy.commonviewdemo.systemapi.HasOverlappingRenderingActivity" />
-92-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:9-78
-92-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:19-76
-93        <activity android:name="com.gy.commonviewdemo.kotlin.KotlinActivity" />
-93-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:9-58
-93-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:19-56
-94        <activity android:name="com.gy.commonviewdemo.kotlin.KotlinReadAndWriterActivity" />
-94-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:88:9-71
-94-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:88:19-69
-95        <activity android:name="com.gy.commonviewdemo.cusview.text.scroll_textview.ScrollTextViewActivity" />
-95-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:9-88
-95-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:19-86
-96
-97        <service
-97-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:91:9-97:19
-98            android:name="com.gy.commonviewdemo.binder.BinderService"
-98-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:91:18-54
-99            android:exported="true"
-99-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:93:13-36
-100            android:process=":binder" >
-100-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:92:13-38
-101            <intent-filter>
-101-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:94:13-96:29
-102                <action android:name="com.gy.commonviewdemo.binder.BinderService" />
-102-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:95:17-84
-102-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:95:25-82
-103            </intent-filter>
-104        </service>
-105
-106        <activity android:name="com.gy.commonviewdemo.binder.BinderActivity" />
-106-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:98:9-58
-106-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:98:19-56
-107        <activity android:name="com.gy.commonviewdemo.cusview.text.no_padding_textview.NoPaddingTextViewActivity" />
-107-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:100:9-95
-107-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:100:19-93
-108        <activity android:name="com.gy.commonviewdemo.cusview.gradient.GradientActivity" />
-108-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:9-70
-108-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:19-68
-109        <activity android:name="com.gy.commonviewdemo.recyclerView.VideoListPlayTimeActivity" />
-109-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:102:9-75
-109-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:102:19-73
-110        <activity android:name="com.gy.commonviewdemo.recyclerView.RvLaneActivity" />
-110-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:103:9-64
-110-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:103:19-62
-111        <activity android:name="com.gy.commonviewdemo.systemapi.TimerTaskActivity" />
-111-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:104:9-64
-111-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:104:19-62
-112        <activity android:name="com.gy.commonviewdemo.systemapi.ValueAnimationActivity" />
-112-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:105:9-69
-112-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:105:19-67
-113    </application>
-114
-115</manifest>
+33        <activity
+33-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:9-30:20
+34            android:name="com.gy.commonviewdemo.MainActivity"
+34-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:23:19-47
+35            android:exported="true" >
+35-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:24:13-36
+36            <intent-filter>
+36-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:25:13-29:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:26:17-69
+37-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:26:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:28:17-77
+39-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:28:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <provider
+43-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:32:9-41:20
+44            android:name="androidx.core.content.FileProvider"
+44-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:34:13-62
+45            android:authorities="com.gy.commonviewdemo.fileprovider"
+45-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:33:13-69
+46            android:exported="false"
+46-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:35:13-37
+47            android:grantUriPermissions="true" >
+47-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:36:13-47
+48            <meta-data
+48-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:38:13-40:62
+49                android:name="android.support.FILE_PROVIDER_PATHS"
+49-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:39:17-67
+50                android:resource="@xml/file_provider_paths" />
+50-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:40:17-60
+51        </provider>
+52
+53        <!-- authorities 是自己拼接Uri的时候content中拼接的内容 也就是AUTHORITY 对应的内容 -->
+54        <!-- content://"+ AUTHORITY+"/"+TABLE_NAME -->
+55        <provider
+55-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:45:9-48:38
+56            android:name="com.gy.commonviewdemo.db.DataProvider"
+56-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:47:13-44
+57            android:authorities="com.gy.commonviewdemo.provider"
+57-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:46:13-65
+58            android:exported="true" />
+58-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:48:13-36
+59
+60        <activity android:name="com.gy.commonviewdemo.cusview.edittext.EdittextActivity" />
+60-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:9-91
+60-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:50:19-89
+61        <activity android:name="com.gy.commonviewdemo.webview.WebViewActivity" />
+61-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:51:9-60
+61-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:51:19-58
+62        <activity android:name="com.gy.commonviewdemo.viewpager.ViewPagerActivity" />
+62-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:9-64
+62-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:52:19-62
+63        <activity android:name="com.gy.commonviewdemo.systemui.SystemUiActivity" />
+63-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:9-62
+63-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:53:19-60
+64        <activity android:name="com.gy.commonviewdemo.recyclerView.RvMainActivity" />
+64-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:9-64
+64-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:54:19-62
+65        <activity android:name="com.gy.commonviewdemo.recyclerView.RvThreeDemo" />
+65-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:9-61
+65-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:55:19-59
+66        <activity android:name="com.gy.commonviewdemo.cusview.threeD.CusView3DActivity" />
+66-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:9-69
+66-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:56:19-67
+67        <activity android:name="com.gy.commonviewdemo.cusview.CusViewMainActivity" />
+67-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:9-64
+67-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:57:19-62
+68        <activity android:name="com.gy.commonviewdemo.cusview.text.TextViewActivity" />
+68-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:9-66
+68-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:58:19-64
+69        <activity android:name="com.gy.commonviewdemo.flow.FlowActivity" />
+69-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:9-54
+69-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:59:19-52
+70        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.RichTextActivity" />
+70-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:9-76
+70-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:60:19-74
+71        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ImageSpanActivity" />
+71-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:9-77
+71-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:61:19-75
+72        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ClickSpanActivity" />
+72-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:9-77
+72-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:62:19-75
+73        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ReplacementSpanActivity" />
+73-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:9-83
+73-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:63:19-81
+74        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.SpanWatcherActivity" />
+74-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:9-79
+74-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:64:19-77
+75        <activity android:name="com.gy.commonviewdemo.notification.NotificationActivity" />
+75-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:9-70
+75-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:65:19-68
+76        <activity android:name="com.gy.commonviewdemo.notification.PendingActivity" />
+76-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:9-65
+76-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:66:19-63
+77        <activity android:name="com.gy.commonviewdemo.db.ContentProviderActivity" />
+77-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:9-63
+77-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:67:19-61
+78        <activity android:name="com.gy.commonviewdemo.clipboardManager.ClipBoardActivity" />
+78-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:9-71
+78-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:68:19-69
+79        <activity android:name="com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity" />
+79-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:9-70
+79-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:69:19-68
+80        <activity
+80-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:70:9-72:93
+81            android:name="com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity"
+81-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:70:19-78
+82            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+82-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:72:13-91
+83            android:supportsPictureInPicture="true" />
+83-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:71:13-52
+84        <activity android:name="com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity" />
+84-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:74:9-67
+84-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:74:19-65
+85        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityOne" />
+85-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:76:9-69
+85-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:76:19-67
+86        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityTwo" />
+86-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:9-69
+86-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:77:19-67
+87        <activity android:name="com.gy.commonviewdemo.recyclerView.RvScrollActivityThree" />
+87-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:78:9-71
+87-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:78:19-69
+88        <activity android:name="com.gy.commonviewdemo.statusbar.StatusBarActivity" />
+88-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:9-64
+88-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:80:19-62
+89        <activity android:name="com.gy.commonviewdemo.cusview.text.SpanEnterActivity" />
+89-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:9-67
+89-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:81:19-65
+90        <activity android:name="com.gy.commonviewdemo.cusview.text.rich_text.ReplaceSpanActivity" />
+90-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:82:9-79
+90-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:82:19-77
+91        <activity android:name="com.gy.commonviewdemo.notification.NotificationMainActivity" />
+91-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:9-74
+91-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:83:19-72
+92        <activity android:name="com.gy.commonviewdemo.notification.alerter.AlerterActivity" />
+92-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:84:9-73
+92-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:84:19-71
+93        <activity android:name="com.gy.commonviewdemo.systemapi.SystemApiActivity" />
+93-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:9-64
+93-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:86:19-62
+94        <activity android:name="com.gy.commonviewdemo.systemapi.HasOverlappingRenderingActivity" />
+94-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:9-78
+94-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:87:19-76
+95        <activity android:name="com.gy.commonviewdemo.kotlin.KotlinActivity" />
+95-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:88:9-58
+95-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:88:19-56
+96        <activity android:name="com.gy.commonviewdemo.kotlin.KotlinReadAndWriterActivity" />
+96-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:9-71
+96-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:89:19-69
+97        <activity android:name="com.gy.commonviewdemo.cusview.text.scroll_textview.ScrollTextViewActivity" />
+97-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:90:9-88
+97-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:90:19-86
+98
+99        <service
+99-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:92:9-98:19
+100            android:name="com.gy.commonviewdemo.binder.BinderService"
+100-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:92:18-54
+101            android:exported="true"
+101-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:94:13-36
+102            android:process=":binder" >
+102-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:93:13-38
+103            <intent-filter>
+103-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:95:13-97:29
+104                <action android:name="com.gy.commonviewdemo.binder.BinderService" />
+104-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:96:17-84
+104-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:96:25-82
+105            </intent-filter>
+106        </service>
+107
+108        <activity android:name="com.gy.commonviewdemo.binder.BinderActivity" />
+108-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:99:9-58
+108-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:99:19-56
+109        <activity android:name="com.gy.commonviewdemo.cusview.text.no_padding_textview.NoPaddingTextViewActivity" />
+109-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:9-95
+109-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:101:19-93
+110        <activity android:name="com.gy.commonviewdemo.cusview.gradient.GradientActivity" />
+110-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:102:9-70
+110-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:102:19-68
+111        <activity android:name="com.gy.commonviewdemo.recyclerView.VideoListPlayTimeActivity" />
+111-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:103:9-75
+111-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:103:19-73
+112        <activity android:name="com.gy.commonviewdemo.recyclerView.RvLaneActivity" />
+112-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:104:9-64
+112-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:104:19-62
+113        <activity android:name="com.gy.commonviewdemo.systemapi.TimerTaskActivity" />
+113-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:105:9-64
+113-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:105:19-62
+114        <activity android:name="com.gy.commonviewdemo.systemapi.ValueAnimationActivity" />
+114-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:106:9-69
+114-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:106:19-67
+115    </application>
+116
+117</manifest>

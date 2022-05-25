@@ -20,7 +20,8 @@
         android:supportsRtl="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -103,7 +104,6 @@
         <activity android:name=".recyclerView.RvLaneActivity"/>
         <activity android:name=".systemapi.TimerTaskActivity"/>
         <activity android:name=".systemapi.ValueAnimationActivity"/>
-        <activity android:name=".cusview.jigsaw.JigsawActivity"/>
     </application>
 
 </manifest>

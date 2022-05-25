@@ -474,8 +474,19 @@ attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
 attr seekBarStyle
+attr segment_bottom_text_color
+attr segment_bottom_text_size
+attr segment_circle_stroke_color
+attr segment_circle_stroke_width
+attr segment_color_list
+attr segment_h_space
+attr segment_item_count
+attr segment_item_height
+attr segment_text_color
+attr segment_text_size
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr sengment_circle_radius
 attr shortcutMatchRequired
 attr showAsAction
 attr showDividers
@@ -1091,6 +1102,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cat
+drawable circle_delete
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1109,6 +1122,7 @@ drawable ic_mtrl_chip_close_circle
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable niutuku
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1121,8 +1135,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable scene
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable weixin
 id ALT
 id CTRL
 id FUNCTION
@@ -1274,6 +1290,7 @@ id checked
 id chronometer
 id clip_horizontal
 id clip_vertical
+id close_edit
 id collapseActionView
 id container
 id content
@@ -1354,8 +1371,11 @@ id iv_1
 id iv_2
 id iv_3
 id iv_4
+id jigsawview
 id labeled
 id largeLabel
+id layout_bottom_edit
+id layout_root
 id left
 id line1
 id line3
@@ -1430,6 +1450,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id segment_view
 id select_dialog_listview
 id selected
 id setDarkModel
@@ -1554,6 +1575,9 @@ id tv_underline_span
 id tv_url_span
 id tv_view_to_image
 id tv_view_to_image_span
+id txt_edit_overturn
+id txt_edit_rotate
+id txt_edit_save
 id unchecked
 id uniform
 id unlabeled
@@ -1637,6 +1661,7 @@ layout activity_gradient
 layout activity_has_overlapping_render
 layout activity_image_span
 layout activity_img
+layout activity_jig_saw
 layout activity_kotlin
 layout activity_kotlin_read_and_writer
 layout activity_main
@@ -2328,6 +2353,7 @@ styleable RecyclerView android_orientation android_clipToPadding android_descend
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
+styleable SegmentView segment_bottom_text_color segment_bottom_text_size segment_circle_stroke_color segment_circle_stroke_width segment_color_list segment_h_space segment_item_count segment_item_height segment_text_color segment_text_size sengment_circle_radius
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme

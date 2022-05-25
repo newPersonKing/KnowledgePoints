@@ -56,4 +56,18 @@
     <declare-styleable name="NoPaddingTextView">
         <attr name="removeDefaultPadding" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="SegmentView">
+        <attr name="segment_text_color" format="reference|color|integer"/>
+        <attr name="segment_text_size" format="dimension"/>
+        <attr name="segment_item_count" format="integer"/>
+        <attr name="sengment_circle_radius" format="dimension"/>
+        <attr name="segment_circle_stroke_width" format="dimension"/>
+        <attr name="segment_circle_stroke_color" format="reference|color"/>
+        <attr name="segment_color_list" format="color"/>
+        <attr name="segment_item_height" format="dimension"/>
+        <attr name="segment_bottom_text_color" format="color|reference"/>
+        <attr name="segment_bottom_text_size" format="dimension"/>
+        <attr name="segment_h_space" format="dimension"/>
+    </declare-styleable>
 </resources>

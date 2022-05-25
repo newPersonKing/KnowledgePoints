@@ -31,7 +31,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.gy.commonviewdemo.MainActivity" >
+        <activity
+            android:name="com.gy.commonviewdemo.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

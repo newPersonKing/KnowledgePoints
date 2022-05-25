@@ -1,6 +1,8 @@
 package com.gy.commonviewdemo.ext
 
 import android.app.Activity
+import android.graphics.Canvas
+import android.graphics.Paint
 import android.graphics.Rect
 import android.view.View
 
@@ -15,4 +17,15 @@ fun View.isVisibleInWindow(activity:Activity):Boolean{
     val rect = Rect(0,0,screenWidth,screenHeight)
 
     return getLocalVisibleRect(rect)
+}
+
+fun drawCenterText(text:String,textPint:Paint,rect: Rect,canvas: Canvas){
+
+    val textWith = textPint.measureText(text)
+    val startX = rect.centerX() - textWith/2
+
+    val fontMetrics = textPint.fontMetrics
+    val distance = (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent
+    val startY = rect.centerY() + distance
+    canvas.drawText(text,startX,startY,textPint)
 }

@@ -15,9 +15,25 @@
         android:text="3D切换"
         android:background="@color/colorAccent"/>
 
+    <com.gy.commonviewdemo.cusview.segment.SegmentView
+        android:id="@+id/segment_view"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:segment_text_color="#999999"
+        app:segment_text_size="10sp"
+        app:segment_item_count="4"
+        app:segment_circle_stroke_width="8dp"
+        app:sengment_circle_radius="8dp"
+        app:segment_item_height="12dp"
+        app:segment_bottom_text_size="10sp"
+        app:segment_bottom_text_color="#666666"
+        app:segment_h_space="4dp"/>
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
