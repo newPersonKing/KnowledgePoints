@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
 MERGED from [androidx.activity:activity-ktx:1.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\1ce73928a2bd1b286add81e49d422a67\jetified-activity-ktx-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\44722fb9df2cddc22b66e6edd68c880e\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\85adc2bd3f6406c0ebab8c750fea9f6b\jetified-lifecycle-viewmodel-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -52,22 +52,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\leblanc.guo\.gra
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\8506ba1d84ee465816087f8e1e40a6e1\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\d99158f1d1aa03bbdfb36c408c27c71a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\393e9d55f37e85628ab978de16c93c87\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
 	package
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:4:5-36
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-109:12
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:11-69
@@ -96,7 +96,7 @@ ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:5-66
 	android:name
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:22-63
 application
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-107:19
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-108:19
 MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -355,6 +355,10 @@ activity#com.gy.commonviewdemo.systemapi.ValueAnimationActivity
 ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:106:9-69
 	android:name
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:106:19-67
+activity#com.gy.commonviewdemo.recyclerView.RvCantScrollActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:9-70
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:19-68
 uses-sdk
 INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml

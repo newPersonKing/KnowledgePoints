@@ -113,6 +113,7 @@
         <activity android:name="com.gy.commonviewdemo.recyclerView.RvLaneActivity" />
         <activity android:name="com.gy.commonviewdemo.systemapi.TimerTaskActivity" />
         <activity android:name="com.gy.commonviewdemo.systemapi.ValueAnimationActivity" />
+        <activity android:name="com.gy.commonviewdemo.recyclerView.RvCantScrollActivity" />
     </application>
 
 </manifest>

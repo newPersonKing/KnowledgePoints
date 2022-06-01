@@ -20,6 +20,7 @@ class RvMainActivity : AppCompatActivity() {
             DemoData("滑动到指定位置 solution-2", RvScrollActivityTwo::class.java,this),
             DemoData("滑动到指定位置 solution-3", RvScrollActivityThree::class.java,this),
             DemoData("弹幕效果", RvLaneActivity::class.java,this),
+            DemoData("可以往下翻 不可以往上翻", RvCantScrollActivity::class.java,this),
         ))
 
         rv_rv_main.layoutManager = LinearLayoutManager(this)

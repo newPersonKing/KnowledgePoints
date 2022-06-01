@@ -8,6 +8,7 @@
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_jig_saw.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_main.xml" value="0.19746376811594202" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_no_padding_textview.xml" value="0.2078804347826087" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_rv_cant_scroll.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_rv_scroll_lane.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_rv_scroll_one.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/activity_textview.xml" value="0.2078804347826087" />
@@ -18,6 +19,7 @@
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/cus_view_main.xml" value="0.4177583697234352" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/item_common_linear.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/item_lane.xml" value="0.3138586956521739" />
+        <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/item_rv_cant_scroll.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/rv_main.xml" value="0.3138586956521739" />
         <entry key="..\:/github/KnowledgePoints/app/src/main/res/layout/video_list_item.xml" value="0.19746376811594202" />
       </map>

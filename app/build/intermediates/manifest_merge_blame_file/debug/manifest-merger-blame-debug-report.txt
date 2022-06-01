@@ -33,7 +33,7 @@
 19-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:22-63
 20
 21    <application
-21-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-107:19
+21-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-108:19
 22        android:allowBackup="true"
 22-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:16:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -248,6 +248,9 @@
 114        <activity android:name="com.gy.commonviewdemo.systemapi.ValueAnimationActivity" />
 114-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:106:9-69
 114-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:106:19-67
-115    </application>
-116
-117</manifest>
+115        <activity android:name="com.gy.commonviewdemo.recyclerView.RvCantScrollActivity" />
+115-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:9-70
+115-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:19-68
+116    </application>
+117
+118</manifest>

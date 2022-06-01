@@ -104,6 +104,7 @@
         <activity android:name=".recyclerView.RvLaneActivity"/>
         <activity android:name=".systemapi.TimerTaskActivity"/>
         <activity android:name=".systemapi.ValueAnimationActivity"/>
+        <activity android:name=".recyclerView.RvCantScrollActivity"/>
     </application>
 
 </manifest>

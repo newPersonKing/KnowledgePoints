@@ -16,6 +16,10 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_rv_cant_scroll.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_rv_cant_scroll.xml"
+    },
+    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -134,6 +138,10 @@
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_main.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_main.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_cant_scroll.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_cant_scroll.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alerter_ic_notifications.xml.flat",
