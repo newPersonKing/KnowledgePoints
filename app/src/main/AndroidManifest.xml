@@ -105,6 +105,21 @@
         <activity android:name=".systemapi.TimerTaskActivity"/>
         <activity android:name=".systemapi.ValueAnimationActivity"/>
         <activity android:name=".recyclerView.RvCantScrollActivity"/>
+        <activity android:name=".apt.spi.SpiActivity"/>
+        <activity android:name=".accessibility.AccessibilityActivity"/>
+
+        <service android:name=".accessibility.MyAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility"/>
+        </service>
     </application>
 
 </manifest>

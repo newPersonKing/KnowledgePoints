@@ -33,7 +33,7 @@
 19-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:22-63
 20
 21    <application
-21-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-108:19
+21-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-123:19
 22        android:allowBackup="true"
 22-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:16:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -251,6 +251,35 @@
 115        <activity android:name="com.gy.commonviewdemo.recyclerView.RvCantScrollActivity" />
 115-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:9-70
 115-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:19-68
-116    </application>
-117
-118</manifest>
+116        <activity android:name="com.gy.commonviewdemo.apt.spi.SpiActivity" />
+116-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:108:9-56
+116-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:108:19-54
+117        <activity android:name="com.gy.commonviewdemo.accessibility.AccessibilityActivity" />
+117-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:109:9-72
+117-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:109:19-70
+118
+119        <service
+119-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:111:9-122:19
+120            android:name="com.gy.commonviewdemo.accessibility.MyAccessibilityService"
+120-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:111:18-70
+121            android:exported="true"
+121-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:113:13-36
+122            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+122-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:112:13-79
+123            <intent-filter>
+123-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:115:13-117:29
+124                <action android:name="android.accessibilityservice.AccessibilityService" />
+124-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:116:17-91
+124-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:116:25-89
+125            </intent-filter>
+126
+127            <meta-data
+127-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:119:13-121:56
+128                android:name="android.accessibilityservice"
+128-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:120:17-60
+129                android:resource="@xml/accessibility" />
+129-->D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:121:17-54
+130        </service>
+131    </application>
+132
+133</manifest>

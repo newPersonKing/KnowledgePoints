@@ -4,18 +4,6 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\fragment_viewpager.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_drag_and_drop.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_drag_and_drop.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_less_black_16dp.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_less_black_16dp.png"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_rv_cant_scroll.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_rv_cant_scroll.xml"
     },
@@ -24,44 +12,12 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_niutuku.jpg.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\niutuku.jpg"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_no_padding_textview.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_no_padding_textview.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jig_saw.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_jig_saw.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_scroll_one.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_scroll_one.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_image_span.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_image_span.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_scroll_lane.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_scroll_lane.xml"
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\xml_accessibility.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\xml\\accessibility.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pending.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_pending.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_kotlin_read_and_writer.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_kotlin_read_and_writer.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_three_demo.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_three_demo.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_timer_task.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_timer_task.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scroll_textview.xml.flat",
@@ -72,20 +28,8 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_alerter_alert_view.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\alerter_alert_view.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_alerter_alert_default_layout.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\alerter_alert_default_layout.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_alerter.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_alerter.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_weixin.jpg.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\weixin.jpg"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_textview.xml.flat",
@@ -100,14 +44,6 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_video_list.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\xml\\network_security_config.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_replacement_span.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_replacement_span.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_out_to_bottom.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_out_to_bottom.xml"
     },
@@ -120,14 +56,6 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_kotlin.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_girl.jpg.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxhdpi\\girl.jpg"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_more_black_16dp.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_more_black_16dp.png"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_out_to_top.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_out_to_top.xml"
     },
@@ -136,36 +64,12 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\interpolator_slight_anticipate.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_main.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_main.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_cant_scroll.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_cant_scroll.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alerter_ic_notifications.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\alerter_ic_notifications.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_content_provider.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_content_provider.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scene.jpg.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\scene.jpg"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_avatar1.png.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxhdpi\\avatar1.png"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_login.jpeg.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxhdpi\\login.jpeg"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -176,16 +80,8 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_three_item.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_more_black_12dp.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_more_black_12dp.png"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_less_black_12dp.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_less_black_12dp.png"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_system_api.xml.flat",
@@ -200,16 +96,8 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_notification.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_video_main.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_video_main.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_span_watcher.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_span_watcher.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_interpolator_slight_overshoot.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\interpolator_slight_overshoot.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit.xml.flat",
@@ -220,16 +108,8 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_binder.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_value_animation.xml.flat",
@@ -242,14 +122,6 @@
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_picture_in_picture.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_picture_in_picture.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_in_from_left.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_in_from_left.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_lane.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_lane.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_lemon.png.flat",
@@ -266,10 +138,6 @@
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rich_text.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rich_text.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_span_main.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_span_main.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -300,6 +168,182 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\circle_delete.png"
     },
     {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_in_from_bottom.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_main_adapter.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_main_adapter.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_webview.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_webview.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_video_list_item.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\video_list_item.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_common_linear.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_common_linear.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_img.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_img.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_provider_paths.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\xml\\file_provider_paths.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_drag_and_drop.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_drag_and_drop.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_accessibility_service.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_accessibility_service.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_less_black_16dp.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_less_black_16dp.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_niutuku.jpg.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\niutuku.jpg"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_no_padding_textview.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_no_padding_textview.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jig_saw.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_jig_saw.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_scroll_one.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_scroll_one.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_image_span.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_image_span.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rv_scroll_lane.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_rv_scroll_lane.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_kotlin_read_and_writer.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_kotlin_read_and_writer.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_three_demo.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_three_demo.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_timer_task.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_timer_task.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_alerter_alert_view.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\alerter_alert_view.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_alerter.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_alerter.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_weixin.jpg.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\weixin.jpg"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_replacement_span.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_replacement_span.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_girl.jpg.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxhdpi\\girl.jpg"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_more_black_16dp.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_more_black_16dp.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_main.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\rv_main.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alerter_ic_notifications.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\alerter_ic_notifications.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_content_provider.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_content_provider.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scene.jpg.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\scene.jpg"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_login.jpeg.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxhdpi\\login.jpeg"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_more_black_12dp.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_more_black_12dp.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_less_black_12dp.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable\\ic_expand_less_black_12dp.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_video_main.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_video_main.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_spi.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_spi.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_interpolator_slight_overshoot.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\interpolator_slight_overshoot.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_in_from_left.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_in_from_left.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_lane.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_lane.xml"
+    },
+    {
+        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_span_main.xml.flat",
+        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_span_main.xml"
+    },
+    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_replace_span.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_replace_span.xml"
     },
@@ -308,20 +352,12 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_slide_in_from_bottom.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_slide_in_from_bottom.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_luck.png.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\mipmap-xxhdpi\\luck.png"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_system_ui.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_system_ui.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_main_adapter.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_main_adapter.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_cus_view_3d.xml.flat",
@@ -348,35 +384,11 @@
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_clipboard.xml"
     },
     {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_video_list_item.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\video_list_item.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_webview.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_webview.xml"
-    },
-    {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\anim_alerter_pulse.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\anim\\alerter_pulse.xml"
     },
     {
         "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_has_overlapping_render.xml.flat",
         "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_has_overlapping_render.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_common_linear.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\item_common_linear.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_img.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\layout\\activity_img.xml"
-    },
-    {
-        "merged": "D:\\github\\KnowledgePoints\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_provider_paths.xml.flat",
-        "source": "D:\\github\\KnowledgePoints\\app\\src\\main\\res\\xml\\file_provider_paths.xml"
     }
 ]

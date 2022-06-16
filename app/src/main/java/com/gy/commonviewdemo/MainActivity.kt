@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.gy.commonviewdemo.accessibility.AccessibilityActivity
+import com.gy.commonviewdemo.apt.spi.SpiActivity
 import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
@@ -56,6 +58,8 @@ class MainActivity : AppCompatActivity() {
             DemoData("system-api",SystemApiActivity::class.java,this),
             DemoData("kotlin相关知识点",KotlinActivity::class.java,this),
             DemoData("binder相关知识点",BinderActivity::class.java,this),
+            DemoData("SPI 机制了解",SpiActivity::class.java,this),
+            DemoData("无障碍服务", AccessibilityActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

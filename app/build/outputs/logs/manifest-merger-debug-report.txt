@@ -1,18 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
 MERGED from [androidx.activity:activity-ktx:1.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\1ce73928a2bd1b286add81e49d422a67\jetified-activity-ktx-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\44722fb9df2cddc22b66e6edd68c880e\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\85adc2bd3f6406c0ebab8c750fea9f6b\jetified-lifecycle-viewmodel-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\d934e587b12d1b31aac9b6b2711c3829\jetified-lifecycle-runtime-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\05a14eb1deb0ff5095fcb42bbba9a7e8\jetified-lifecycle-livedata-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\84f0d288deae40ba948df422f5b8a508\jetified-library-1.5.1\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\04ac49d19a5eec3dc11b5a931a5cd9d9\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c9b0c30c23d301f730e1a483d911edb0\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\031c1f47e66bc5a1469da4292b2273a1\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\8adcce162aecb9dba7e4defc7c806559\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\ed16ff0c8c3641bb8e87c2dba8788ed0\jetified-activity-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\fb5c7eb8f7cad4a691ce5f0e8f5eb2ae\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -42,7 +42,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.0] C:\Users\leblanc.guo\.
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\ad55987ad77ae87726c74c6a0ea58c82\lifecycle-livedata-core-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c41aeaa32a5877a7881183753d60afbf\jetified-rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\5cb8ad4fee93035ad4c453d827966891\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6a74cdce7407fdd0f60d955207f69e66\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\83bbb71d89d7f63bd39114255df98ec4\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\bfc3bffb9760544fa60c34daaa6f28d2\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\4cb5948454ebe6a181f62255320a0ffe\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\aeabeabc6de99a6cd452a27992f64de3\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -52,22 +52,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\leblanc.guo\.gra
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\8506ba1d84ee465816087f8e1e40a6e1\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\d99158f1d1aa03bbdfb36c408c27c71a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\393e9d55f37e85628ab978de16c93c87\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
-INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
 	package
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:4:5-36
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
-		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-110:12
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:1-125:12
 		INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:2:11-69
@@ -96,19 +96,19 @@ ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:5-66
 	android:name
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:13:22-63
 application
-ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-108:19
-MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
-MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:15:5-123:19
+MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\84f0d288deae40ba948df422f5b8a508\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
+MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\84f0d288deae40ba948df422f5b8a508\jetified-library-1.5.1\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c9b0c30c23d301f730e1a483d911edb0\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c9b0c30c23d301f730e1a483d911edb0\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\031c1f47e66bc5a1469da4292b2273a1\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\031c1f47e66bc5a1469da4292b2273a1\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\e096bb08d15c906cfca8e824b0c70338\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\e096bb08d15c906cfca8e824b0c70338\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.7.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\e990b9b164eeda24c291887f4f065851\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\e990b9b164eeda24c291887f4f065851\core-1.7.0\AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6a74cdce7407fdd0f60d955207f69e66\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6a74cdce7407fdd0f60d955207f69e66\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\83bbb71d89d7f63bd39114255df98ec4\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\83bbb71d89d7f63bd39114255df98ec4\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\bfc3bffb9760544fa60c34daaa6f28d2\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\bfc3bffb9760544fa60c34daaa6f28d2\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
@@ -359,6 +359,34 @@ activity#com.gy.commonviewdemo.recyclerView.RvCantScrollActivity
 ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:9-70
 	android:name
 		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:107:19-68
+activity#com.gy.commonviewdemo.apt.spi.SpiActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:108:9-56
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:108:19-54
+activity#com.gy.commonviewdemo.accessibility.AccessibilityActivity
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:109:9-72
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:109:19-70
+service#com.gy.commonviewdemo.accessibility.MyAccessibilityService
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:111:9-122:19
+	android:exported
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:113:13-36
+	android:permission
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:112:13-79
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:111:18-70
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:115:13-117:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:116:17-91
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:116:25-89
+meta-data#android.accessibilityservice
+ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:119:13-121:56
+	android:resource
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:121:17-54
+	android:name
+		ADDED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml:120:17-60
 uses-sdk
 INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\github\KnowledgePoints\app\src\main\AndroidManifest.xml
@@ -373,14 +401,14 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] C:\Users\leblanc.gu
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\d934e587b12d1b31aac9b6b2711c3829\jetified-lifecycle-runtime-ktx-2.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\05a14eb1deb0ff5095fcb42bbba9a7e8\jetified-lifecycle-livedata-ktx-2.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\05a14eb1deb0ff5095fcb42bbba9a7e8\jetified-lifecycle-livedata-ktx-2.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6de052776594fe26ebf3a4b3e6d76442\jetified-library-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\84f0d288deae40ba948df422f5b8a508\jetified-library-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jaeger.statusbarutil:library:1.5.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\84f0d288deae40ba948df422f5b8a508\jetified-library-1.5.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\806e9b59e8857aeb0fc12e4dfe405482\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\04ac49d19a5eec3dc11b5a931a5cd9d9\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\04ac49d19a5eec3dc11b5a931a5cd9d9\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c9b0c30c23d301f730e1a483d911edb0\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c9b0c30c23d301f730e1a483d911edb0\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\031c1f47e66bc5a1469da4292b2273a1\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\031c1f47e66bc5a1469da4292b2273a1\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\8adcce162aecb9dba7e4defc7c806559\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\8adcce162aecb9dba7e4defc7c806559\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.4.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\ed16ff0c8c3641bb8e87c2dba8788ed0\jetified-activity-1.4.0\AndroidManifest.xml:20:5-22:41
@@ -439,8 +467,8 @@ MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\leblanc.guo\.gradle\
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\c41aeaa32a5877a7881183753d60afbf\jetified-rxandroid-2.1.1\AndroidManifest.xml:18:5-43
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\5cb8ad4fee93035ad4c453d827966891\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\5cb8ad4fee93035ad4c453d827966891\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6a74cdce7407fdd0f60d955207f69e66\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\6a74cdce7407fdd0f60d955207f69e66\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\83bbb71d89d7f63bd39114255df98ec4\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\83bbb71d89d7f63bd39114255df98ec4\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\bfc3bffb9760544fa60c34daaa6f28d2\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\bfc3bffb9760544fa60c34daaa6f28d2\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\leblanc.guo\.gradle\caches\transforms-2\files-2.1\4cb5948454ebe6a181f62255320a0ffe\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
