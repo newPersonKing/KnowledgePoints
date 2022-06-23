@@ -30,10 +30,15 @@
         app:segment_bottom_text_color="#666666"
         app:segment_h_space="4dp"/>
 
+    <com.gy.commonviewdemo.cusview.redpacket.WaveView
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 
 </LinearLayout>

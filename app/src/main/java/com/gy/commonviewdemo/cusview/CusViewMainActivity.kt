@@ -9,6 +9,7 @@ import com.gy.commonviewdemo.MainAdapter
 import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.gradient.GradientActivity
+import com.gy.commonviewdemo.cusview.redpacket.RedPacketActivity
 import com.gy.commonviewdemo.cusview.segment.Segment
 import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.cusview.threeD.CusView3DActivity
@@ -47,6 +48,7 @@ class CusViewMainActivity : AppCompatActivity() {
             DemoData("3D切换", CusView3DActivity::class.java,this),
             DemoData("TextView相关", TextViewActivity::class.java,this),
             DemoData("渐变效果", GradientActivity::class.java,this),
+            DemoData("红包雨", RedPacketActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
