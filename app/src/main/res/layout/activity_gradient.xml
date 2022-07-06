@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <com.gy.commonviewdemo.cusview.gradient.FlowingLightView
             android:layout_width="match_parent"
@@ -26,6 +27,16 @@
         <com.gy.commonviewdemo.cusview.gradient.CircleProgress
             android:layout_width="300dp"
             android:layout_height="300dp"/>
+
+        <com.gy.commonviewdemo.cusview.gradient.EdgesView
+            android:id="@+id/edgesView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <com.gy.commonviewdemo.cusview.gradient.SlantingView
+            android:id="@+id/slantView"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
 
     </LinearLayout>
 
