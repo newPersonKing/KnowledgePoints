@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -37,6 +38,16 @@
             android:id="@+id/slantView"
             android:layout_width="300dp"
             android:layout_height="50dp"/>
+
+        <com.gy.commonviewdemo.cusview.gradient.ThreeGradientCornerView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="测试"
+            android:gravity="center"
+            app:one_color="@android:color/holo_blue_light"
+            app:second_color="@android:color/holo_green_light"
+            app:progress_color="@android:color/holo_red_dark"
+            app:bg_border_color="2dp"/>
 
     </LinearLayout>
 
