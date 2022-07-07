@@ -109,6 +109,7 @@
         <activity android:name=".apt.spi.SpiActivity"/>
         <activity android:name=".accessibility.AccessibilityActivity"/>
         <activity android:name=".cusview.redpacket.RedPacketActivity"/>
+        <activity android:name=".cusview.redpacket.FloatRedPacketActivity"/>
 
         <service android:name=".accessibility.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
