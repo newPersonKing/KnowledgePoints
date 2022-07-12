@@ -13,13 +13,6 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <com.gy.commonviewdemo.cusview.AnimationText
-            android:id="@+id/animation_text"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="测试方法"
-            android:textSize="20sp"
-            android:gravity="center"/>
 
         <com.gy.commonviewdemo.cusview.gradient.FlowingLightView
             android:layout_width="match_parent"
@@ -45,7 +38,7 @@
         <com.gy.commonviewdemo.cusview.gradient.SlantingView
             android:id="@+id/slantView"
             android:layout_width="300dp"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp" />
 
         <com.gy.commonviewdemo.cusview.gradient.ThreeGradientCornerView
             android:layout_width="match_parent"
@@ -59,7 +52,9 @@
 
         <com.gy.commonviewdemo.cusview.gradient.SingleSlant
             android:layout_width="200dp"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            app:single_slant_bg_color="@color/color_3cc864"
+            app:slant_percent="0.3"/>
 
 
     </LinearLayout>

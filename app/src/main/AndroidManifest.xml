@@ -110,6 +110,8 @@
         <activity android:name=".accessibility.AccessibilityActivity"/>
         <activity android:name=".cusview.redpacket.RedPacketActivity"/>
         <activity android:name=".cusview.redpacket.FloatRedPacketActivity"/>
+        <activity android:name=".cusview.anim.AnimActivity"/>
+        <activity android:name=".cusview.triangle.TriangleActivity"/>
 
         <service android:name=".accessibility.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"

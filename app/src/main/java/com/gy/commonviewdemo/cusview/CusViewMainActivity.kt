@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.DemoData
 import com.gy.commonviewdemo.MainAdapter
 import com.gy.commonviewdemo.R
+import com.gy.commonviewdemo.cusview.anim.AnimActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.gradient.GradientActivity
 import com.gy.commonviewdemo.cusview.redpacket.FloatRedPacketActivity
@@ -14,6 +15,7 @@ import com.gy.commonviewdemo.cusview.redpacket.RedPacketActivity
 import com.gy.commonviewdemo.cusview.segment.Segment
 import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.cusview.threeD.CusView3DActivity
+import com.gy.commonviewdemo.cusview.triangle.TriangleActivity
 import kotlinx.android.synthetic.main.cus_view_main.*
 
 class CusViewMainActivity : AppCompatActivity() {
@@ -51,6 +53,8 @@ class CusViewMainActivity : AppCompatActivity() {
             DemoData("渐变效果", GradientActivity::class.java,this),
             DemoData("红包雨", RedPacketActivity::class.java,this),
             DemoData("随机漂浮红包", FloatRedPacketActivity::class.java,this),
+            DemoData("动画", AnimActivity::class.java,this),
+            DemoData("三角", TriangleActivity::class.java,this)
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

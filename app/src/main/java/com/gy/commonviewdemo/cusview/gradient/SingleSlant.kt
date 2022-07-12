@@ -7,6 +7,7 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
 import android.view.View
+import com.gy.commonviewdemo.R
 
 // 单边斜
 class SingleSlant @JvmOverloads constructor(
@@ -16,9 +17,16 @@ class SingleSlant @JvmOverloads constructor(
     private var mWidth = 0
     private var mHeight = 0
     private var percent = 0.1f
+    private var bgColor = Color.TRANSPARENT
     private var paint = Paint().apply {
         style = Paint.Style.FILL
-        color = Color.GREEN
+    }
+
+    init {
+        val typeArray = context.obtainStyledAttributes(attrs, R.styleable.SingleSlant)
+        percent = typeArray.getFloat(R.styleable.SingleSlant_slant_percent,0f)
+        bgColor = typeArray.getColor(R.styleable.SingleSlant_single_slant_bg_color,Color.TRANSPARENT)
+        typeArray.recycle()
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
@@ -35,7 +43,7 @@ class SingleSlant @JvmOverloads constructor(
         path.lineTo(mWidth * 1f,mHeight * 1f)
         path.lineTo(0f,mHeight * 1f)
         path.lineTo(mWidth * percent,0f)
+        paint.color = bgColor
         canvas?.drawPath(path,paint)
-
     }
 }

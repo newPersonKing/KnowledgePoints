@@ -84,4 +84,25 @@
         <attr name="progress_color" format="color"/>
         <attr name="bg_border_color" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="SingleSlant">
+        <attr name="single_slant_bg_color" format="color"/>
+        <attr name="slant_percent" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="TriangleOnRectView">
+
+        <attr name="triangle_height" format="dimension"/>
+        <attr name="triangle_bg" format="color"/>
+        <attr name="triangle_position" format="enum">
+            <enum name="LEFT" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="RIGHT" value="2"/>
+            <enum name="BOTTOM" value="3"/>
+        </attr>
+        <attr name="triangle_bg_color" format="color"/>
+        <attr name="triangle_trans_percent" format="float"/>
+        <attr name="triangle_corner_radius" format="dimension"/>
+
+    </declare-styleable>
 </resources>

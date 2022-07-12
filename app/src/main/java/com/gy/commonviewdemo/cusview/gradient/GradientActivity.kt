@@ -11,11 +11,6 @@ import kotlinx.android.synthetic.main.activity_gradient.*
 // 记录一些渐变效果的UI
 class GradientActivity : AppCompatActivity() {
 
-    val handler = Handler(Looper.getMainLooper())
-    val runnable = Runnable {
-        animation_text.text = "测试动画"
-        test()
-    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +20,8 @@ class GradientActivity : AppCompatActivity() {
         edgesView.setColors(Color.RED,Color.YELLOW)
         slantView.setColor(Color.YELLOW)
 
-        handler.postDelayed(runnable,200)
     }
 
-    private fun test(){
-        handler.postDelayed(runnable,200)
-    }
+
 
 }
