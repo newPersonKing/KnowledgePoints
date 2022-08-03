@@ -8,6 +8,7 @@ import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
 import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
+import com.gy.commonviewdemo.constraint.ConstraintLayoutDemoActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.gradient.GradientActivity
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("binder相关知识点",BinderActivity::class.java,this),
             DemoData("SPI 机制了解",SpiActivity::class.java,this),
             DemoData("无障碍服务", AccessibilityActivity::class.java,this),
+            DemoData("ConstraintLayout学习", ConstraintLayoutDemoActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

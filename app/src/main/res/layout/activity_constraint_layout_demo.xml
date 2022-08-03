@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/placeholder_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.Placeholder
+            android:id="@+id/left_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_placeholder"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layer_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_container">
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_start,tv_end"
+            android:background="@color/color_3cc864"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_start,tv_center"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_center"
+            android:text="tv_start"
+            app:layout_constraintHorizontal_chainStyle="spread"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_start"
+            app:layout_constraintEnd_toStartOf="@+id/tv_end"
+            android:text="tv_center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_center"
+            android:text="tv_end"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/flow_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/layer_container">
+
+        <!--aligned 从左往右 chain 均分-->
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:flow_wrapMode="aligned"
+            app:flow_verticalGap="10dp"
+            app:flow_horizontalAlign="center"
+            app:flow_maxElementsWrap="4"
+            app:constraint_referenced_ids="tv1,tv2,tv3,tv4,tv5,tv6"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv6"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintStart_toStartOf="@id/tv3"
+            app:layout_constraintEnd_toEndOf="@id/tv4"
+            app:layout_constraintBottom_toBottomOf="@id/tv6"
+            android:id="@+id/tv7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/flow_container">
+
+        <!--roundPercent 设置为1 圆形 round 设置具体的圆角值-->
+        <!--crossfade 模糊-->
+        <!--warmth 滤镜？？-->
+        <!--saturation 饱和度-->
+        <!--contrast 对比度-->
+        <!--crossfade overlay 配合增加遮盖-->
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:altSrc="@drawable/cat"
+            android:src="@drawable/niutuku"
+            android:scaleType="fitXY"
+            app:round="30dp"
+            app:overlay="true"
+            app:crossfade="0.4"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/niutuku"
+            android:scaleType="fitXY"
+            app:roundPercent="1"
+            app:crossfade="0.4"
+            app:altSrc="@drawable/cat"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
