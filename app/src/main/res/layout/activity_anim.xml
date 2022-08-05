@@ -21,19 +21,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="28sp"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"/>
 
         <com.gy.commonviewdemo.cusview.anim.StrokeText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="28sp"
+            android:textSize="40sp"
             android:textColor="@android:color/holo_blue_light"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:text="1234"/>
 
     </com.gy.commonviewdemo.cusview.anim.AnimFramelayout>
 
