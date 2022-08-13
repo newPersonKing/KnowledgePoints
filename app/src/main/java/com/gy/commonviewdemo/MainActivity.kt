@@ -17,6 +17,7 @@ import com.gy.commonviewdemo.cusview.text.TextViewActivity
 import com.gy.commonviewdemo.cusview.text.rich_text.*
 import com.gy.commonviewdemo.db.ContentProviderActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
+import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationActivity
@@ -47,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("btn_system_ui",SystemUiActivity::class.java,this),
             DemoData("rv相关",RvMainActivity::class.java,this),
             DemoData("自定义一view相关",CusViewMainActivity::class.java,this),
+            DemoData("drawable",DrawableActivity::class.java,this),
             DemoData("flow相关",FlowActivity::class.java,this),
             DemoData("富文本相关", SpanEnterActivity::class.java,this),
             DemoData("通知",NotificationMainActivity::class.java,this),

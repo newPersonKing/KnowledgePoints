@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.gy.commonviewdemo.cusview.shadow.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:hl_shadowLimit="10dp"
+            app:hl_cornerRadius="30dp"
+            app:hl_layoutBackground="@android:color/holo_red_dark"
+            app:hl_layoutBackground_true="@color/color_3cc864"
+            app:hl_shadowColor="@color/colorPrimary"
+            app:hl_shadowOffsetY="10dp"
+            app:hl_shadowOffsetX="10dp">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cat"
+                android:scaleType="fitXY"
+                app:round="30dp"
+                />
+
+        </com.gy.commonviewdemo.cusview.shadow.ShadowLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

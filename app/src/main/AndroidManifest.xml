@@ -113,6 +113,8 @@
         <activity android:name=".cusview.anim.AnimActivity"/>
         <activity android:name=".cusview.triangle.TriangleActivity"/>
         <activity android:name=".constraint.ConstraintLayoutDemoActivity"/>
+        <activity android:name=".cusview.shadow.ShadowActivity"/>
+        <activity android:name=".drawable.DrawableActivity"/>
 
         <service android:name=".accessibility.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"

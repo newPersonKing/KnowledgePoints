@@ -16,7 +16,7 @@
 
         <com.gy.commonviewdemo.cusview.gradient.FlowingLightView
             android:layout_width="match_parent"
-            android:layout_height="100dp"/>
+            android:layout_height="50dp"/>
 
         <com.gy.commonviewdemo.cusview.gradient.ShineTextView
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
 
         <com.gy.commonviewdemo.cusview.gradient.CircleProgress
             android:layout_width="300dp"
-            android:layout_height="300dp"/>
+            android:layout_height="200dp"/>
 
         <com.gy.commonviewdemo.cusview.gradient.EdgesView
             android:id="@+id/edgesView"
@@ -55,7 +55,6 @@
             android:layout_height="50dp"
             app:single_slant_bg_color="@color/color_3cc864"
             app:slant_percent="0.3"/>
-
 
     </LinearLayout>
 

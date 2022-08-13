@@ -25,7 +25,7 @@ class StrokeText @JvmOverloads constructor(
         }
         borderText?.also {
             gravity = this.gravity
-            setTextColor(Color.RED)
+            it.setTextColor(Color.RED)
         }
     }
 
@@ -49,11 +49,12 @@ class StrokeText @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         // 直接绘制描边 效果并不是特别的完美
         // 应该先绘制描边 再绘制正文
-        borderText?.draw(canvas);
+
 //        paint.apply {
 //            style = Paint.Style.STROKE
 //            strokeWidth = 4f
 //        }
         super.onDraw(canvas)
+        borderText?.draw(canvas)
     }
 }
