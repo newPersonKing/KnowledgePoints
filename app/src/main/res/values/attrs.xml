@@ -129,6 +129,17 @@
         <!--阴影：下面是否隐藏阴影-->
         <attr name="hl_shadowHiddenBottom" format="boolean" />
 
+        <!-- 2、关于圆角 -->
+        <!--圆角：统一大小，其中包括了阴影，shape、背景图、stroke边框圆角-->
+        <attr name="hl_cornerRadius" format="dimension" />
+        <!--圆角：左上圆角。设置后会忽略hl_cornerRadius的值-->
+        <attr name="hl_cornerRadius_leftTop" format="dimension" />
+        <!--圆角：右上圆角。同上-->
+        <attr name="hl_cornerRadius_rightTop" format="dimension" />
+        <!--圆角：左下圆角。同上-->
+        <attr name="hl_cornerRadius_leftBottom" format="dimension" />
+        <!--圆角：右下圆角。同上-->
+        <attr name="hl_cornerRadius_rightBottom" format="dimension" />
 
     </declare-styleable>
 </resources>

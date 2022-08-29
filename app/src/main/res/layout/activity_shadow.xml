@@ -18,8 +18,6 @@
             android:layout_height="wrap_content"
             app:hl_shadowLimit="10dp"
             app:hl_cornerRadius="30dp"
-            app:hl_layoutBackground="@android:color/holo_red_dark"
-            app:hl_layoutBackground_true="@color/color_3cc864"
             app:hl_shadowColor="@color/colorPrimary"
             app:hl_shadowOffsetY="10dp"
             app:hl_shadowOffsetX="10dp">

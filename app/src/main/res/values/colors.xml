@@ -13,4 +13,27 @@
     <color name="alert_default_error_background">#F44336</color>
     <color name="alert_default_text_color">@android:color/white</color>
     <color name="alert_default_icon_color">@android:color/white</color>
+
+    <color name="black">#FF000000</color>
+    <color name="option_icon_tint">#FFFFFFFF</color>
+
+    <color name="capture_normal">#9F2C162B</color>
+    <color name="capture_normal_end">#9F390239</color>
+    <color name="capture_press">@color/ubuntu_purple</color>
+    <color name="ubuntu_purple">#390239</color>
+
+    <color name="scan_rect_color">@color/ubuntu_orange</color>
+    <color name="camera_switch_bg">#3fd3d7d4</color>
+    <color name="ubuntu_orange">#A52732</color>
+
+    <color name="scan_zone_color">#5f660F5E</color>
+
+    <color name="top_bar_bg">#9F000000</color>
+    <color name="focus_tap_color">@color/ubuntu_fuchsia</color>
+    <color name="ubuntu_fuchsia">#660F5E</color>
+
+    <color name="record_press">@color/ubuntu_red</color>
+    <color name="ubuntu_red">#9C2239</color>
+
+    <color name="record_normal">@color/ubuntu_orange</color>
 </resources>

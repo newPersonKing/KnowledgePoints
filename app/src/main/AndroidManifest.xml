@@ -4,9 +4,11 @@
     package="com.gy.commonviewdemo">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <permission android:name = "com.android.permission.RECV_XXX"/>
     <uses-permission android:name="com.android.permission.RECV_XXX"></uses-permission>
     <!--手机震动-->
@@ -115,6 +117,7 @@
         <activity android:name=".constraint.ConstraintLayoutDemoActivity"/>
         <activity android:name=".cusview.shadow.ShadowActivity"/>
         <activity android:name=".drawable.DrawableActivity"/>
+        <activity android:name=".camera.CameraActivity"/>
 
         <service android:name=".accessibility.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
@@ -128,6 +131,8 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessibility"/>
         </service>
+
+        <activity android:name=".BlackTechActivity"/>
     </application>
 
 </manifest>

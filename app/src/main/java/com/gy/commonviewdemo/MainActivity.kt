@@ -1,26 +1,33 @@
 package com.gy.commonviewdemo
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.ActivityManager
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.app.Presentation
+import android.content.Context
+import android.content.Intent
+import android.content.res.Resources
+import android.hardware.display.DisplayManager
+import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
 import com.gy.commonviewdemo.binder.BinderActivity
+import com.gy.commonviewdemo.camera.CameraActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
 import com.gy.commonviewdemo.constraint.ConstraintLayoutDemoActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
-import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
-import com.gy.commonviewdemo.cusview.gradient.GradientActivity
 import com.gy.commonviewdemo.cusview.text.SpanEnterActivity
-import com.gy.commonviewdemo.cusview.text.TextViewActivity
-import com.gy.commonviewdemo.cusview.text.rich_text.*
 import com.gy.commonviewdemo.db.ContentProviderActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
-import com.gy.commonviewdemo.notification.NotificationActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
 import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
@@ -41,6 +48,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        layoutInflater.factory2
 
         val adapter = MainAdapter(listOf(
             DemoData("webview相关",WebViewActivity::class.java,this),
@@ -64,6 +73,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("SPI 机制了解",SpiActivity::class.java,this),
             DemoData("无障碍服务", AccessibilityActivity::class.java,this),
             DemoData("ConstraintLayout学习", ConstraintLayoutDemoActivity::class.java,this),
+            DemoData("Camera相机", CameraActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
@@ -82,6 +92,95 @@ class MainActivity : AppCompatActivity() {
             timer.purge()
         },3000)
 
+        rv_main.postDelayed(Runnable {
+            Log.i("ccccccccccc","postDelayed")
+            val intent = Intent(this,MainActivity::class.java)
+//            startActivity(intent)
+            moveToFront(this)
+//            start(this)
+        },10000)
+
+    }
+
+
+    // 1 对于android 10 7 startActivity 可以直接启动
+    // 2 android 8.0 华为 startActivity
+    // 3 小米 12 是可以直接启动 alarmManager
+    // 4 google 12 可以直接启动
+    // 5 N3 v7.1.2 startActivity
+    // 6 Redmi Note 5 9 startActivity
+    // 7 鸿蒙不可以
+    // 8 Redmi 10X moveToFront alarmManager 都要配合 createVirtualDisplay
+    fun start(context: Context) {
+        //android 10 以上版本,且延时等于0时，手动增加延时
+        var delay = 0
+//        TaskUtil.moveAppTaskToFront(context)
+        val intent = Intent(context, BlackTechActivity::class.java)
+//        val bundle = Bundle()
+//        bundle.putString(ExKeepConstant.SCENES, params.scenesName)
+//        bundle.putByteArray(ExKeepConstant.ADS, ParcelableUtils.toByteArray(params.ads))
+//        intent.putExtras(bundle)
+        intent.flags =
+            Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP
+        if (Build.VERSION.SDK_INT >= 29) {
+            Log.i("ccccccccccc","alarmManager")
+            if (delay == 0) {
+                delay = 800
+            }
+            val alarmManager = context.getSystemService(ALARM_SERVICE) as AlarmManager
+            val pendingIntent = PendingIntent.getActivity(
+                context,
+                100,
+                intent,
+                PendingIntent.FLAG_IMMUTABLE,
+            )
+            alarmManager.set(
+                AlarmManager.RTC_WAKEUP,
+                System.currentTimeMillis() + 800,
+                pendingIntent
+            )
+        } else {
+            Log.i("ccccccccccc","startActivity")
+            context.applicationContext.startActivity(intent)
+        }
+    }
+
+//    val fontScale = 1f
+//    override fun getResources(): Resources {
+//        val res = super.getResources()
+//        val configuration = res.configuration
+//        if (configuration.fontScale != fontScale) { //fontScale要缩放的比例
+//            configuration.fontScale = fontScale
+//            res.updateConfiguration(configuration, res.displayMetrics)
+//        }
+//        return res
+//    }
+
+    override fun onPause() {
+        super.onPause()
+        val virtualDisplay =
+            (getSystemService(DISPLAY_SERVICE) as DisplayManager).createVirtualDisplay(
+                "get",
+                1,
+                1,
+                160,
+                null,
+                0
+            )
+        val presentation = Presentation(this, virtualDisplay.display)
+        presentation.show()
+    }
+
+    fun moveToFront(context: Context) {
+        Log.i("ccccccccccc","moveToFront")
+        val activityManager = context.getSystemService(Context.ACTIVITY_SERVICE) as? ActivityManager
+        activityManager?.getRunningTasks(100)?.forEach { taskInfo ->
+            if (taskInfo.topActivity?.packageName == context.packageName) {
+                Log.i("ccccccccccc","Try to move to front")
+                activityManager.moveTaskToFront(taskInfo.id, 0)
+                return
+            }
+        }
     }
 
 }
