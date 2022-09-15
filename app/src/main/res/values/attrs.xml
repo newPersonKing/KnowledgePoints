@@ -142,4 +142,8 @@
         <attr name="hl_cornerRadius_rightBottom" format="dimension" />
 
     </declare-styleable>
+
+    <declare-styleable name="LaneView">
+        <attr name="speed_multiple" format="float"></attr>
+    </declare-styleable>
 </resources>

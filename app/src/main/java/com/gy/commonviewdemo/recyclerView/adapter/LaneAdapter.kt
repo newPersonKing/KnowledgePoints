@@ -25,7 +25,6 @@ class LaneAdapter : RecyclerView.Adapter<LaneAdapter.ViewHolder>(){
             val tvIndex =  holder.itemView.findViewById<TextView>(R.id.tv_index)
             tvIndex.visibility = View.GONE
         }
-
     }
 
     override fun getItemCount(): Int {

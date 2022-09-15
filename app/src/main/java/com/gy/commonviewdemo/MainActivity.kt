@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //            moveToFront(this)
 //            start(this)
-            openQQGroup("ziOrsLP0XJjJJ1-99qpPsVN_e44I1y9M")
+//            openQQGroup("ziOrsLP0XJjJJ1-99qpPsVN_e44I1y9M")
         },3000)
     }
 

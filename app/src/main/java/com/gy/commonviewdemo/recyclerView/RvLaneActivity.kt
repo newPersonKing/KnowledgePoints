@@ -9,7 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.recyclerView.adapter.LaneAdapter
 import com.gy.commonviewdemo.recyclerView.layoutmanager.LaneLayoutManager
+import kotlinx.android.synthetic.main.activity_rv_scroll_lane.*
 import kotlinx.android.synthetic.main.activity_rv_scroll_one.*
+import kotlinx.android.synthetic.main.activity_rv_scroll_one.btn_start_scroll
+import kotlinx.android.synthetic.main.activity_rv_scroll_one.rv
 import java.util.*
 
 class RvLaneActivity : AppCompatActivity() , View.OnClickListener{
@@ -19,18 +22,23 @@ class RvLaneActivity : AppCompatActivity() , View.OnClickListener{
         setContentView(R.layout.activity_rv_scroll_lane)
         btn_start_scroll.setOnClickListener(this)
 
-        val layoutManager = LaneLayoutManager()
-        rv.layoutManager = layoutManager
-        rv.adapter = LaneAdapter()
-        rv.setOnTouchListener { v, event -> true }
+//        val layoutManager = LaneLayoutManager()
+//        rv.layoutManager = layoutManager
+//        rv.adapter = LaneAdapter()
+//        rv.setOnTouchListener { v, event -> true }
+//
+//        Timer().scheduleAtFixedRate(object : TimerTask() {
+//            override fun run() {
+//                runOnUiThread {
+//                    rv.smoothScrollBy(10,0)
+//                }
+//            }
+//        },0,30)
 
-        Timer().scheduleAtFixedRate(object : TimerTask() {
-            override fun run() {
-                runOnUiThread {
-                    rv.smoothScrollBy(10,0)
-                }
-            }
-        },0,30)
+        rv.postDelayed({
+            lane.setAdapter(LaneAdapter())
+            lane.start()
+        },1000)
 
     }
 
