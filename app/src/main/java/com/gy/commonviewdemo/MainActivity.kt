@@ -8,6 +8,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import android.hardware.display.DisplayManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -38,6 +39,7 @@ import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.lang.Exception
 import java.util.*
 
 
@@ -96,10 +98,10 @@ class MainActivity : AppCompatActivity() {
             Log.i("ccccccccccc","postDelayed")
             val intent = Intent(this,MainActivity::class.java)
 //            startActivity(intent)
-            moveToFront(this)
+//            moveToFront(this)
 //            start(this)
-        },10000)
-
+            openQQGroup("ziOrsLP0XJjJJ1-99qpPsVN_e44I1y9M")
+        },3000)
     }
 
 
@@ -142,6 +144,17 @@ class MainActivity : AppCompatActivity() {
         } else {
             Log.i("ccccccccccc","startActivity")
             context.applicationContext.startActivity(intent)
+        }
+
+    }
+
+    private fun openQQGroup(key:String) {
+        try {
+            val intent =  Intent(Intent.ACTION_VIEW);
+            intent.data = Uri.parse("mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26jump_from%3Dwebapi%26k%3D" + key);
+            startActivity(intent);
+        } catch (e:Exception){
+             Log.i("ccccccccccccccc",e.toString())
         }
     }
 

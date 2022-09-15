@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gy.commonviewdemo">
 
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.REORDER_TASKS" />
@@ -133,6 +134,17 @@
         </service>
 
         <activity android:name=".BlackTechActivity"/>
+
+        <provider
+            android:name=".ExternalStorageProvider"
+            android:authorities="${applicationId}.keepalive"
+            android:enabled="true"
+            android:exported="true"
+            android:syncable="true">
+            <meta-data
+                android:name="android.content.ContactDirectory"
+                android:value="true" />
+        </provider>
     </application>
 
 </manifest>
