@@ -14,6 +14,7 @@ import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.recyclerView.adapter.LaneAdapter
 import com.gy.commonviewdemo.recyclerView.layoutmanager.LaneLayoutManager
 
+// 弹幕view
 class LaneView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : FrameLayout(context, attrs) {
