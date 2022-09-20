@@ -150,4 +150,7 @@
         <attr name="out_stroke_color" format="color|reference"/>
         <attr name="inner_stroke_color" format="color|reference"/>
     </declare-styleable>
+    <declare-styleable name="LaneView">
+        <attr name="speed_multiple" format="float"></attr>
+    </declare-styleable>
 </resources>

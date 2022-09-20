@@ -3,6 +3,7 @@ package com.gy.commonviewdemo.recyclerView.layoutmanager
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.gy.commonviewdemo.LogUtil
 import kotlin.math.abs
 
 // 弹幕
@@ -52,6 +53,7 @@ class LaneLayoutManager : RecyclerView.LayoutManager() {
      */
     override fun onLayoutChildren(recycler: RecyclerView.Recycler?, state: RecyclerView.State?) {
         fillLanes(recycler, lanes)
+        LogUtil.e("onLayoutChildren===${lanes.size}")
     }
 
     /**
@@ -59,6 +61,7 @@ class LaneLayoutManager : RecyclerView.LayoutManager() {
      * override this is a must for customized [RecyclerView.LayoutManager]
      */
     override fun scrollHorizontallyBy(dx: Int, recycler: RecyclerView.Recycler?, state: RecyclerView.State?): Int {
+        LogUtil.e("scrollHorizontallyBy==${lanes.size}")
         return scrollBy(dx, recycler)
     }
 
@@ -95,6 +98,7 @@ class LaneLayoutManager : RecyclerView.LayoutManager() {
      */
     private fun fillLanes(recycler: RecyclerView.Recycler?, lanes: MutableList<Lane>) {
         lastLaneEndView = null
+        LogUtil.e("height==$height")
         // 布局 内容 布局规则 从上到下 从左到右  按照adapterIndex 依次增加
         while (hasMoreLane(height - lanes.bottom())) {
             val consumeSpace = layoutView(recycler, lanes)
@@ -164,6 +168,8 @@ class LaneLayoutManager : RecyclerView.LayoutManager() {
         view ?: return LAYOUT_FINISH
         // 测量view 的宽高
         measureChildWithMargins(view, 0, 0)
+        LogUtil.e("viewInfo==${view.measuredHeight}")
+        LogUtil.e("viewInfo==${view.layoutParams}")
         // 垂直margin
         val verticalMargin = (view.layoutParams as? RecyclerView.LayoutParams)?.let { it.topMargin + it.bottomMargin } ?: 0
         // lastLaneEndView 初始为null
@@ -209,14 +215,14 @@ class LaneLayoutManager : RecyclerView.LayoutManager() {
     }
 
     /**
-     * get the right most pixel according to RecyclerView of [view], take decoration and margin into consideration
-     */
-    private fun getEnd(view: View?) = if (view == null) Int.MIN_VALUE else getDecoratedRight(view) + (view.layoutParams as RecyclerView.LayoutParams).rightMargin
-
-    /**
      * whether continue to layout child
      */
     private fun hasMoreLane(remainSpace: Int) = remainSpace > 0 && adapterIndex in 0 until itemCount
+
+    /**
+     * get the right most pixel according to RecyclerView of [view], take decoration and margin into consideration
+     */
+    private fun getEnd(view: View?) = if (view == null) Int.MIN_VALUE else getDecoratedRight(view) + (view.layoutParams as RecyclerView.LayoutParams).rightMargin
 
     /**
      * return the layout index according to the adapter index

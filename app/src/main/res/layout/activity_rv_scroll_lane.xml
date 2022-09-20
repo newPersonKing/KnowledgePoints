@@ -17,6 +17,13 @@
         android:orientation="horizontal"/>
 
 
+    <com.gy.commonviewdemo.recyclerView.view.LaneView
+        android:id="@+id/lane"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/record_press"
+        app:speed_multiple="0.2"/>
+
     <Button
         android:id="@+id/btn_start_scroll"
         android:layout_width="match_parent"
