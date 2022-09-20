@@ -133,6 +133,7 @@
         </service>
 
         <activity android:name=".BlackTechActivity"/>
+        <activity android:name=".cusview.progress.ProgressActivity"/>
     </application>
 
 </manifest>

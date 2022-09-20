@@ -92,13 +92,13 @@ class MainActivity : AppCompatActivity() {
             timer.purge()
         },3000)
 
-        rv_main.postDelayed(Runnable {
-            Log.i("ccccccccccc","postDelayed")
-            val intent = Intent(this,MainActivity::class.java)
-//            startActivity(intent)
-            moveToFront(this)
-//            start(this)
-        },10000)
+//        rv_main.postDelayed(Runnable {
+//            Log.i("ccccccccccc","postDelayed")
+//            val intent = Intent(this,MainActivity::class.java)
+////            startActivity(intent)
+//            moveToFront(this)
+////            start(this)
+//        },10000)
 
     }
 

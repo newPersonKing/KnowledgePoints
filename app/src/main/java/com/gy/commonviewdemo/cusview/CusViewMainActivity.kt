@@ -10,6 +10,7 @@ import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.cusview.anim.AnimActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.gradient.GradientActivity
+import com.gy.commonviewdemo.cusview.progress.ProgressActivity
 import com.gy.commonviewdemo.cusview.redpacket.FloatRedPacketActivity
 import com.gy.commonviewdemo.cusview.redpacket.RedPacketActivity
 import com.gy.commonviewdemo.cusview.segment.Segment
@@ -57,7 +58,7 @@ class CusViewMainActivity : AppCompatActivity() {
             DemoData("动画", AnimActivity::class.java,this),
             DemoData("三角", TriangleActivity::class.java,this),
             DemoData("阴影", ShadowActivity::class.java,this),
-
+            DemoData("进度条", ProgressActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

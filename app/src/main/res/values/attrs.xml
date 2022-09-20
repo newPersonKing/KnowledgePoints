@@ -142,4 +142,12 @@
         <attr name="hl_cornerRadius_rightBottom" format="dimension" />
 
     </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="inner_stroke_width" format="dimension"/>
+        <attr name="out_stroke_with" format="dimension"/>
+        <attr name="arc_angle" format="integer"/>
+        <attr name="out_stroke_color" format="color|reference"/>
+        <attr name="inner_stroke_color" format="color|reference"/>
+    </declare-styleable>
 </resources>
