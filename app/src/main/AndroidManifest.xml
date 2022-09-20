@@ -135,6 +135,8 @@
 
         <activity android:name=".cusview.progress.ProgressActivity"/>
 
+        <activity android:name=".kotlin.InfixActivity"/>
+
         <provider
             android:name=".ExternalStorageProvider"
             android:authorities="${applicationId}.keepalive"

@@ -18,6 +18,7 @@ class KotlinActivity : AppCompatActivity(){
 
         val adapter = MainAdapter(listOf(
             DemoData("kotlin代理属性", KotlinReadAndWriterActivity::class.java,this),
+            DemoData("infix 中缀函数", InfixActivity::class.java,this),
         ))
 
         rv_kotlin.layoutManager = LinearLayoutManager(this)

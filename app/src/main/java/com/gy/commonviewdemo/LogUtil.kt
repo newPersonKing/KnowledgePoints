@@ -11,4 +11,8 @@ object LogUtil {
     fun e(msg:String){
         Log.e("common",msg)
     }
+
+    fun e(tag:String,msg:String){
+        Log.e("common_$tag",msg)
+    }
 }
