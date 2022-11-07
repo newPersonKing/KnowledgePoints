@@ -16,6 +16,11 @@ class CusView3DActivity : AppCompatActivity() {
         vp_3d.setPageTransformer(false,BliPageTransformer())
         vp_3d.adapter = ViewPagerAdapter(supportFragmentManager)
 
+
+        rotate_view.setOnClickListener {
+            rotate_view.startAnimation()
+        }
+
     }
 
 

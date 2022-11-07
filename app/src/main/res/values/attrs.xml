@@ -153,4 +153,9 @@
     <declare-styleable name="LaneView">
         <attr name="speed_multiple" format="float"></attr>
     </declare-styleable>
+
+    <declare-styleable name="Rotate3DView">
+        <attr name="circle_count" format="integer"/>
+        <attr name="rotate_duration" format="integer"/>
+    </declare-styleable>
 </resources>

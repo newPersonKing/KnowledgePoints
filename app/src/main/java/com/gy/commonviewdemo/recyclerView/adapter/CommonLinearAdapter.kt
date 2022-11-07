@@ -16,6 +16,10 @@ class CommonLinearAdapter : RecyclerView.Adapter<CommonLinearAdapter.ViewHolder>
         return ViewHolder(itemView)
     }
 
+    override fun onBindViewHolder(holder: ViewHolder, position: Int, payloads: MutableList<Any>) {
+        super.onBindViewHolder(holder, position, payloads)
+    }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val tvIndex =  holder.itemView.findViewById<TextView>(R.id.tv_index)
         tvIndex.text = "这是${position}个item"

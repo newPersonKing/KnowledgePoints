@@ -8,6 +8,7 @@ import com.gy.commonviewdemo.DemoData
 import com.gy.commonviewdemo.MainAdapter
 import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.cusview.anim.AnimActivity
+import com.gy.commonviewdemo.cusview.duffXfermode.DuffXfermodeActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.gradient.GradientActivity
 import com.gy.commonviewdemo.cusview.progress.ProgressActivity
@@ -59,6 +60,7 @@ class CusViewMainActivity : AppCompatActivity() {
             DemoData("三角", TriangleActivity::class.java,this),
             DemoData("阴影", ShadowActivity::class.java,this),
             DemoData("进度条", ProgressActivity::class.java,this),
+            DemoData("混合模式", DuffXfermodeActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

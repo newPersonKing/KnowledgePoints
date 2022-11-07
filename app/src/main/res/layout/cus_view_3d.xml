@@ -12,7 +12,29 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_3d"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <com.gy.commonviewdemo.cusview.threeD.Rotate3DView
+        android:id="@+id/rotate_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="这是内容=="
+            android:visibility="gone"
+            android:gravity="center"/>
+
+    </com.gy.commonviewdemo.cusview.threeD.Rotate3DView>
 
 
 </LinearLayout>
