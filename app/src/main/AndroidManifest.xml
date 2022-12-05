@@ -141,6 +141,8 @@
 
         <activity android:name=".cusview.duffXfermode.DuffXfermodeActivity"/>
 
+        <activity android:name=".behavior.BehaviorMainActivity"/>
+
         <provider
             android:name=".ExternalStorageProvider"
             android:authorities="${applicationId}.keepalive"

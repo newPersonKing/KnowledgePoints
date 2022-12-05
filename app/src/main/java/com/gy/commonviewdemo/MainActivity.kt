@@ -8,6 +8,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import android.hardware.display.DisplayManager
+import android.icu.lang.UCharacter.GraphemeClusterBreak.L
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -15,9 +16,11 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
+import com.gy.commonviewdemo.behavior.BehaviorMainActivity
 import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.camera.CameraActivity
 import com.gy.commonviewdemo.clipboardManager.ClipBoardActivity
@@ -76,6 +79,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("无障碍服务", AccessibilityActivity::class.java,this),
             DemoData("ConstraintLayout学习", ConstraintLayoutDemoActivity::class.java,this),
             DemoData("Camera相机", CameraActivity::class.java,this),
+            DemoData("Behavior相关", BehaviorMainActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
@@ -101,9 +105,45 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //            moveToFront(this)
 //            start(this)
-//            openQQGroup("ziOrsLP0XJjJJ1-99qpPsVN_e44I1y9M")
+//            openQQGroup("ziOrsLP0XJLo1-99qpPsVN_e44I1y9M")
         },3000)
+        printDeviceInfo()
     }
+
+    //看一下设备信息
+    private fun printDeviceInfo() {
+        val deviceInfo = arrayOf(
+            "产品：${android.os.Build.PRODUCT}",
+            "制造商：${android.os.Build.MANUFACTURER}",
+            "型号：${android.os.Build.MODEL}",
+            "品牌：${android.os.Build.BRAND}",
+            "主板：${android.os.Build.BOARD}",
+            "设备标识：${android.os.Build.FINGERPRINT}",
+            "版本号：${android.os.Build.ID}",
+            "用户：${android.os.Build.USER}",
+            "CPU_ABI：${android.os.Build.CPU_ABI}",
+            "CPU_ABI2：${android.os.Build.CPU_ABI2}",
+            "标签：${android.os.Build.TAGS}",
+            "Android SDK版本：${android.os.Build.VERSION.SDK}",
+            "Android SDK版本号：${android.os.Build.VERSION.SDK_INT}",
+            "Android 版本（RELEASE）：${android.os.Build.VERSION.RELEASE}",
+            "驱动（DEVICE）：${android.os.Build.DEVICE}",
+            "DISPLAY：${android.os.Build.DISPLAY}",
+            "HARDWARE：${android.os.Build.HARDWARE}",
+            "主机（HOST）：${android.os.Build.HOST}",
+            "版本类型（TYPE）：${android.os.Build.TYPE}",
+            "TIME：${android.os.Build.TIME}",
+            "RADIO：${android.os.Build.RADIO}",
+            "序列号（SERIAL）：${android.os.Build.SERIAL}",
+            "UNKNOWN：${android.os.Build.UNKNOWN}"
+        )
+        deviceInfo.forEach {
+            LogUtil.e("cccccc===${it}")
+        }
+        LogUtil.e("cccccc===printDeviceInfo==${Utils.isHarmonyOs()}")
+        LogUtil.e("cccccc===printDeviceInfo==${Utils.getHarmonyVersion()}")
+    }
+
 
 
     // 1 对于android 10 7 startActivity 可以直接启动
