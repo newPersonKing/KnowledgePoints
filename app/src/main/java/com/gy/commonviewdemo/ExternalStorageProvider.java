@@ -207,13 +207,14 @@ public class ExternalStorageProvider extends ContentProvider {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Log.e("ccccccccccccccc","onCreate_11_华为");
-                trackWakeupEvent("华为");
-                Intent i=new Intent();
-                i.setAction("android.intent.action.CLOSE_SYSTEM_DIALOGS");
-                i.setData(Uri.parse("content://"+AUTH));
-                i.setFlags(Intent.FLAG_EXCLUDE_STOPPED_PACKAGES);
-                context.sendStickyBroadcast(i);
+                /*requires android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS.*/
+//                Log.e("ccccccccccccccc","onCreate_11_华为");
+//                trackWakeupEvent("华为");
+//                Intent i=new Intent();
+//                i.setAction("android.intent.action.CLOSE_SYSTEM_DIALOGS");
+//                i.setData(Uri.parse("content://"+AUTH));
+//                i.setFlags(Intent.FLAG_EXCLUDE_STOPPED_PACKAGES);
+//                context.sendStickyBroadcast(i);
             }
         }, 1500);
         return true;

@@ -41,6 +41,7 @@ import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
+import com.gy.commonviewdemo.wifi.WifiActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
 import java.util.*
@@ -80,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("ConstraintLayout学习", ConstraintLayoutDemoActivity::class.java,this),
             DemoData("Camera相机", CameraActivity::class.java,this),
             DemoData("Behavior相关", BehaviorMainActivity::class.java,this),
+            DemoData("Wifi连接", WifiActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
