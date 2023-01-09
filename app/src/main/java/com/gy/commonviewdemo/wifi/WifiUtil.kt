@@ -105,6 +105,8 @@ object WifiUtil {
             LogUtil.e("清除wifi配置:${tempConfig.SSID + (isDisable && isRemove && isSave)}")
         }
 
+
+        
         //不需要密码的场景
         if (type == WifiCapability.WIFI_CIPHER_NO_PASS) {
             config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE)
