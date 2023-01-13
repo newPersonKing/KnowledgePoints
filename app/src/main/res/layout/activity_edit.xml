@@ -33,6 +33,15 @@
             android:text="测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行测试不换行"/>
 
 
+        <com.gy.commonviewdemo.cusview.edittext.EditTextField
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="清空按钮"
+            android:text="12312"
+            app:clearButtonDrawable="@drawable/circle_delete"
+            android:background="@android:color/holo_blue_bright"
+            app:clearButtonMode="unlessEditing"/>
+
     </LinearLayout>
 
 
