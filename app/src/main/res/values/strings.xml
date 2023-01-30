@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CommonViewDemo</string>
+    <string name="lock">时钟</string>
+    <string name="td">3d</string>
+    <string name="circle">画圈</string>
 </resources>

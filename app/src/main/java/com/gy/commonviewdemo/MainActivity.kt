@@ -31,6 +31,7 @@ import com.gy.commonviewdemo.db.ContentProviderActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
+import com.gy.commonviewdemo.globaltouch.GlobalTouchActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
 import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
@@ -40,6 +41,7 @@ import com.gy.commonviewdemo.statusbar.StatusBarActivity
 import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
+import com.gy.commonviewdemo.wallpaper.WallpagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import com.gy.commonviewdemo.wifi.WifiActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -82,6 +84,8 @@ class MainActivity : AppCompatActivity() {
             DemoData("Camera相机", CameraActivity::class.java,this),
             DemoData("Behavior相关", BehaviorMainActivity::class.java,this),
             DemoData("Wifi连接", WifiActivity::class.java,this),
+            DemoData("全局事件", GlobalTouchActivity::class.java,this),
+            DemoData("壁纸相关", WallpagerActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
