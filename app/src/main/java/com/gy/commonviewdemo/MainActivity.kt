@@ -6,17 +6,13 @@ import android.app.PendingIntent
 import android.app.Presentation
 import android.content.Context
 import android.content.Intent
-import android.content.res.Resources
 import android.hardware.display.DisplayManager
-import android.icu.lang.UCharacter.GraphemeClusterBreak.L
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.provider.Settings
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
@@ -45,7 +41,6 @@ import com.gy.commonviewdemo.wallpaper.WallpagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import com.gy.commonviewdemo.wifi.WifiActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import java.lang.Exception
 import java.util.*
 
 
@@ -114,6 +109,11 @@ class MainActivity : AppCompatActivity() {
 //            openQQGroup("ziOrsLP0XJLo1-99qpPsVN_e44I1y9M")
         },3000)
         printDeviceInfo()
+
+        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
+        startActivity(intent)
+
+
     }
 
     //看一下设备信息
