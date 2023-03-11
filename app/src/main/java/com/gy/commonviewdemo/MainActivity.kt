@@ -33,6 +33,7 @@ import com.gy.commonviewdemo.notification.NotificationMainActivity
 import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
 import com.gy.commonviewdemo.recyclerView.RvMainActivity
 import com.gy.commonviewdemo.rxjava.rxjava2.RxJava2Activity
+import com.gy.commonviewdemo.sensor.SensorActivity
 import com.gy.commonviewdemo.statusbar.StatusBarActivity
 import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
@@ -51,8 +52,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        layoutInflater.factory2
 
         val adapter = MainAdapter(listOf(
             DemoData("webview相关",WebViewActivity::class.java,this),
@@ -81,6 +80,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("Wifi连接", WifiActivity::class.java,this),
             DemoData("全局事件", GlobalTouchActivity::class.java,this),
             DemoData("壁纸相关", WallpagerActivity::class.java,this),
+            DemoData("传感器Sensor", SensorActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
@@ -110,8 +110,8 @@ class MainActivity : AppCompatActivity() {
         },3000)
         printDeviceInfo()
 
-        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
-        startActivity(intent)
+//        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
+//        startActivity(intent)
 
 
     }

@@ -4,16 +4,14 @@ import android.app.PendingIntent
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.gy.commonviewdemo.R
 import kotlinx.android.synthetic.main.activity_notification.*
 
 class NotificationActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        btn_open.setOnClickListener {
-            openNotify()
-        }
+        openNotify()
     }
 
     private fun openNotify(){
