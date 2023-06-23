@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <com.gy.commonviewdemo.cusview.image3d.view.Roll3DView
+        android:id="@+id/iv_2d"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rollmodel="Roll2D"/>
+
+    <com.gy.commonviewdemo.cusview.image3d.view.Roll3DView
+        android:id="@+id/iv_3d"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rollmodel="Roll3D"
+        android:layout_marginTop="30dp"/>
+
+    <com.gy.commonviewdemo.cusview.image3d.view.Roll3DView
+        android:id="@+id/iv_SepartConbine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rollmodel="SepartConbine"
+        android:layout_marginTop="30dp"/>
+
+    <com.gy.commonviewdemo.cusview.image3d.view.Roll3DView
+        android:id="@+id/iv_RollInTurn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rollmodel="RollInTurn"
+        android:layout_marginTop="30dp"/>
+
+    <com.gy.commonviewdemo.cusview.image3d.view.Roll3DView
+        android:id="@+id/iv_Jalousie"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rollmodel="Jalousie"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

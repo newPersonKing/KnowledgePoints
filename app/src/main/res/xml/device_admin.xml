@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 指定设备超级管理员所拥有的权限 -->
+    <uses-policies>
+
+<!--        <disable-camera /> &lt;!&ndash;停用相机&ndash;&gt;-->
+
+<!--        <encrypted-storage />&lt;!&ndash;设置存储设备加密&ndash;&gt;-->
+
+<!--        <expire-password />&lt;!&ndash;设置锁定屏幕密码的有效期&ndash;&gt;-->
+
+        <force-lock /><!--强制锁屏-->
+
+<!--        <limit-password />&lt;!&ndash; 限制密码类型&ndash;&gt;-->
+
+<!--        <reset-password />&lt;!&ndash;重置密码&ndash;&gt;-->
+
+<!--        <watch-login />&lt;!&ndash; 监控屏幕解锁尝试次数&ndash;&gt;-->
+
+<!--        <wipe-data />&lt;!&ndash;清除数据恢复出厂设置&ndash;&gt;-->
+
+<!--        <disable-keyguard-features/>&lt;!&ndash;禁用键盘保护功能&ndash;&gt;-->
+
+<!--        <set-global-proxy/>&lt;!&ndash;设置全局代理&ndash;&gt;-->
+
+
+    </uses-policies>
+
+</device-admin>

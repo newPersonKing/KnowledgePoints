@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.gy.commonviewdemo.cusview.imagecloud.TagCloudView
+        android:id="@+id/tag_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:autoScrollMode="uniform"
+        app:darkColor="@android:color/black"
+        app:lightColor="@android:color/white"
+        app:radiusPercent="0.6"
+        app:scrollSpeed="3" />
+
+    <Button
+        android:id="@+id/tag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Text Tag" />
+
+    <Button
+        android:id="@+id/tag_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom View Tag" />
+
+    <Button
+        android:id="@+id/tag_vector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VectorDrawable Tag" />
+
+    <Button
+        android:id="@+id/test_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Using in Fragment" />
+
+</LinearLayout>

@@ -11,6 +11,8 @@ import com.gy.commonviewdemo.cusview.anim.AnimActivity
 import com.gy.commonviewdemo.cusview.duffXfermode.DuffXfermodeActivity
 import com.gy.commonviewdemo.cusview.edittext.EdittextActivity
 import com.gy.commonviewdemo.cusview.gradient.GradientActivity
+import com.gy.commonviewdemo.cusview.image3d.Image3DActivity
+import com.gy.commonviewdemo.cusview.imagecloud.Tag3DActivity
 import com.gy.commonviewdemo.cusview.progress.ProgressActivity
 import com.gy.commonviewdemo.cusview.redpacket.FloatRedPacketActivity
 import com.gy.commonviewdemo.cusview.redpacket.RedPacketActivity
@@ -61,6 +63,8 @@ class CusViewMainActivity : AppCompatActivity() {
             DemoData("阴影", ShadowActivity::class.java,this),
             DemoData("进度条", ProgressActivity::class.java,this),
             DemoData("混合模式", DuffXfermodeActivity::class.java,this),
+            DemoData("3DImageView", Image3DActivity::class.java,this),
+            DemoData("3DCustomView", Tag3DActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

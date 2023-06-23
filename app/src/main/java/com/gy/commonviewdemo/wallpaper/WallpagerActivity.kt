@@ -7,7 +7,9 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import com.gy.commonviewdemo.R
 import com.gy.commonviewdemo.wallpaper.camera.CameraLiveWallpaper
+import com.gy.commonviewdemo.wallpaper.drawimage.TestDrawImageWallpaperService
 import com.gy.commonviewdemo.wallpaper.gl.AdvanceGLWallpaperService
+import com.gy.commonviewdemo.wallpaper.gl.GLWallpaperService
 import com.gy.commonviewdemo.wallpaper.mediaplayer.DynamicWallPaper
 import com.gy.commonviewdemo.wallpaper.view.circle.NormalWallpaperService
 import com.gy.commonviewdemo.wallpaper.view.clock.TextClockWallpaperService
@@ -70,6 +72,17 @@ class WallpagerActivity : FragmentActivity() {
             intent.putExtra(
                 WallpaperManager.EXTRA_LIVE_WALLPAPER_COMPONENT,
                 ComponentName(this, CameraLiveWallpaper::class.java)
+            )
+            startActivity(intent)
+        }
+
+        tv_test.setOnClickListener {
+            val intent = Intent(
+                WallpaperManager.ACTION_CHANGE_LIVE_WALLPAPER
+            )
+            intent.putExtra(
+                WallpaperManager.EXTRA_LIVE_WALLPAPER_COMPONENT,
+                ComponentName(this, TestDrawImageWallpaperService::class.java)
             )
             startActivity(intent)
         }

@@ -4,15 +4,19 @@ import android.app.ActivityManager
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.app.Presentation
+import android.app.role.RoleManager
 import android.content.Context
+import android.content.Context.ALARM_SERVICE
 import android.content.Intent
 import android.hardware.display.DisplayManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
+import android.telecom.TelecomManager
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
@@ -24,9 +28,11 @@ import com.gy.commonviewdemo.constraint.ConstraintLayoutDemoActivity
 import com.gy.commonviewdemo.cusview.CusViewMainActivity
 import com.gy.commonviewdemo.cusview.text.SpanEnterActivity
 import com.gy.commonviewdemo.db.ContentProviderActivity
+import com.gy.commonviewdemo.deviceadmin.DeviceAdminActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
+import com.gy.commonviewdemo.flow.test
 import com.gy.commonviewdemo.globaltouch.GlobalTouchActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
@@ -38,6 +44,7 @@ import com.gy.commonviewdemo.statusbar.StatusBarActivity
 import com.gy.commonviewdemo.systemapi.SystemApiActivity
 import com.gy.commonviewdemo.systemui.SystemUiActivity
 import com.gy.commonviewdemo.viewpager.ViewPagerActivity
+import com.gy.commonviewdemo.viewpager.ViewPagerUpdateActivity
 import com.gy.commonviewdemo.wallpaper.WallpagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import com.gy.commonviewdemo.wifi.WifiActivity
@@ -52,10 +59,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+         ReadJsonFileUtil.read(this)
         val adapter = MainAdapter(listOf(
             DemoData("webview相关",WebViewActivity::class.java,this),
             DemoData("viewpager",ViewPagerActivity::class.java,this),
+            DemoData("viewpager 刷新",ViewPagerUpdateActivity::class.java,this),
             DemoData("btn_system_ui",SystemUiActivity::class.java,this),
             DemoData("rv相关",RvMainActivity::class.java,this),
             DemoData("自定义一view相关",CusViewMainActivity::class.java,this),
@@ -81,6 +89,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("全局事件", GlobalTouchActivity::class.java,this),
             DemoData("壁纸相关", WallpagerActivity::class.java,this),
             DemoData("传感器Sensor", SensorActivity::class.java,this),
+            DemoData("激活设备管理器", DeviceAdminActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
@@ -201,7 +210,7 @@ class MainActivity : AppCompatActivity() {
             intent.data = Uri.parse("mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26jump_from%3Dwebapi%26k%3D" + key);
             startActivity(intent);
         } catch (e:Exception){
-             Log.i("ccccccccccccccc",e.toString())
+            Log.i("ccccccccccccccc",e.toString())
         }
     }
 
@@ -218,17 +227,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        val virtualDisplay =
-            (getSystemService(DISPLAY_SERVICE) as DisplayManager).createVirtualDisplay(
-                "get",
-                1,
-                1,
-                160,
-                null,
-                0
-            )
-        val presentation = Presentation(this, virtualDisplay.display)
-        presentation.show()
+//        val virtualDisplay =
+//            (getSystemService(DISPLAY_SERVICE) as DisplayManager).createVirtualDisplay(
+//                "get",
+//                1,
+//                1,
+//                160,
+//                null,
+//                0
+//            )
+//        val presentation = Presentation(this, virtualDisplay.display)
+//        presentation.show()
+        testFront()
     }
 
     fun moveToFront(context: Context) {
@@ -241,6 +251,40 @@ class MainActivity : AppCompatActivity() {
                 return
             }
         }
+    }
+
+    fun testFront(){
+        val activityManager = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        activityManager.moveTaskToFront(taskId, 0);
+        moveToFront(this)
+    }
+
+    fun setDefaultPhoneApp(activity: FragmentActivity): Boolean {
+        // 发起将本应用设为默认电话应用的请求，仅支持 Android M 及以上
+        return buildSetDefaultPhoneCallAppIntent()?.let {
+            if(it.resolveActivity(activity.packageManager)!=null){
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
+                    val rm : RoleManager? = activity.getSystemService(RoleManager::class.java)
+                    if(rm?.isRoleAvailable(RoleManager.ROLE_DIALER) == true){
+                        activity.startActivityForResult(rm.createRequestRoleIntent(RoleManager.ROLE_DIALER),100)
+                    }
+                }else {
+                    activity.startActivityForResult(it,100)
+                }
+            }else {
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                application.startActivity(it)
+            }
+            true
+        } ?: false
+    }
+
+    private fun buildSetDefaultPhoneCallAppIntent(): Intent? {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            Intent().apply {
+                action = TelecomManager.ACTION_CHANGE_DEFAULT_DIALER
+                putExtra(TelecomManager.EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME, application.packageName)
+            } else null
     }
 
 }

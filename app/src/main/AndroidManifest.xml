@@ -24,7 +24,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -41,6 +40,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
 
         <provider
@@ -228,9 +231,65 @@
                 android:resource="@xml/camera_livewallpaper" />
         </service>
 
+        <service
+            android:exported="true"
+            android:name=".wallpaper.drawimage.TestDrawImageWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/camera_livewallpaper" />
+        </service>
+
+        <service
+            android:exported="true"
+            android:name=".wallpaper.liveWallpaper3D.LiveWallpaper3DService"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/camera_livewallpaper" />
+        </service>
+
+        <service
+            android:exported="true"
+            android:name=".wallpaper.gl.GLWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/camera_livewallpaper" />
+        </service>
+
         <activity android:name=".wallpaper.WallpagerActivity"/>
         <activity android:name=".sensor.SensorActivity"/>
         <activity android:name=".sensor.SensorTypeProximity"/>
+        <activity android:name=".cusview.image3d.Image3DActivity"/>
+        <activity android:name=".cusview.imagecloud.Tag3DActivity"/>
+        <activity android:name=".viewpager.ViewPagerUpdateActivity"/>
+        <activity android:name=".deviceadmin.DeviceAdminActivity"/>
+        <receiver
+            android:exported="true"
+            android:name=".deviceadmin.DeviceManageReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+        </receiver>
+
     </application>
+
+    <queries>
+        <intent/>
+    </queries>
 
 </manifest>

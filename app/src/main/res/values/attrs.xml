@@ -185,4 +185,29 @@
         <attr name="clearButtonDrawable" format="reference"/>
         <attr name="clearButtonTint" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="Roll3DView">
+        <attr name="rollmodel">
+            <enum name="Roll2D" value="0"/>
+            <enum name="Roll3D" value="1" />
+            <enum name="SepartConbine" value="2"/>
+            <enum name="RollInTurn" value="3"/>
+            <enum name="Jalousie" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagCloudView">
+        <attr name="autoScrollMode">
+            <enum name="disable" value="0"/>
+            <enum name="decelerate" value="1"/>
+            <enum name="uniform" value="2"/>
+        </attr>
+        <attr name="manualScroll" format="boolean"/>
+        <attr name="radiusPercent" format="float"/>
+        <attr name="scrollSpeed" format="float"/>
+        <attr name="lightColor" format="color"/>
+        <attr name="darkColor" format="color"/>
+        <attr name="startAngleX" format="float"/>
+        <attr name="startAngleY" format="float"/>
+    </declare-styleable>
 </resources>
