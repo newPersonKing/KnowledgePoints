@@ -9,7 +9,7 @@
 
 <!--        <expire-password />&lt;!&ndash;设置锁定屏幕密码的有效期&ndash;&gt;-->
 
-        <force-lock /><!--强制锁屏-->
+<!--        <force-lock />&lt;!&ndash;强制锁屏&ndash;&gt;-->
 
 <!--        <limit-password />&lt;!&ndash; 限制密码类型&ndash;&gt;-->
 

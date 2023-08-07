@@ -282,6 +282,20 @@
                 android:resource="@xml/device_admin" />
         </receiver>
 
+        <activity android:name=".ActivityAliasActivity"/>
+
+        <activity android:name=".ActivityAliasTestActivity"/>
+
+        <activity-alias
+            android:name="com.gy.commonviewdemo.test"
+            android:targetActivity=".ActivityAliasTestActivity"/>
+
     </application>
+
+    <queries>
+        <package android:name="com.nhnent.payapp" />
+        <package android:name="com.kakaopay.biz" />
+    </queries>
+
 
 </manifest>

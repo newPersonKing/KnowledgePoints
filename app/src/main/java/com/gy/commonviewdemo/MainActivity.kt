@@ -3,18 +3,17 @@ package com.gy.commonviewdemo
 import android.app.ActivityManager
 import android.app.AlarmManager
 import android.app.PendingIntent
-import android.app.Presentation
 import android.app.role.RoleManager
 import android.content.Context
-import android.content.Context.ALARM_SERVICE
 import android.content.Intent
-import android.hardware.display.DisplayManager
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.provider.Settings
 import android.telecom.TelecomManager
+import android.text.TextUtils
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,7 +31,6 @@ import com.gy.commonviewdemo.deviceadmin.DeviceAdminActivity
 import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
-import com.gy.commonviewdemo.flow.test
 import com.gy.commonviewdemo.globaltouch.GlobalTouchActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
@@ -90,6 +88,7 @@ class MainActivity : AppCompatActivity() {
             DemoData("壁纸相关", WallpagerActivity::class.java,this),
             DemoData("传感器Sensor", SensorActivity::class.java,this),
             DemoData("激活设备管理器", DeviceAdminActivity::class.java,this),
+            DemoData("Activity-Alias 启动Activity", ActivityAliasActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)
@@ -106,6 +105,29 @@ class MainActivity : AppCompatActivity() {
         rv_main.postDelayed({
             timerTask.cancel()
             timer.purge()
+            val url = "intent://kakaopay/pg?url=https://online-pay.kakao.com/pay/r1/704c5c768a7d3fd5a67a222c07efc3c2681971ee50453e217609ab30c68f458f#Intent;scheme=kakaotalk;package=com.kakao.talk;end"
+            val uri = Uri.parse(url)
+
+            try {
+                val intent = Intent.parseUri(uri.toString(), Intent.URI_INTENT_SCHEME)
+                if (intent != null) {
+                    val pm: PackageManager = packageManager
+                    val info = pm.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY)
+                    Log.i("ccccccccccc","info==$info")
+                    if (info != null) {
+                        startActivity(
+                            Intent.parseUri(
+                                uri.toString(),
+                                Intent.URI_INTENT_SCHEME
+                            )
+                        )
+                    } else {
+                    }
+                }
+            } catch (e: java.lang.Exception) {
+                Log.i("ccccccccccc","Exception==$e")
+            }
+
         },3000)
 
 
