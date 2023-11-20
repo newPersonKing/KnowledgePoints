@@ -5,6 +5,7 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.app.role.RoleManager
 import android.content.Context
+import android.content.Context.ALARM_SERVICE
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -19,6 +20,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
+import com.gy.commonviewdemo.base64.Base64Util
 import com.gy.commonviewdemo.behavior.BehaviorMainActivity
 import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.camera.CameraActivity
@@ -32,6 +34,8 @@ import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.globaltouch.GlobalTouchActivity
+import com.gy.commonviewdemo.imgpix.DrawPixActivity
+import com.gy.commonviewdemo.imgpix.DrawPixMainActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
 import com.gy.commonviewdemo.picture_in_picture.PictureInPictureActivity
@@ -46,6 +50,10 @@ import com.gy.commonviewdemo.viewpager.ViewPagerUpdateActivity
 import com.gy.commonviewdemo.wallpaper.WallpagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import com.gy.commonviewdemo.wifi.WifiActivity
+import com.gy.commonviewdemo.x5.X5WebViewActivity
+import com.gy.commonviewdemo.x5.YcX5WebChromeClient
+import com.gy.commonviewdemo.x5.YcX5WebViewClient
+import com.ycbjie.webviewlib.X5WebView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -57,8 +65,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-         ReadJsonFileUtil.read(this)
+        ReadJsonFileUtil.read(this)
         val adapter = MainAdapter(listOf(
+            DemoData("X5webview",X5WebViewActivity::class.java,this),
+            DemoData("图片转灰度图",DrawPixMainActivity::class.java,this),
             DemoData("webview相关",WebViewActivity::class.java,this),
             DemoData("viewpager",ViewPagerActivity::class.java,this),
             DemoData("viewpager 刷新",ViewPagerUpdateActivity::class.java,this),
@@ -140,6 +150,8 @@ class MainActivity : AppCompatActivity() {
 //            openQQGroup("ziOrsLP0XJLo1-99qpPsVN_e44I1y9M")
         },3000)
         printDeviceInfo()
+
+        LogUtil.e("${Base64Util.base64Decode("d3d3d3cuaGh0","")}")
 
 //        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 //        startActivity(intent)

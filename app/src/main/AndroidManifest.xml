@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <permission android:name = "com.android.permission.RECV_XXX"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="com.android.permission.RECV_XXX"></uses-permission>
     <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
     <!--手机震动-->
@@ -34,7 +36,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -128,6 +131,13 @@
         <activity android:name=".cusview.shadow.ShadowActivity"/>
         <activity android:name=".drawable.DrawableActivity"/>
         <activity android:name=".camera.CameraActivity"/>
+        <activity android:name=".imgpix.DrawPixActivity"/>
+        <activity android:name=".imgpix.pix2.DrawPix2Activity"/>
+        <activity android:name=".imgpix.pix3.DrawPix3Activity"/>
+        <activity android:name=".imgpix.pix4.DrawPix4Activity"/>
+        <activity android:name=".imgpix.pix5.DrawPix5Activity"/>
+        <activity android:name=".imgpix.DrawPixMainActivity"/>
+        <activity android:name=".x5.X5WebViewActivity"/>
 
         <service android:name=".accessibility.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
@@ -289,6 +299,16 @@
         <activity-alias
             android:name="com.gy.commonviewdemo.test"
             android:targetActivity=".ActivityAliasTestActivity"/>
+
+
+        <activity
+            android:name="com.ycbjie.webviewlib.X5WebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 

@@ -92,4 +92,9 @@ dependencies {
     implementation "androidx.camera:camera-view:${camerax_extensions_version}"
     // If you want to additionally use the CameraX Extensions library
     implementation "androidx.camera:camera-extensions:${camerax_extensions_version}"
+
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    implementation 'cn.yc:WebViewLib:1.2.4'
 }
