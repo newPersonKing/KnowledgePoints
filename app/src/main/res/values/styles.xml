@@ -47,4 +47,7 @@
 
     <style name="AlertButton" parent="@style/Widget.AppCompat.Button.Colored" />
 
+    <style name="CusTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
 </resources>

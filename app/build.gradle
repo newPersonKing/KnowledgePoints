@@ -97,4 +97,6 @@ dependencies {
     implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
 
     implementation 'cn.yc:WebViewLib:1.2.4'
+
+    implementation 'com.github.Victor2018:DocViewer:v2.9.1'
 }

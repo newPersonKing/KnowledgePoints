@@ -12,15 +12,15 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.telecom.TelecomManager
-import android.text.TextUtils
 import android.util.Log
-import android.widget.Toast
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.cherry.lib.doc.DocViewerActivity
+import com.cherry.lib.doc.bean.DocSourceType
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
-import com.gy.commonviewdemo.base64.Base64Util
 import com.gy.commonviewdemo.behavior.BehaviorMainActivity
 import com.gy.commonviewdemo.binder.BinderActivity
 import com.gy.commonviewdemo.camera.CameraActivity
@@ -34,7 +34,6 @@ import com.gy.commonviewdemo.drag_and_drop.DragAndDropActivity
 import com.gy.commonviewdemo.drawable.DrawableActivity
 import com.gy.commonviewdemo.flow.FlowActivity
 import com.gy.commonviewdemo.globaltouch.GlobalTouchActivity
-import com.gy.commonviewdemo.imgpix.DrawPixActivity
 import com.gy.commonviewdemo.imgpix.DrawPixMainActivity
 import com.gy.commonviewdemo.kotlin.KotlinActivity
 import com.gy.commonviewdemo.notification.NotificationMainActivity
@@ -51,10 +50,9 @@ import com.gy.commonviewdemo.wallpaper.WallpagerActivity
 import com.gy.commonviewdemo.webview.WebViewActivity
 import com.gy.commonviewdemo.wifi.WifiActivity
 import com.gy.commonviewdemo.x5.X5WebViewActivity
-import com.gy.commonviewdemo.x5.YcX5WebChromeClient
-import com.gy.commonviewdemo.x5.YcX5WebViewClient
-import com.ycbjie.webviewlib.X5WebView
 import kotlinx.android.synthetic.main.activity_main.*
+import java.io.BufferedReader
+import java.io.InputStreamReader
 import java.util.*
 
 
@@ -65,7 +63,41 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE)
         ReadJsonFileUtil.read(this)
+//        com.gy.commonviewdemo.Utils.getVpnIp(this);
+
+        val command = "curl ipinfo.io" // 要执行的Curl命令
+
+        val process = ProcessBuilder()
+            .command("sh", "-c", command) // 指定Shell并传入Curl命令作为参数
+            .redirectErrorStream(true) // 将错误输出重定向到标准输出流
+            .start()
+
+        val reader = BufferedReader(InputStreamReader(process.inputStream))
+        val output = StringBuilder()
+        var line: String?
+
+        while (reader.readLine().also { line = it } != null) {
+            output.append(line).append("\n")
+        }
+        val exitCode = process.waitFor()
+        Log.i("cccccccccccccc","Exit Code: " + exitCode);
+        Log.i("ccccccccccccc","Output:\n$output");
+
+        val cityMatchResult  = "(\"country\":)(.*\")(.*)(\")".toRegex().find(output)
+        val ipMatchResult  = "(\"ip\":)(.*\")(.*)(\")".toRegex().find(output)
+
+        Log.i("cccccccccc","cityMatchResult?.groups.size====${cityMatchResult?.groups?.get(0)?.value}")
+        Log.i("cccccccccc","cityMatchResult?.groups.size====${cityMatchResult?.groups?.get(3)?.value}")
+        Log.i("cccccccccc","ipMatchResult?.groups.size====${ipMatchResult?.groups?.get(3)?.value}")
+//        Log.i("cccccc","====find====${cityMatchResult?.groupValues?.get(0) ?: ""}");
+
+//        var intent = Intent(this, DocViewerActivity::class.java)
+//        intent.putExtra(Constant.INTENT_SOURCE_KEY, DocSourceType.PATH)
+//        intent.putExtra(Constant.INTENT_DATA_KEY,url)
+//        startActivity(intent)
+//        DocViewerActivity.launchDocViewer(this, DocSourceType.URL,"https://a1goonv2uqw.feishu.cn/docx/Um4Ld53xJo4cVBxLb2qcmHa5nvb?from=from_copylink")
         val adapter = MainAdapter(listOf(
             DemoData("X5webview",X5WebViewActivity::class.java,this),
             DemoData("图片转灰度图",DrawPixMainActivity::class.java,this),
@@ -104,54 +136,52 @@ class MainActivity : AppCompatActivity() {
         rv_main.layoutManager = LinearLayoutManager(this)
         rv_main.adapter = adapter
 
-        var timer = Timer()
-        val timerTask = object : TimerTask() {
-            override fun run() {
-                Log.i("ccccccccccc","scheduleAtFixedRate")
-            }
-        }
+//        var timer = Timer()
+//        val timerTask = object : TimerTask() {
+//            override fun run() {
+//                Log.i("ccccccccccc","scheduleAtFixedRate")
+//            }
+//        }
 
-        timer.scheduleAtFixedRate(timerTask,0,1000)
-        rv_main.postDelayed({
-            timerTask.cancel()
-            timer.purge()
-            val url = "intent://kakaopay/pg?url=https://online-pay.kakao.com/pay/r1/704c5c768a7d3fd5a67a222c07efc3c2681971ee50453e217609ab30c68f458f#Intent;scheme=kakaotalk;package=com.kakao.talk;end"
-            val uri = Uri.parse(url)
+//        timer.scheduleAtFixedRate(timerTask,0,1000)
+//        rv_main.postDelayed({
+//            timerTask.cancel()
+//            timer.purge()
+//            val url = "intent://kakaopay/pg?url=https://online-pay.kakao.com/pay/r1/704c5c768a7d3fd5a67a222c07efc3c2681971ee50453e217609ab30c68f458f#Intent;scheme=kakaotalk;package=com.kakao.talk;end"
+//            val uri = Uri.parse(url)
+//
+//            try {
+//                val intent = Intent.parseUri(uri.toString(), Intent.URI_INTENT_SCHEME)
+//                if (intent != null) {
+//                    val pm: PackageManager = packageManager
+//                    val info = pm.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY)
+//                    Log.i("ccccccccccc","info==$info")
+//                    if (info != null) {
+//                        startActivity(
+//                            Intent.parseUri(
+//                                uri.toString(),
+//                                Intent.URI_INTENT_SCHEME
+//                            )
+//                        )
+//                    } else {
+//                    }
+//                }
+//            } catch (e: java.lang.Exception) {
+//                Log.i("ccccccccccc","Exception==$e")
+//            }
+//
+//        },3000)
 
-            try {
-                val intent = Intent.parseUri(uri.toString(), Intent.URI_INTENT_SCHEME)
-                if (intent != null) {
-                    val pm: PackageManager = packageManager
-                    val info = pm.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY)
-                    Log.i("ccccccccccc","info==$info")
-                    if (info != null) {
-                        startActivity(
-                            Intent.parseUri(
-                                uri.toString(),
-                                Intent.URI_INTENT_SCHEME
-                            )
-                        )
-                    } else {
-                    }
-                }
-            } catch (e: java.lang.Exception) {
-                Log.i("ccccccccccc","Exception==$e")
-            }
 
-        },3000)
-
-
-        rv_main.postDelayed(Runnable {
-            Log.i("ccccccccccc","postDelayed")
-            val intent = Intent(this,MainActivity::class.java)
-//            startActivity(intent)
-//            moveToFront(this)
-//            start(this)
-//            openQQGroup("ziOrsLP0XJLo1-99qpPsVN_e44I1y9M")
-        },3000)
-        printDeviceInfo()
-
-        LogUtil.e("${Base64Util.base64Decode("d3d3d3cuaGh0","")}")
+//        rv_main.postDelayed(Runnable {
+//            Log.i("ccccccccccc","postDelayed")
+//            val intent = Intent(this,MainActivity::class.java)
+////            startActivity(intent)
+////            moveToFront(this)
+////            start(this)
+////            openQQGroup("ziOrsLP0XJLo1-99qpPsVN_e44I1y9M")
+//        },3000)
+//        printDeviceInfo()
 
 //        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 //        startActivity(intent)
@@ -189,8 +219,6 @@ class MainActivity : AppCompatActivity() {
         deviceInfo.forEach {
             LogUtil.e("cccccc===${it}")
         }
-        LogUtil.e("cccccc===printDeviceInfo==${Utils.isHarmonyOs()}")
-        LogUtil.e("cccccc===printDeviceInfo==${Utils.getHarmonyVersion()}")
     }
 
 

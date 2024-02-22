@@ -45,7 +45,7 @@ public class NormalWallpaperService extends WallpaperService {
             SharedPreferences prefs = PreferenceManager
                     .getDefaultSharedPreferences(NormalWallpaperService.this);
             maxNumber = Integer
-                    .valueOf(prefs.getString("numberOfCircles", "4"));
+                    .parseInt(prefs.getString("numberOfCircles", "4"));
             touchEnabled = prefs.getBoolean("touch", false);
             circles = new ArrayList<>();
             paint.setAntiAlias(true);
