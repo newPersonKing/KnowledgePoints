@@ -42,6 +42,11 @@
             android:background="@android:color/holo_blue_bright"
             app:clearButtonMode="unlessEditing"/>
 
+        <com.gy.commonviewdemo.cusview.edittext.StrokeEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="边框文字"/>
+
     </LinearLayout>
 
 
