@@ -4,10 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gy.commonviewdemo.*
+import com.gy.commonviewdemo.imgpix.led.DrawLedActivity
 import com.gy.commonviewdemo.imgpix.pix2.DrawPix2Activity
 import com.gy.commonviewdemo.imgpix.pix3.DrawPix3Activity
 import com.gy.commonviewdemo.imgpix.pix4.DrawPix4Activity
 import com.gy.commonviewdemo.imgpix.pix5.DrawPix5Activity
+import com.gy.commonviewdemo.imgpix.pix6.Pix6Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -25,6 +27,8 @@ class DrawPixMainActivity : AppCompatActivity() {
             DemoData("图片转灰度图2", DrawPix3Activity::class.java,this),
             DemoData("图片转灰度图3", DrawPix4Activity::class.java,this),
             DemoData("图片转灰度图4", DrawPix5Activity::class.java,this),
+            DemoData("图片转灰度图5", Pix6Activity::class.java,this),
+            DemoData("draw Led", DrawLedActivity::class.java,this),
         ))
 
         rv_main.layoutManager = LinearLayoutManager(this)

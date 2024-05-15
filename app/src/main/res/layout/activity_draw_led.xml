@@ -8,15 +8,10 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <com.gy.commonviewdemo.imgpix.led.LedDisplayView
+        android:id="@+id/led_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-   <WebView
-       android:id="@+id/webview"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"/>
 
-   <androidx.appcompat.widget.AppCompatTextView
-       android:id="@+id/tv_click"
-       android:layout_width="match_parent"
-       android:layout_height="100dp"
-       android:text="click"/>
 </LinearLayout>

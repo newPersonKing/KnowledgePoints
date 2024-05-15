@@ -20,6 +20,22 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            buildConfigField "String", "BUILD_DATE", "\"202403291425\""
+            // 单引号写法
+            buildConfigField 'String', 'string1', '\"value1\"'
+            // 双引号写法
+            buildConfigField "String", "string2", "\"value2\""
+            // 单双引号的写法，最简洁不用转义，推荐该写法
+            buildConfigField 'String', 'string3', '"value3"'
+            // 如果是引用其他方法或者参数可以这么写
+            buildConfigField 'String', 'string4',"\"${defaultConfig.versionName}\""
+            buildConfigField 'int', 'int1', '0'
+            buildConfigField 'boolean', 'boolean1', 'false'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
 
     compileOptions {

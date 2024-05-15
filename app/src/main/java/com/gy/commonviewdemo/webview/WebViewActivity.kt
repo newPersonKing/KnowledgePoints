@@ -3,16 +3,17 @@ package com.gy.commonviewdemo.webview
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import android.view.View
 import android.webkit.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.gy.commonviewdemo.R
 import kotlinx.android.synthetic.main.activity_webview.*
 import java.io.File
+
 
 class WebViewActivity : AppCompatActivity(),View.OnClickListener {
 
@@ -22,8 +23,21 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
 
-        webview.loadUrl("file:///android_asset/test.html")
+//        webview.loadUrl("file:///android_asset/test.html")
 //        webview.loadUrl("https://shared.ivydad.com/goods/shop?page_id=84&_hideShareButton=1")
+        webview.loadUrl("https://www.3tpraja.online/app/index.html?ch=108")
+        webview.webViewClient = WebViewClient()
+        webview.webChromeClient = WebChromeClient()
+        val webSettings = webview.settings
+        webSettings.domStorageEnabled = true
+        webSettings.blockNetworkImage = false
+        webSettings.defaultTextEncodingName = "UTF-8"
+        webSettings.useWideViewPort = true
+        webSettings.loadWithOverviewMode = true
+        webSettings.javaScriptEnabled = true
+        webSettings.javaScriptCanOpenWindowsAutomatically = false
+        webview.addJavascriptInterface(this, "androisads")
+        webSettings.cacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK
 
         webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
@@ -49,13 +63,21 @@ class WebViewActivity : AppCompatActivity(),View.OnClickListener {
             takePhoto()
         }
         initSetting()
+
+        tv_click.setOnClickListener {
+//            webview.evaluateJavascript("javascript:showAlert()"){
+//
+//            }
+            webview.loadUrl("javascript:showAlert()");
+        }
     }
 
+    @JavascriptInterface
+    fun jsMethod(){
+
+    }
     private fun checkContentSize(){
 
-//        webview.evaluateJavascript("javascript:showAlert()"){
-//
-//        }
 
         webview.evaluateJavascript("document.compatMode"){
             Log.i("ccccccccccccc","mode====$it")

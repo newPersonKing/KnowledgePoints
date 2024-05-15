@@ -7,90 +7,123 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/high_light_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/high_light_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/tv_line_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+          <TextView
+              android:id="@+id/tv_line_count"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
 
-    <com.gy.commonviewdemo.cusview.text.zoom_text_view.PinchZoomTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="可以放大的textView可以放大的textView可以放大的textView可以放大的textView可以放大的textView可以放大的textView"/>
-
-
-    <com.gy.commonviewdemo.cusview.text.anim_num_textview.NumberAnimTextView
-        android:id="@+id/anim_tv"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorAccent"
-        android:layout_margin="15dp"
-        android:gravity="center"/>
-
-    <com.gy.commonviewdemo.cusview.text.autofit_textview.AutofitTextView
-        android:id="@+id/auto_fit_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="2" />
-
-    <com.gy.commonviewdemo.cusview.text.ExpandableTextView
-        android:id="@+id/tv_expandable"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:orientation="vertical"
-        app:maxCollapsedLines="4">
-
-        <TextView
-            android:id="@id/expandable_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:fontFamily="sans-serif-light"
-            android:textSize="16sp"
-            android:textColor="#666666" />
-
-        <ImageButton
-            android:id="@id/expand_collapse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:layout_gravity="right|bottom"
-            android:background="@android:color/transparent"/>
-
-    </com.gy.commonviewdemo.cusview.text.ExpandableTextView>
-
-    <com.gy.commonviewdemo.cusview.text.ticker.TickerView
-        android:id="@+id/ticker_tv"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="15dp"/>
+          <com.gy.commonviewdemo.cusview.text.zoom_text_view.PinchZoomTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="15dp"
+              android:text="可以放大的textView可以放大的textView可以放大的textView可以放大的textView可以放大的textView可以放大的textView"/>
 
 
-    <Button
-        android:id="@+id/btn_scroll_textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_margin="15dp"
-        android:text="自动滚动的textview"/>
+          <com.gy.commonviewdemo.cusview.text.anim_num_textview.NumberAnimTextView
+              android:id="@+id/anim_tv"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/colorAccent"
+              android:layout_margin="15dp"
+              android:gravity="center"/>
+
+          <com.gy.commonviewdemo.cusview.text.autofit_textview.AutofitTextView
+              android:id="@+id/auto_fit_tv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:maxLines="2" />
+
+          <com.gy.commonviewdemo.cusview.text.ExpandableTextView
+              android:id="@+id/tv_expandable"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="15dp"
+              android:orientation="vertical"
+              app:maxCollapsedLines="4">
+
+              <TextView
+                  android:id="@id/expandable_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:fontFamily="sans-serif-light"
+                  android:textSize="16sp"
+                  android:textColor="#666666" />
+
+              <ImageButton
+                  android:id="@id/expand_collapse"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="16dp"
+                  android:layout_gravity="right|bottom"
+                  android:background="@android:color/transparent"/>
+
+          </com.gy.commonviewdemo.cusview.text.ExpandableTextView>
+
+          <com.gy.commonviewdemo.cusview.text.ticker.TickerView
+              android:id="@+id/ticker_tv"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:layout_margin="15dp"/>
 
 
-    <Button
-        android:id="@+id/btn_no_padding_textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_margin="15dp"
-        android:text="没有padding的textview"/>
+          <Button
+              android:id="@+id/btn_scroll_textview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorAccent"
+              android:layout_margin="15dp"
+              android:text="自动滚动的textview"/>
+
+
+          <Button
+              android:id="@+id/btn_no_padding_textview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorAccent"
+              android:layout_margin="15dp"
+              android:text="没有padding的textview"/>
+
+          <com.gy.commonviewdemo.cusview.text.MathExpressTextView
+              android:id="@+id/math_view_1"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"/>
+
+          <com.gy.commonviewdemo.cusview.text.MathExpressTextView
+              android:id="@+id/math_view_2"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"/>
+
+          <com.gy.commonviewdemo.cusview.text.MathExpressTextView
+              android:id="@+id/math_view_3"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"/>
+
+          <com.gy.commonviewdemo.cusview.text.MathExpressTextView
+              android:id="@+id/math_view_4"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"/>
+
+          <com.gy.commonviewdemo.cusview.text.path_text.FontPathToPointsView
+              android:layout_width="match_parent"
+              android:layout_height="300dp"/>
+      </LinearLayout>
+  </ScrollView>
 
 
 </LinearLayout>

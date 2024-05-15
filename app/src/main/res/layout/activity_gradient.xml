@@ -56,6 +56,17 @@
             app:single_slant_bg_color="@color/color_3cc864"
             app:slant_percent="0.3"/>
 
+        <com.gy.commonviewdemo.cusview.gradient.GradientShaderTextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="GradientShaderTextViewGradientShaderTextView"
+            android:textColor="@android:color/black"
+            android:background="@color/green"/>
+
+        <com.gy.commonviewdemo.cusview.gradient.LightsView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+
     </LinearLayout>
 
 

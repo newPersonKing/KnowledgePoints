@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gy.commonviewdemo">
 
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -26,6 +29,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -136,8 +140,11 @@
         <activity android:name=".imgpix.pix3.DrawPix3Activity"/>
         <activity android:name=".imgpix.pix4.DrawPix4Activity"/>
         <activity android:name=".imgpix.pix5.DrawPix5Activity"/>
+        <activity android:name=".imgpix.pix6.Pix6Activity"/>
         <activity android:name=".imgpix.DrawPixMainActivity"/>
+        <activity android:name=".imgpix.led.DrawLedActivity"/>
         <activity android:name=".x5.X5WebViewActivity"/>
+        <activity android:name=".cusview.video_nine_grid.VideoNineGridActivity"/>
 
         <service android:name=".accessibility.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
@@ -299,6 +306,9 @@
             android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".cusview.path.PathExampleActivity"
+            android:screenOrientation="portrait"/>
 
         <activity android:name="com.cherry.lib.doc.DocViewerActivity"
             android:theme="@style/CusTheme"/>

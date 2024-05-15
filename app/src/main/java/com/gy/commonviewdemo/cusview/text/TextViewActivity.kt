@@ -1,7 +1,9 @@
 package com.gy.commonviewdemo.cusview.text
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.provider.CalendarContract.Colors
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +43,36 @@ class TextViewActivity : AppCompatActivity(){
             val intent = Intent(this,NoPaddingTextViewActivity::class.java)
             startActivity(intent)
         }
+
+        math_view_1.setShaderColors(Color.parseColor("#ffFF4081"))
+        math_view_1.setText("2H","2","",10f)
+            .appendMarkText("+")
+            .appendText("O","2","",10f)
+            .appendMarkText("=")
+            .appendText("2H","2","",10f)
+            .appendText("O","","",10f);
+
+        math_view_2.setShaderColors(Color.parseColor("#ffff9922"));
+        math_view_2.setText("2","","2",10f)
+            .appendMarkText("+")
+            .appendText("5","","-1",10f)
+            .appendMarkText("=")
+            .appendText("4.2","","",10f);
+
+        math_view_3.setShaderColors(Color.parseColor("#ffFFEAC4"));
+        math_view_3.setText("H","2","0",10f)
+            .appendMarkText("+")
+            .appendText("Cu","","+2",10f)
+            .appendText("O","","-2",10f)
+            .appendMarkText("==")
+            .appendText("Cu","","0",10f)
+            .appendText("H","2","+1",10f)
+            .appendText("O","","-2",10f);
+
+        math_view_4.setShaderColors(Color.RED)
+        math_view_4.setText("985","","GB",10f)
+            .appendMarkText("+")
+            .appendText("211","","MB",10f);
 
     }
 

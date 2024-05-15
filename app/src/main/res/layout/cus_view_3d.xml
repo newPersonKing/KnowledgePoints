@@ -37,4 +37,17 @@
     </com.gy.commonviewdemo.cusview.threeD.Rotate3DView>
 
 
+    <com.gy.commonviewdemo.cusview.threeD.Smartian3DView
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.gy.commonviewdemo.cusview.threeD.Smartian3D3View
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <com.gy.commonviewdemo.cusview.threeD.VortexView
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
 </LinearLayout>

@@ -5,20 +5,18 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.app.role.RoleManager
 import android.content.Context
-import android.content.Context.ALARM_SERVICE
 import android.content.Intent
-import android.content.pm.PackageManager
+import android.hardware.usb.UsbManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.telecom.TelecomManager
 import android.util.Log
+import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.cherry.lib.doc.DocViewerActivity
-import com.cherry.lib.doc.bean.DocSourceType
 import com.gy.commonviewdemo.accessibility.AccessibilityActivity
 import com.gy.commonviewdemo.apt.spi.SpiActivity
 import com.gy.commonviewdemo.behavior.BehaviorMainActivity
@@ -67,6 +65,10 @@ class MainActivity : AppCompatActivity() {
         ReadJsonFileUtil.read(this)
 //        com.gy.commonviewdemo.Utils.getVpnIp(this);
 
+        window.decorView.systemUiVisibility = (
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+
         val command = "curl ipinfo.io" // 要执行的Curl命令
 
         val process = ProcessBuilder()
@@ -93,11 +95,8 @@ class MainActivity : AppCompatActivity() {
         Log.i("cccccccccc","ipMatchResult?.groups.size====${ipMatchResult?.groups?.get(3)?.value}")
 //        Log.i("cccccc","====find====${cityMatchResult?.groupValues?.get(0) ?: ""}");
 
-//        var intent = Intent(this, DocViewerActivity::class.java)
-//        intent.putExtra(Constant.INTENT_SOURCE_KEY, DocSourceType.PATH)
-//        intent.putExtra(Constant.INTENT_DATA_KEY,url)
-//        startActivity(intent)
-//        DocViewerActivity.launchDocViewer(this, DocSourceType.URL,"https://a1goonv2uqw.feishu.cn/docx/Um4Ld53xJo4cVBxLb2qcmHa5nvb?from=from_copylink")
+        Runtime.getRuntime().exec("sync")
+        UsbManager.ACTION_USB_ACCESSORY_DETACHED
         val adapter = MainAdapter(listOf(
             DemoData("X5webview",X5WebViewActivity::class.java,this),
             DemoData("图片转灰度图",DrawPixMainActivity::class.java,this),
@@ -136,14 +135,38 @@ class MainActivity : AppCompatActivity() {
         rv_main.layoutManager = LinearLayoutManager(this)
         rv_main.adapter = adapter
 
-//        var timer = Timer()
-//        val timerTask = object : TimerTask() {
-//            override fun run() {
-//                Log.i("ccccccccccc","scheduleAtFixedRate")
-//            }
-//        }
 
-//        timer.scheduleAtFixedRate(timerTask,0,1000)
+//        NetPingManager(this@MainActivity,"googleads.g.doubleclick.net",object : NetPingManager.IOnNetPingListener {
+//            override fun ontDelay(log: Long) {
+//
+//            }
+//
+//            override fun onError() {
+//                LogUtil.i("==========onError onError onErroronError")
+//            }
+//
+//            override fun onConnected() {
+//                LogUtil.i("==========onConnected onConnected onConnectedonConnected")
+//            }
+//
+//            override fun unConnected() {
+//                LogUtil.i("==========unConnected unConnected unConnectedunConnectedunConnected")
+//            }
+//
+//        }).startGetDelay()
+
+
+
+        val timer = Timer()
+        val timerTask = object : TimerTask() {
+            override fun run() {
+
+
+
+            }
+        }
+
+        timer.scheduleAtFixedRate(timerTask,0,10000)
 //        rv_main.postDelayed({
 //            timerTask.cancel()
 //            timer.purge()
@@ -185,7 +208,7 @@ class MainActivity : AppCompatActivity() {
 
 //        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 //        startActivity(intent)
-
+        CallLogExample.getCallLogs(this)
 
     }
 
