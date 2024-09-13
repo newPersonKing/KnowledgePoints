@@ -1,6 +1,8 @@
 package com.gy.commonviewdemo;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.net.ConnectivityManager;
@@ -26,12 +28,19 @@ import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
+import java.util.List;
 
 import kotlin.Unit;
 
 public class Utils {
 
 
+    public  static  List<ApplicationInfo> getInstalledApplications(Context context) {
+        final PackageManager packageManager = context.getPackageManager();
+        // GET_META_DATA表示获取应用的元数据
+        List<ApplicationInfo> installedApplications = packageManager.getInstalledApplications(PackageManager.GET_META_DATA);
+        return installedApplications;
+    }
     /**
      * 是否为鸿蒙系统
      *

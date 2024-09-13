@@ -3,17 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gy.commonviewdemo">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <uses-permission android:name="android.permission.READ_CALL_LOG"/>
     <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
 
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.REORDER_TASKS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <permission android:name = "com.android.permission.RECV_XXX"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="com.android.permission.RECV_XXX"></uses-permission>
@@ -30,6 +37,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+<!--    <uses-permission android:name="com.light.float"/>-->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -49,26 +57,27 @@
             </intent-filter>
         </activity>
 
-        <provider
-            android:authorities="com.gy.commonviewdemo.fileprovider"
-            android:name="androidx.core.content.FileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true"
-            tools:ignore="MissingClass">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_provider_paths"/>
-        </provider>
+<!--        <provider-->
+<!--            android:authorities="com.gy.commonviewdemo.fileprovider"-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            tools:ignore="MissingClass">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_provider_paths"/>-->
+<!--        </provider>-->
 
-        <!--authorities 是自己拼接Uri的时候content中拼接的内容 也就是AUTHORITY 对应的内容-->
-        <!--content://"+ AUTHORITY+"/"+TABLE_NAME-->
-        <provider
-            android:authorities="com.gy.commonviewdemo.provider"
-            android:name=".db.DataProvider"
-            android:exported="true"/>
+<!--        &lt;!&ndash;authorities 是自己拼接Uri的时候content中拼接的内容 也就是AUTHORITY 对应的内容&ndash;&gt;-->
+<!--        &lt;!&ndash;content://"+ AUTHORITY+"/"+TABLE_NAME&ndash;&gt;-->
+<!--        <provider-->
+<!--            android:authorities="com.gy.commonviewdemo.provider"-->
+<!--            android:name=".db.DataProvider"-->
+<!--            android:exported="true"/>-->
 
         <activity android:name="com.gy.commonviewdemo.cusview.edittext.EdittextActivity"/>
-        <activity android:name=".webview.WebViewActivity"/>
+        <activity android:name=".webview.WebViewActivity"
+            android:theme="@style/webTheme"/>
         <activity android:name=".viewpager.ViewPagerActivity"/>
         <activity android:name=".systemui.SystemUiActivity"/>
         <activity android:name=".recyclerView.RvMainActivity"/>
@@ -312,6 +321,7 @@
 
         <activity android:name="com.cherry.lib.doc.DocViewerActivity"
             android:theme="@style/CusTheme"/>
+        <receiver android:name=".TestBroad" />
     </application>
 
     <queries>

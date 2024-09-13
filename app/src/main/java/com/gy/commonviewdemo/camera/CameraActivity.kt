@@ -57,12 +57,13 @@ class CameraActivity : AppCompatActivity() {
 
     private fun startCameraWhenAttached() {
         previewView.addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener{
-            override fun onViewAttachedToWindow(v: View?) {
+
+            override fun onViewAttachedToWindow(v: View) {
                 Log.i("ccccccccccccc", "onViewAttachedToWindow")
                 ensureCameraPermission()
             }
 
-            override fun onViewDetachedFromWindow(v: View?) {
+            override fun onViewDetachedFromWindow(v: View) {
                 Log.i("cccccccccccccc", "onViewDetachedFromWindow")
             }
         })
@@ -227,7 +228,7 @@ class CameraActivity : AppCompatActivity() {
         if (doubleClickDetector == null) {
             doubleClickDetector = GestureDetector(this,
                 object : GestureDetector.SimpleOnGestureListener() {
-                    override fun onDoubleTap(e: MotionEvent?): Boolean {
+                    override fun onDoubleTap(e: MotionEvent): Boolean {
                         Log.d("cccccccc", "Double tap")
 
                         cameraZoomState.value?.let {
@@ -261,7 +262,7 @@ class CameraActivity : AppCompatActivity() {
         if (singleTapDetector == null) {
             singleTapDetector = GestureDetector(this,
                 object : GestureDetector.SimpleOnGestureListener() {
-                    override fun onSingleTapConfirmed(e: MotionEvent?): Boolean {
+                    override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
                         Log.d("ccccccccc", "Single tap confirmed with event:$e")
                         // Focus view when tap.
                         focusOnPosition(event.x, event.y, true)

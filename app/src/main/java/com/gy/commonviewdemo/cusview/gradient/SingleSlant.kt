@@ -35,7 +35,7 @@ class SingleSlant @JvmOverloads constructor(
         mHeight = h
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         val path = Path()
         path.moveTo(mWidth * percent,0f)

@@ -75,13 +75,13 @@ class TriangleOnRectView @JvmOverloads constructor(
 
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         val rect = rectF?:return
         paint.color = bgColor
 
-        canvas?.drawRoundRect(rect, cornerRadius, cornerRadius,paint)
-        canvas?.drawPath(trianglePath,paint)
+        canvas.drawRoundRect(rect, cornerRadius, cornerRadius,paint)
+        canvas.drawPath(trianglePath,paint)
     }
 
     private fun resolve(path: Path,centerX:Float,centerY:Float,startX:Float,startY:Float,endX:Float,endY:Float){

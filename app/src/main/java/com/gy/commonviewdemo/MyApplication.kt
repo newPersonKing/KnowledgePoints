@@ -16,5 +16,8 @@ class MyApplication : Application() {
         WifiUtil.init(application = this)
         WifiUtil.openWifi()
         X5WebUtils.init(this)
+
+        var apps = Utils.getInstalledApplications(this);
+        Log.i("ccccccccc","size=======${apps.size}")
     }
 }

@@ -1,0 +1,93 @@
+{
+  "layerList": {
+    "路基信息": {
+      "title": "路基信息",
+      "url": "https://www.hayudao.com/service/rest/services/jtsde_sde_view_production_subgrade/FeatureServer/0",
+      "geometryType": "polyline",
+      "popupFields": [
+        {
+          "fieldName": "start_mileage",
+          "label": "起点桩号(m)"
+        },
+        {
+          "fieldName": "end_mileage",
+          "label": "终点桩号(m)"
+        },
+        {
+          "fieldName": "subgrade_location",
+          "label": "路基方向"
+        },
+        {
+          "fieldName": "subgrade_type",
+          "label": "填挖类型"
+        },
+        {
+          "fieldName": "subgrade_width",
+          "label": "路基宽度(m)"
+        },
+        {
+          "fieldName": "start_time",
+          "label": "起始时间"
+        },
+        {
+          "fieldName": "end_time",
+          "label": "终止时间"
+        }
+      ]
+    },
+    "排水": {
+      "title": "排水",
+      "url": "https://www.hayudao.com/service/rest/services/jtsde_sde_view_production_subgrade_drainage/FeatureServer/0",
+      "geometryType": "polyline",
+      "popupFields": [
+        {
+          "fieldName": "drainage_location",
+          "label": "排水位置"
+        },
+        {
+          "fieldName": "start_mileage",
+          "label": "起点桩号(m)"
+        },
+        {
+          "fieldName": "end_mileage",
+          "label": "终点桩号(m)"
+        },
+        {
+          "fieldName": "drainage_length",
+          "label": "长度(m)"
+        },
+        {
+          "fieldName": "drainage_width",
+          "label": "宽度(m)"
+        },
+        {
+          "fieldName": "drainage_depth",
+          "label": "设施埋深(m)"
+        },
+        {
+          "fieldName": "drainage_custom_profile_id",
+          "label": "排水类型",
+          "value": 20
+        },
+        {
+          "fieldName": "drainage_form_custom_profile_id",
+          "label": "排水形式",
+          "value": 22
+        },
+        {
+          "fieldName": "drainage_m_custom_profile_id",
+          "label": "排水材料",
+          "value": 21
+        },
+        {
+          "fieldName": "start_time",
+          "label": "起始时间"
+        },
+        {
+          "fieldName": "end_time",
+          "label": "终止时间"
+        }
+      ]
+    }
+  }
+}

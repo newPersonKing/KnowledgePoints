@@ -39,20 +39,20 @@ class ThreeGradientCornerView @JvmOverloads constructor(
         mHeight = h
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         mPaint.color = oneColor
-        canvas?.drawRoundRect(0f,0f,mWidth*1f,mHeight*1f,mHeight/2f,mHeight/2f,mPaint)
+        canvas.drawRoundRect(0f,0f,mWidth*1f,mHeight*1f,mHeight/2f,mHeight/2f,mPaint)
         mPaint.color = secondColor
-        canvas?.drawRoundRect(0f + borderWidth,0f+borderWidth,mWidth*1f - borderWidth,mHeight*1f - borderWidth,mHeight/2f - borderWidth,mHeight/2f- borderWidth,mPaint)
+        canvas.drawRoundRect(0f + borderWidth,0f+borderWidth,mWidth*1f - borderWidth,mHeight*1f - borderWidth,mHeight/2f - borderWidth,mHeight/2f- borderWidth,mPaint)
 
-        canvas?.save()
-        canvas?.clipPath(Path().apply {
+        canvas.save()
+        canvas.clipPath(Path().apply {
             addRect(0f + 2 * borderWidth,0f+2 * borderWidth,(mWidth*1f -2 * borderWidth) * progress,mHeight*1f - 2 * borderWidth,
                 Path.Direction.CW)
         })
         mPaint.color = progressColor
-        canvas?.drawRoundRect(0f + 2 * borderWidth,0f+ 2 * borderWidth,mWidth*1f - 2 * borderWidth,mHeight*1f - 2 * borderWidth,mHeight/2f - borderWidth,mHeight/2f- borderWidth,mPaint)
-        canvas?.restore()
+        canvas.drawRoundRect(0f + 2 * borderWidth,0f+ 2 * borderWidth,mWidth*1f - 2 * borderWidth,mHeight*1f - 2 * borderWidth,mHeight/2f - borderWidth,mHeight/2f- borderWidth,mPaint)
+        canvas.restore()
 
         super.onDraw(canvas)
     }

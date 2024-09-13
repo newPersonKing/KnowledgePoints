@@ -129,9 +129,8 @@ class TextClockView @JvmOverloads constructor(
     }
 
     //在onDraw方法将画布原点平移到中心位置
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        if (canvas == null) return
         canvas.drawColor(Color.BLACK)//填充背景
         canvas.save()
         canvas.translate(mWidth / 2, mHeight / 2)//原点移动到中心

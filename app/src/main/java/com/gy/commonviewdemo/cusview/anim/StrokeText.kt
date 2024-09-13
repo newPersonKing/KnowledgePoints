@@ -46,7 +46,7 @@ class StrokeText @JvmOverloads constructor(
         borderText?.layout(left, top, right, bottom)
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         // 直接绘制描边 效果并不是特别的完美
         // 应该先绘制描边 再绘制正文
 

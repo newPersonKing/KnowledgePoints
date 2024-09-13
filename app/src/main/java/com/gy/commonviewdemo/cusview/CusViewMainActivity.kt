@@ -24,11 +24,16 @@ import com.gy.commonviewdemo.cusview.threeD.CusView3DActivity
 import com.gy.commonviewdemo.cusview.triangle.TriangleActivity
 import com.gy.commonviewdemo.cusview.video_nine_grid.VideoNineGridActivity
 import kotlinx.android.synthetic.main.cus_view_main.*
+import java.time.Clock.tick
 
 class CusViewMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.cus_view_main)
+
+        tiles.post {
+            tiles.tick()
+        }
 
         segment_view.setSegments(mutableListOf<Segment>().apply {
             add(Segment().apply {

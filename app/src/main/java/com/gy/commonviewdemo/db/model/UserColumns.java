@@ -38,9 +38,4 @@ public class UserColumns  {
             + "unique ( "
             + USERNAME
             + " ) on conflict ignore );";
-
-    public static final String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
-            + "/vnd.mykeep.user";
-    public static final String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE
-            + "/vnd.mykeep.user";
 }

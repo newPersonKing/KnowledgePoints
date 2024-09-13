@@ -1,15 +1,26 @@
 package com.gy.commonviewdemo
 
+import android.annotation.SuppressLint
 import android.app.ActivityManager
 import android.app.AlarmManager
+import android.app.DownloadManager
 import android.app.PendingIntent
 import android.app.role.RoleManager
 import android.content.Context
+import android.content.Context.ALARM_SERVICE
 import android.content.Intent
+import android.content.IntentFilter
+import android.hardware.Camera
+import android.hardware.camera2.CameraManager
 import android.hardware.usb.UsbManager
 import android.net.Uri
 import android.os.Build
+import android.os.Build.VERSION_CODES.M
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.provider.MediaStore
+import android.provider.Settings
 import android.telecom.TelecomManager
 import android.util.Log
 import android.view.View
@@ -49,6 +60,7 @@ import com.gy.commonviewdemo.webview.WebViewActivity
 import com.gy.commonviewdemo.wifi.WifiActivity
 import com.gy.commonviewdemo.x5.X5WebViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.io.BufferedInputStream
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.*
@@ -64,36 +76,55 @@ class MainActivity : AppCompatActivity() {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE)
         ReadJsonFileUtil.read(this)
 //        com.gy.commonviewdemo.Utils.getVpnIp(this);
+        Log.i("ccccccccc","${1000L / 100_10000}")
+        Log.i("ccccccccc","${1000 / 100_10000}")
+        Log.i("ccccccccc","${(1000L * 1.0 / 100_10000).toBigDecimal()}")
+        Log.i("ccccccccc","${(1.0 / 1000 * 100_0000).toBigDecimal()}")
 
         window.decorView.systemUiVisibility = (
                 View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
 
-        val command = "curl ipinfo.io" // 要执行的Curl命令
+        try {
+            val inputStream = resources.openRawResource(R.raw.map_config)
+            val bufferReader = BufferedReader(InputStreamReader(inputStream))
+            val strBuilder = StringBuilder()
+            var  line = bufferReader.readLine()
+            while(line != null){
+                strBuilder.append(line)
+                line = bufferReader.readLine()
+            }
+            Log.i("cccccccc",strBuilder.toString())
+        }catch (e:Exception){
 
-        val process = ProcessBuilder()
-            .command("sh", "-c", command) // 指定Shell并传入Curl命令作为参数
-            .redirectErrorStream(true) // 将错误输出重定向到标准输出流
-            .start()
-
-        val reader = BufferedReader(InputStreamReader(process.inputStream))
-        val output = StringBuilder()
-        var line: String?
-
-        while (reader.readLine().also { line = it } != null) {
-            output.append(line).append("\n")
         }
-        val exitCode = process.waitFor()
-        Log.i("cccccccccccccc","Exit Code: " + exitCode);
-        Log.i("ccccccccccccc","Output:\n$output");
 
-        val cityMatchResult  = "(\"country\":)(.*\")(.*)(\")".toRegex().find(output)
-        val ipMatchResult  = "(\"ip\":)(.*\")(.*)(\")".toRegex().find(output)
 
-        Log.i("cccccccccc","cityMatchResult?.groups.size====${cityMatchResult?.groups?.get(0)?.value}")
-        Log.i("cccccccccc","cityMatchResult?.groups.size====${cityMatchResult?.groups?.get(3)?.value}")
-        Log.i("cccccccccc","ipMatchResult?.groups.size====${ipMatchResult?.groups?.get(3)?.value}")
-//        Log.i("cccccc","====find====${cityMatchResult?.groupValues?.get(0) ?: ""}");
+//        val command = "curl ipinfo.io" // 要执行的Curl命令
+//
+//        val process = ProcessBuilder()
+//            .command("sh", "-c", command) // 指定Shell并传入Curl命令作为参数
+//            .redirectErrorStream(true) // 将错误输出重定向到标准输出流
+//            .start()
+//
+//        val reader = BufferedReader(InputStreamReader(process.inputStream))
+//        val output = StringBuilder()
+//        var line: String?
+//
+//        while (reader.readLine().also { line = it } != null) {
+//            output.append(line).append("\n")
+//        }
+//        val exitCode = process.waitFor()
+//        Log.i("cccccccccccccc","Exit Code: " + exitCode);
+//        Log.i("ccccccccccccc","Output:\n$output");
+//
+//        val cityMatchResult  = "(\"country\":)(.*\")(.*)(\")".toRegex().find(output)
+//        val ipMatchResult  = "(\"ip\":)(.*\")(.*)(\")".toRegex().find(output)
+//
+//        Log.i("cccccccccc","cityMatchResult?.groups.size====${cityMatchResult?.groups?.get(0)?.value}")
+//        Log.i("cccccccccc","cityMatchResult?.groups.size====${cityMatchResult?.groups?.get(3)?.value}")
+//        Log.i("cccccccccc","ipMatchResult?.groups.size====${ipMatchResult?.groups?.get(3)?.value}")
+////        Log.i("cccccc","====find====${cityMatchResult?.groupValues?.get(0) ?: ""}");
 
         Runtime.getRuntime().exec("sync")
         UsbManager.ACTION_USB_ACCESSORY_DETACHED
@@ -136,6 +167,11 @@ class MainActivity : AppCompatActivity() {
         rv_main.adapter = adapter
 
 
+//        val intent = Intent(Intent.ACTION_CALL)
+//        val data = Uri.parse("tel:1923189237749174912")
+//        intent.setData(data)
+//        startActivity(intent)
+
 //        NetPingManager(this@MainActivity,"googleads.g.doubleclick.net",object : NetPingManager.IOnNetPingListener {
 //            override fun ontDelay(log: Long) {
 //
@@ -156,17 +192,17 @@ class MainActivity : AppCompatActivity() {
 //        }).startGetDelay()
 
 
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//            registerReceiver(TestBroad(), IntentFilter().apply {
+//                addAction("floatStateChange")
+//            }, RECEIVER_NOT_EXPORTED)
+//        }else {
+//           
+//        }
+        registerReceiver(TestBroad(), IntentFilter().apply {
+            addAction("floatStateChange")
+        })
 
-        val timer = Timer()
-        val timerTask = object : TimerTask() {
-            override fun run() {
-
-
-
-            }
-        }
-
-        timer.scheduleAtFixedRate(timerTask,0,10000)
 //        rv_main.postDelayed({
 //            timerTask.cancel()
 //            timer.purge()
@@ -208,7 +244,7 @@ class MainActivity : AppCompatActivity() {
 
 //        val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 //        startActivity(intent)
-        CallLogExample.getCallLogs(this)
+//        CallLogExample.getCallLogs(this)
 
     }
 
@@ -371,5 +407,6 @@ class MainActivity : AppCompatActivity() {
                 putExtra(TelecomManager.EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME, application.packageName)
             } else null
     }
+
 
 }

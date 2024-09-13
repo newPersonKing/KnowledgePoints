@@ -26,20 +26,20 @@ class ValueAnimationActivity : AppCompatActivity(){
             }
         }
         valueAnim.addListener(object : Animator.AnimatorListener{
-            override fun onAnimationStart(animation: Animator?) {
+            override fun onAnimationStart(animation: Animator) {
               Log.i("ValueAnimationActivity","onAnimationStart")
                 vibrator?.vibrate(20000)
             }
 
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(animation: Animator) {
                 Log.i("ValueAnimationActivity","onAnimationEnd")
             }
 
-            override fun onAnimationCancel(animation: Animator?) {
+            override fun onAnimationCancel(animation: Animator) {
                 Log.i("ValueAnimationActivity","onAnimationCancel")
             }
 
-            override fun onAnimationRepeat(animation: Animator?) {
+            override fun onAnimationRepeat(animation: Animator) {
                 Log.i("ValueAnimationActivity","onAnimationRepeat")
             }
 

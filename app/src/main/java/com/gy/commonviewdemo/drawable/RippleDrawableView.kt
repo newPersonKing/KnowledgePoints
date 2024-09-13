@@ -28,7 +28,7 @@ class RippleDrawableView @JvmOverloads constructor(
         mHeight = h
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         createDrawable()
     }

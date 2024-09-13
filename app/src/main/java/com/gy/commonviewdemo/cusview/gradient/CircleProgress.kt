@@ -38,7 +38,7 @@ class CircleProgress @JvmOverloads constructor(
         mHeight = h
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         canvas?.drawCircle(mWidth/2f,mHeight/2f,200f/2f,mFillPaint)
 

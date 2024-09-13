@@ -26,7 +26,7 @@ class SlantingView @JvmOverloads constructor(
         mHeight = h
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         if(mWidth == 0 || mHeight == 0)return
 
